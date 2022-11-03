@@ -11,7 +11,7 @@ class SplashActivity :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_layout)
 
-        supportActionBar?.hide()
+
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(Runnable {

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "558492715774",
+    "project_id": "kozoltime",
+    "storage_bucket": "kozoltime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558492715774:android:05ce73f21870d3619bb3af",
+        "android_client_info": {
+          "package_name": "kr.co.ky.kozoltime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558492715774-shrlk4pdu8jpk8dic60nc1olk32cgqsk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.ky.kozoltime",
+            "certificate_hash": "90e79d859432296aeff360039030fa2f75a8af25"
+          }
+        },
+        {
+          "client_id": "558492715774-09ak4uvi64m0sk2n8m1jc54sh7r0sqel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEtU8BQf5nl_ZTHYA5JqlBM97hO3Hcd48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558492715774-09ak4uvi64m0sk2n8m1jc54sh7r0sqel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

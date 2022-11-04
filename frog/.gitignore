@@ -1,8 +1,8 @@
 /build
-folder/.gradle
-forler/.idea
-build.gradle
-.gitignore
+.gradle/
+.idea/
+gradle/
+.gitignore/
 proguard-rules.pro
 frog/src/androidTest/java/kr/co/ky/frog/ExampleInstrumentedTest.kt
 frog/src/androidTest/java/kr/co/ky/frog/ExampleInstrumentedTest.kt
@@ -21,7 +21,7 @@ gradlew
 gradlew.bat
 local.properties
 settings.gradle
-
+LoginActivity.kt
 
 
 

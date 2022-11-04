@@ -15,7 +15,7 @@ class SplashActivity :AppCompatActivity(){
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(Runnable {
-            Intent(this, LoginActivity::class.java).apply {
+            Intent(this, LoginJoin::class.java).apply {
                 startActivity(this)
                 finish()
             }

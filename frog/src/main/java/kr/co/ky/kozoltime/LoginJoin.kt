@@ -8,7 +8,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import com.google.android.gms.auth.api.Auth
+import androidx.core.widget.addTextChangedListener
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -19,20 +19,36 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_login_join.*
+import kotlinx.android.synthetic.main.activity_login_join.google_button
 
-class LoginActivity : AppCompatActivity() {
+class LoginJoin : AppCompatActivity() {
     var auth: FirebaseAuth? = null
     var googleSignInClient: GoogleSignInClient? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_login_join)
         auth = FirebaseAuth.getInstance()
-        email_login_button.setOnClickListener {
-            signinAndSignup()
+        login_btn.setOnClickListener {
+            if (id_edit.length() == 0 && password_edit.length() == 0) {
+                detectEmailAndPasswordEmpty()
+            } else {
+                signinAndSignup()
+            }
         }
-        google_sign_in_button.setOnClickListener {
+        google_button.setOnClickListener {
             googleLogin()
+        }
+        join_btn.setOnClickListener {
+            if (id_edit.length() == 0 && password_edit.length() == 0) {
+                detectEmailAndPasswordEmpty()
+            } else {
+                signinEmail()
+            }
+        }
+        just_look_btn.setOnClickListener {
+            guestMoveMainPage()
         }
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
@@ -77,23 +93,23 @@ class LoginActivity : AppCompatActivity() {
 
     fun signinAndSignup() {
         auth?.createUserWithEmailAndPassword(
-            email_edittext.text.toString(),
-            password_edittext.text.toString()
+            id_edit.text.toString(),
+            password_edit.text.toString()
         )?.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 moveMainPage(task.result?.user)
             } else if (task.exception?.message.isNullOrEmpty()) {
                 Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
             } else {
-                signinEmail()
+//                signinEmail()
             }
         }
     }
 
     fun signinEmail() {
         auth?.createUserWithEmailAndPassword(
-            email_edittext.text.toString(),
-            password_edittext.text.toString()
+            id_edit.text.toString(),
+            password_edit.text.toString()
         )?.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 moveMainPage(task.result?.user)
@@ -104,12 +120,37 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun moveMainPage(user: FirebaseUser?) {
-        try {
-            if (user != null) {
-                startActivity(Intent(this, MainActivity::class.java))
-            }
-        }catch (e:IllegalArgumentException ){
-            e.printStackTrace()
+
+        if (user != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+        } else {
+            Toast.makeText(this, "회원가입을 하세요", Toast.LENGTH_LONG).show()
+        }
+
+    }
+
+    fun guestMoveMainPage() {
+        startActivity(Intent(this, MainActivity::class.java))
+    }
+
+    private fun detectEmailAndPasswordEmpty() {
+        login_btn.isEnabled = false
+        join_btn.isEnabled = false
+
+        id_edit.addTextChangedListener {
+            val email = id_edit.text.toString()
+            val password = password_edit.text.toString()
+            var enabled = email.isNotEmpty() && password.isNotEmpty()
+            login_btn.isEnabled = enabled
+            join_btn.isEnabled = enabled
+        }
+
+        password_edit.addTextChangedListener {
+            val email = id_edit.text.toString()
+            val password = password_edit.text.toString()
+            var enabled = email.isNotEmpty() && password.isNotEmpty()
+            login_btn.isEnabled = enabled
+            join_btn.isEnabled = enabled
         }
     }
 }

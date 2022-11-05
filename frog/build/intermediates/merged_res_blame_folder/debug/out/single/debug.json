@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_splash_layout.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/splash_layout.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_favorite_border.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_favorite_border.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_searching.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_searching.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_chat_black.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_chat_black.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_arrow_back.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_job_epilogue.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_job_epilogue.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_account.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_account.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_btn_signin_twitter.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/btn_signin_twitter.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_write.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_write.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_new_office.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_new_office.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_btn_signin_google.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/btn_signin_google.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_find_job.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_find_job.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_logo_title.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/logo_title.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_lens.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/lens.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_office.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_office.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_find_job.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_find_job.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/menu_bottom_navigation_main.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/menu/bottom_navigation_main.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_favorite.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_favorite.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_add.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_add.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_community.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_community.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_login_join.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_add_a_photo.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_add_a_photo.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_community.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_community.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_search.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_search.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_btn_signin_facebook.png.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/btn_signin_facebook.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_job_epilogue.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_job_epilogue.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_detail.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_detail.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_home2.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_home2.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_outline_local_play_24px.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_outline_local_play_24px.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_push_icon.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/push_icon.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_office_cardview.xml.flat",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/office_cardview.xml"
+    }
+]

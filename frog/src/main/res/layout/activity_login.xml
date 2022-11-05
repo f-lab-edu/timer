@@ -11,7 +11,7 @@
         android:id="@+id/login_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="로그인 타임 "
+        android:text="@string/login_time"
         android:textSize="60sp"
         android:textColor="@color/white"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,7 +33,7 @@
             android:id="@+id/email_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"/>
+            android:hint="@string/email"/>
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -45,11 +45,11 @@
             android:id="@+id/password_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="password"/>
+            android:hint="@string/password"/>
         </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/email_login_button"
-            android:text="이메일 로그인"
+            android:text="@string/signin_email"
             android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -58,7 +58,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="35dp"/>
         <Button
-            android:text="페이스북 로그인 "
+            android:text="@string/signin_facebook"
             android:textColor="@color/white"
             android:background="@drawable/btn_signin_facebook"
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:layout_marginBottom="5dp"/>
         <Button
             android:id="@+id/google_sign_in_button"
-            android:text="구글 로그인 "
+            android:text="@string/signin_google"
         android:textColor="@color/white"
             android:background="@drawable/btn_signin_google"
             android:layout_width="match_parent"

@@ -18,7 +18,6 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login_join.*
 import kotlinx.android.synthetic.main.activity_login_join.google_button
 
@@ -86,13 +85,13 @@ class LoginJoin : AppCompatActivity() {
                 if (task.isSuccessful) {
                     moveMainPage(task.result?.user)
                 } else {
-                    Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "회원가입을 해주세요.", Toast.LENGTH_LONG).show()
                 }
             }
     }
 
     fun signinAndSignup() {
-        auth?.createUserWithEmailAndPassword(
+        auth?.signInWithEmailAndPassword(
             id_edit.text.toString(),
             password_edit.text.toString()
         )?.addOnCompleteListener { task ->

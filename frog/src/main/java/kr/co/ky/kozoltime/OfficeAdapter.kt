@@ -8,10 +8,10 @@ import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.office_cardview.view.*
 
 class OfficeAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    var postList:ArrayList<Post> = arrayListOf()
+   var postList:ArrayList<Post> = arrayListOf()
     init {
         val firestore = FirebaseFirestore.getInstance()
-        firestore?.collection("postList")?.addSnapshotListener{querySnapshot,firebaseFirestoreException -> postList.clear()
+        firestore?.collection("kozoltime")?.addSnapshotListener{querySnapshot,firebaseFirestoreException -> postList.clear()
 
         for(snapshot in querySnapshot!!.documents){
             var item = snapshot.toObject(Post::class.java)

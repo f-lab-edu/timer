@@ -8,6 +8,10 @@
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_write.xml"
     },
     {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_find_job.xml",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_find_job.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_main.xml"
     },
@@ -16,24 +20,16 @@
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_detail.xml"
     },
     {
-        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/splash_layout.xml",
-        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/splash_layout.xml"
-    },
-    {
-        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
-        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_login.xml"
-    },
-    {
-        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_find_job.xml",
-        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/fragment_find_job.xml"
-    },
-    {
         "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/office_cardview.xml",
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/office_cardview.xml"
     },
     {
         "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login_join.xml",
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_login_join.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/splash_layout.xml",
+        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/splash_layout.xml"
     },
     {
         "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_community.xml",

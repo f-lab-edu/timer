@@ -6,91 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <LinearLayout
-        android:id="@+id/main_content"
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/nav_division"
-        android:orientation="vertical">
-        <LinearLayout
-            android:id="@+id/home_linear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <EditText
-            android:id="@+id/home_edit"
-            android:layout_width="320dp"
-            android:layout_height="50dp"> </EditText>
-            <Button
-                android:id="@+id/home_search_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_searching"
-                android:paddingLeft="30dp"
-                android:background="@color/purple"/>
-        </LinearLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="4"
-            android:paddingTop="10dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_division"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
-            >
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:text="사무직"
-                android:textColor="@color/white"
-                android:background="@color/purple"/>
-
-
-
-        </GridLayout>
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/nav_division"
         android:background="@color/colorDivision"

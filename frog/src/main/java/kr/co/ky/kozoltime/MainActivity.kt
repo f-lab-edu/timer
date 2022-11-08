@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-import navigation.communityFragment
+import navigation.CommunityFragment
 import navigation.DetailViewFragment
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 return true
             }
             R.id.job_epilogue -> {
-                var communityFragment = communityFragment()
+                var communityFragment = CommunityFragment()
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.main_content, communityFragment).commit()
                 return true
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 return true
             }
             R.id.find_job -> {
-                var alarmFragment = communityFragment()
+                var alarmFragment = CommunityFragment()
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.main_content, alarmFragment).commit()
                 return true

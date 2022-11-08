@@ -11,8 +11,6 @@ class SplashActivity :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_layout)
 
-
-
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(Runnable {
             Intent(this, LoginJoin::class.java).apply {

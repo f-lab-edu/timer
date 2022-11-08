@@ -18,18 +18,16 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login_join.*
 import kotlinx.android.synthetic.main.activity_login_join.google_button
 
 class LoginJoin : AppCompatActivity() {
-    var auth: FirebaseAuth? = null
+    var auth: FirebaseAuth = FirebaseAuth.getInstance()
     var googleSignInClient: GoogleSignInClient? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_join)
-        auth = FirebaseAuth.getInstance()
         login_btn.setOnClickListener {
             if (id_edit.length() == 0 && password_edit.length() == 0) {
                 detectEmailAndPasswordEmpty()
@@ -125,6 +123,7 @@ class LoginJoin : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         } else {
             Toast.makeText(this, "회원가입을 하세요", Toast.LENGTH_LONG).show()
+            detectEmailAndPasswordEmpty()
         }
 
     }

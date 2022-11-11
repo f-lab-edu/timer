@@ -4,7 +4,9 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Spinner;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,12 +22,29 @@ public final class FragmentJobEpilogueBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Spinner writeSpinner;
+  public final EditText homeEdit;
 
-  private FragmentJobEpilogueBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Spinner writeSpinner) {
+  @NonNull
+  public final LinearLayout homeLinear;
+
+  @NonNull
+  public final Button homeSearchBtn;
+
+  @NonNull
+  public final LinearLayout mainContent;
+
+  @NonNull
+  public final Button officeBtn;
+
+  private FragmentJobEpilogueBinding(@NonNull ConstraintLayout rootView, @NonNull EditText homeEdit,
+      @NonNull LinearLayout homeLinear, @NonNull Button homeSearchBtn,
+      @NonNull LinearLayout mainContent, @NonNull Button officeBtn) {
     this.rootView = rootView;
-    this.writeSpinner = writeSpinner;
+    this.homeEdit = homeEdit;
+    this.homeLinear = homeLinear;
+    this.homeSearchBtn = homeSearchBtn;
+    this.mainContent = mainContent;
+    this.officeBtn = officeBtn;
   }
 
   @Override
@@ -55,13 +74,38 @@ public final class FragmentJobEpilogueBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.write_spinner;
-      Spinner writeSpinner = ViewBindings.findChildViewById(rootView, id);
-      if (writeSpinner == null) {
+      id = R.id.home_edit;
+      EditText homeEdit = ViewBindings.findChildViewById(rootView, id);
+      if (homeEdit == null) {
         break missingId;
       }
 
-      return new FragmentJobEpilogueBinding((ConstraintLayout) rootView, writeSpinner);
+      id = R.id.home_linear;
+      LinearLayout homeLinear = ViewBindings.findChildViewById(rootView, id);
+      if (homeLinear == null) {
+        break missingId;
+      }
+
+      id = R.id.home_search_btn;
+      Button homeSearchBtn = ViewBindings.findChildViewById(rootView, id);
+      if (homeSearchBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.main_content;
+      LinearLayout mainContent = ViewBindings.findChildViewById(rootView, id);
+      if (mainContent == null) {
+        break missingId;
+      }
+
+      id = R.id.office_btn;
+      Button officeBtn = ViewBindings.findChildViewById(rootView, id);
+      if (officeBtn == null) {
+        break missingId;
+      }
+
+      return new FragmentJobEpilogueBinding((ConstraintLayout) rootView, homeEdit, homeLinear,
+          homeSearchBtn, mainContent, officeBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

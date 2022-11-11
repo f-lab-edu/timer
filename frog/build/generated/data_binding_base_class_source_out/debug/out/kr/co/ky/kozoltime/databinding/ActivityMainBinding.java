@@ -4,8 +4,7 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,36 +25,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigation;
 
   @NonNull
-  public final EditText homeEdit;
-
-  @NonNull
-  public final LinearLayout homeLinear;
-
-  @NonNull
-  public final Button homeSearchBtn;
-
-  @NonNull
-  public final LinearLayout mainContent;
+  public final FrameLayout frame;
 
   @NonNull
   public final LinearLayout navDivision;
 
-  @NonNull
-  public final Button officeBtn;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigation, @NonNull EditText homeEdit,
-      @NonNull LinearLayout homeLinear, @NonNull Button homeSearchBtn,
-      @NonNull LinearLayout mainContent, @NonNull LinearLayout navDivision,
-      @NonNull Button officeBtn) {
+      @NonNull BottomNavigationView bottomNavigation, @NonNull FrameLayout frame,
+      @NonNull LinearLayout navDivision) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
-    this.homeEdit = homeEdit;
-    this.homeLinear = homeLinear;
-    this.homeSearchBtn = homeSearchBtn;
-    this.mainContent = mainContent;
+    this.frame = frame;
     this.navDivision = navDivision;
-    this.officeBtn = officeBtn;
   }
 
   @Override
@@ -91,27 +72,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.home_edit;
-      EditText homeEdit = ViewBindings.findChildViewById(rootView, id);
-      if (homeEdit == null) {
-        break missingId;
-      }
-
-      id = R.id.home_linear;
-      LinearLayout homeLinear = ViewBindings.findChildViewById(rootView, id);
-      if (homeLinear == null) {
-        break missingId;
-      }
-
-      id = R.id.home_search_btn;
-      Button homeSearchBtn = ViewBindings.findChildViewById(rootView, id);
-      if (homeSearchBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.main_content;
-      LinearLayout mainContent = ViewBindings.findChildViewById(rootView, id);
-      if (mainContent == null) {
+      id = R.id.frame;
+      FrameLayout frame = ViewBindings.findChildViewById(rootView, id);
+      if (frame == null) {
         break missingId;
       }
 
@@ -121,14 +84,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.office_btn;
-      Button officeBtn = ViewBindings.findChildViewById(rootView, id);
-      if (officeBtn == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation, homeEdit,
-          homeLinear, homeSearchBtn, mainContent, navDivision, officeBtn);
+      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation, frame,
+          navDivision);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

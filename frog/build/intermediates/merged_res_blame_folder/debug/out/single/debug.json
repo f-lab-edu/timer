@@ -44,10 +44,6 @@
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_job_epilogue.xml"
     },
     {
-        "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
-        "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/layout/activity_login.xml"
-    },
-    {
         "merged": "/Users/hi-macbook/Documents/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_account.png.flat",
         "source": "/Users/hi-macbook/Documents/kozol2/frog/src/main/res/drawable/ic_account.png"
     },

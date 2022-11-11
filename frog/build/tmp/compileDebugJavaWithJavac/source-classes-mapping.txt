@@ -1,7 +1,5 @@
 kr/co/ky/kozoltime/BuildConfig.java
  kr.co.ky.kozoltime.BuildConfig
-kr/co/ky/kozoltime/databinding/ActivityLoginBinding.java
- kr.co.ky.kozoltime.databinding.ActivityLoginBinding
 kr/co/ky/kozoltime/databinding/SplashLayoutBinding.java
  kr.co.ky.kozoltime.databinding.SplashLayoutBinding
 kr/co/ky/kozoltime/databinding/FragmentNewOfficeBinding.java

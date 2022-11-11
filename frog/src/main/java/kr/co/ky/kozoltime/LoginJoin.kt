@@ -84,13 +84,13 @@ class LoginJoin : AppCompatActivity() {
                 if (task.isSuccessful) {
                     moveMainPage(task.result?.user)
                 } else {
-                    Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "회원가입을 해주세요.", Toast.LENGTH_LONG).show()
                 }
             }
     }
 
     fun signinAndSignup() {
-        auth?.createUserWithEmailAndPassword(
+        auth?.signInWithEmailAndPassword(
             id_edit.text.toString(),
             password_edit.text.toString()
         )?.addOnCompleteListener { task ->

@@ -13,7 +13,7 @@ class SplashActivity :AppCompatActivity(){
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(Runnable {
-            Intent(this, LoginJoin::class.java).apply {
+            Intent(this, LoginJoinActivity::class.java).apply {
                 startActivity(this)
                 finish()
             }

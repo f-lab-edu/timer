@@ -30,6 +30,7 @@
         android:columnCount="4"
         android:paddingTop="10dp">
         <Button
+            android:id="@+id/office_btn"
             android:layout_width="103dp"
             android:layout_height="50dp"
             android:text="@string/office"

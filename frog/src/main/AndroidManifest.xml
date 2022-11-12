@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Kozoltime"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".LoginJoin"
+            android:name=".LoginJoinActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

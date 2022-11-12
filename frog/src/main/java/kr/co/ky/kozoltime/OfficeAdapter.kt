@@ -11,7 +11,7 @@ class OfficeAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
    var postList:ArrayList<Post> = arrayListOf()
     init {
         val firestore = FirebaseFirestore.getInstance()
-        firestore?.collection("kozoltime")?.addSnapshotListener{querySnapshot,firebaseFirestoreException -> postList.clear()
+        firestore.collection("kozoltime").addSnapshotListener{querySnapshot,firebaseFirestoreException -> postList.clear()
 
         for(snapshot in querySnapshot!!.documents){
             var item = snapshot.toObject(Post::class.java)
@@ -38,9 +38,7 @@ class OfficeAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        if(postList != null) {
-            return postList.size
+            return postList.size ?: return 0
         }
-        return 0
     }
-}
+

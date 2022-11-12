@@ -21,7 +21,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_login_join.*
 import kotlinx.android.synthetic.main.activity_login_join.google_button
 
-class LoginJoin : AppCompatActivity() {
+class LoginJoinActivity : AppCompatActivity() {
     var auth: FirebaseAuth = FirebaseAuth.getInstance()
     var googleSignInClient: GoogleSignInClient? = null
 

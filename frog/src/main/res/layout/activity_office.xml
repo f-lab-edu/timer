@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Office">
+    tools:context=".OfficeActivity">
     <LinearLayout
         android:id="@+id/office_linear"
         android:layout_width="wrap_content"

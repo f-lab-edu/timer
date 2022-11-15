@@ -38,7 +38,7 @@ class OfficeAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-            return postList.size ?: return 0
+            return postList.size
         }
     }
 

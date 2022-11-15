@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Write">
+    tools:context=".WriteActivity">
     <LinearLayout
         android:id="@+id/job_epilogue_spinner_category"
         android:layout_width="match_parent"

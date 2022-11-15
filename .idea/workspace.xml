@@ -12,25 +12,179 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="cherrypick success">
+    <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="code fix with advise">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/activity_login_join-layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/activity_login_join-layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/fragment_job_epilogue-layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/fragment_job_epilogue-layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/splash_layout-layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/splash_layout-layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login_join.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login_join.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_write.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_write.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_job_epilogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_job_epilogue.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/splash_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/splash_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable-v24_ic_launcher_foreground.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_btn_signin_facebook.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_btn_signin_google.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_btn_signin_twitter.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_account.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_add_a_photo.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_arrow_back.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_chat_black.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_favorite.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_favorite_border.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_outline_local_play_24px.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_ic_search.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_lens.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_logo_title.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/drawable_push_icon.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_activity_write.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_activity_write.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_fragment_job_epilogue.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_fragment_job_epilogue.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_splash_layout.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/layout_splash_layout.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/menu_bottom_navigation_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/menu_bottom_navigation_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/values-night-v8_values-night-v8.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/values-night-v8_values-night-v8.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-night-v8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-night-v8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/JobEpilogue.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/LoginJoin$detectEmailAndPasswordEmpty$$inlined$addTextChangedListener$default$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/LoginJoin$detectEmailAndPasswordEmpty$$inlined$addTextChangedListener$default$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/LoginJoin.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/Office.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/SplashActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/SplashActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/kr/co/ky/kozoltime/Write.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/navigation/JobEpilogueFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/navigation/JobEpilogueFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/navigation/communityFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/project_dex_archive/debug/out/navigation/communityFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/outputs/apk/debug/frog-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/outputs/apk/debug/frog-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/META-INF/frog_debug.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/META-INF/frog_debug.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/JobEpilogue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/LoginJoin$detectEmailAndPasswordEmpty$$inlined$addTextChangedListener$default$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/LoginJoin$detectEmailAndPasswordEmpty$$inlined$addTextChangedListener$default$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/LoginJoin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/Office.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/SplashActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/SplashActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/kr/co/ky/kozoltime/Write.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/navigation/JobEpilogueFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/navigation/JobEpilogueFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/navigation/communityFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/tmp/kotlin-classes/debug/navigation/communityFragment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/JobEpilogue.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/LoginJoin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/LoginJoinActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/NewOffice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/NewOfficeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/Office.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/OfficeActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/OfficeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/OfficeAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/SplashActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/Write.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/WriteActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/navigation/JobEpilogueFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/navigation/JobEpilogueFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/navigation/communityFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/res/layout/activity_login_join.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/layout/activity_login_join.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/res/layout/activity_office.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/layout/activity_office.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/res/layout/activity_write.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/layout/activity_write.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/res/layout/fragment_job_epilogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/layout/fragment_job_epilogue.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/src/main/res/layout/fragment_new_office.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/layout/fragment_new_office.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/src/main/res/menu/bottom_navigation_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/menu/bottom_navigation_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +245,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="2GtqshR3DsKZyEzfWc3XioZteDW" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
@@ -102,7 +264,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/frog/src/main/res/layout" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1668258421890" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1668513293325" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -242,11 +404,15 @@
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Android App.frog" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7c992c3f-414d-4a55-b4ef-c1926ae02ed0" name="Default Changelist" comment="" />
+      <changelist id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="code fix with advise" />
       <created>1667218436025</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -287,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667656549671</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="code fix with advise">
+      <created>1668259573369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668259573369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,6 +483,7 @@
     <MESSAGE value="login google no facebook id" />
     <MESSAGE value="login seperate join and login" />
     <MESSAGE value="officeActivity recyclerview" />
-    <option name="LAST_COMMIT_MESSAGE" value="officeActivity recyclerview" />
+    <MESSAGE value="code fix with advise" />
+    <option name="LAST_COMMIT_MESSAGE" value="code fix with advise" />
   </component>
 </project>

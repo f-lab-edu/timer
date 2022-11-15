@@ -19,8 +19,14 @@ class JobEpilogueFragment : Fragment(){
         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_job_epilogue,container,false)
         return view
 
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+
         office_btn.setOnClickListener{
-            val intent = Intent(context, OfficeActivity::class.java)
+            val intent = Intent(getActivity(), OfficeActivity::class.java)
             startActivity(intent)
         }
     }

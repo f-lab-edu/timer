@@ -15,9 +15,9 @@
             android:id="@+id/office_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/office_job"
+            android:text="@string/office"
             android:textStyle="bold"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:layout_margin="5dp"/>
     <Button
         android:id="@+id/legend_office_btn"

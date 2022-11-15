@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginJoin">
+    tools:context=".LoginJoinActivity">
 
     <TextView
         android:id="@+id/id_tv"
@@ -17,57 +17,53 @@
         android:layout_marginLeft="70dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
     <EditText
         android:id="@+id/id_edit"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginLeft="20dp"
+        android:layout_height="40dp"
+        android:hint="@string/email"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="@string/signin_email" />
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
     <EditText
         android:id="@+id/password_edit"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginLeft="20dp"
+        android:layout_height="40dp"
+        android:hint="@string/password"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:hint="@string/sign_password" />
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
     <Button
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/purple"
+        android:layout_height="40dp"
         android:text="@string/signin_email"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@color/purple"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
     <Button
         android:id="@+id/join_btn"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
         android:background="@color/purple"
         android:text="@string/join"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
     <Button
         android:id="@+id/just_look_btn"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
         android:background="@color/purple"
         android:text="@string/next_join"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,16 +71,15 @@
         android:layout_marginLeft="150dp"
         android:text="@string/social_login"
         android:textSize="20sp"/>
-
     <Button
         android:id="@+id/google_button"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/btn_signin_google"
         android:text="@string/signin_google"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:background="@drawable/btn_signin_google"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"/>
 </LinearLayout>

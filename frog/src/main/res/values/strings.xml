@@ -26,4 +26,19 @@
     <string name="nurse">간호조무사</string>
     <string name="delivery">배달부</string>
     <string name="ect">기타등등</string>
+
+    <!-- bottom_navigation_main -->
+    <string name="ssul">취업 후기</string>
+    <string name="community">커뮤니티</string>
+    <string name="find_job">구인란</string>
+    <string name="my_page">나의 프로필</string>
+
+    <!-- office_cardview -->
+    <string name="id">id</string>
+    <string name="title">title</string>
+    <string name="context">context</string>
+
+    <!-- activity_office -->
+    <string name="legend_post">레전드</string>
+    <string name="new_post">새 글</string>
 </resources>

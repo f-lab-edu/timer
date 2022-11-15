@@ -16,6 +16,9 @@
             android:name=".LoginJoinActivity"
             android:exported="false" />
         <activity
+            android:name=".OfficeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>

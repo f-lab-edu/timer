@@ -4,11 +4,12 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -18,24 +19,42 @@ import kr.co.ky.kozoltime.R;
 
 public final class ActivityWriteBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final LinearLayout jobEpilogueSpinnerCategory;
 
   @NonNull
+  public final Button writeBtn;
+
+  @NonNull
+  public final LinearLayout writeContextLinear;
+
+  @NonNull
   public final Spinner writeSpinner;
 
-  private ActivityWriteBinding(@NonNull ConstraintLayout rootView,
-      @NonNull LinearLayout jobEpilogueSpinnerCategory, @NonNull Spinner writeSpinner) {
+  @NonNull
+  public final EditText writeSsulContext;
+
+  @NonNull
+  public final EditText writeSsulTitle;
+
+  private ActivityWriteBinding(@NonNull LinearLayout rootView,
+      @NonNull LinearLayout jobEpilogueSpinnerCategory, @NonNull Button writeBtn,
+      @NonNull LinearLayout writeContextLinear, @NonNull Spinner writeSpinner,
+      @NonNull EditText writeSsulContext, @NonNull EditText writeSsulTitle) {
     this.rootView = rootView;
     this.jobEpilogueSpinnerCategory = jobEpilogueSpinnerCategory;
+    this.writeBtn = writeBtn;
+    this.writeContextLinear = writeContextLinear;
     this.writeSpinner = writeSpinner;
+    this.writeSsulContext = writeSsulContext;
+    this.writeSsulTitle = writeSsulTitle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -66,14 +85,38 @@ public final class ActivityWriteBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.write_btn;
+      Button writeBtn = ViewBindings.findChildViewById(rootView, id);
+      if (writeBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.write_context_linear;
+      LinearLayout writeContextLinear = ViewBindings.findChildViewById(rootView, id);
+      if (writeContextLinear == null) {
+        break missingId;
+      }
+
       id = R.id.write_spinner;
       Spinner writeSpinner = ViewBindings.findChildViewById(rootView, id);
       if (writeSpinner == null) {
         break missingId;
       }
 
-      return new ActivityWriteBinding((ConstraintLayout) rootView, jobEpilogueSpinnerCategory,
-          writeSpinner);
+      id = R.id.write_ssul_context;
+      EditText writeSsulContext = ViewBindings.findChildViewById(rootView, id);
+      if (writeSsulContext == null) {
+        break missingId;
+      }
+
+      id = R.id.write_ssul_title;
+      EditText writeSsulTitle = ViewBindings.findChildViewById(rootView, id);
+      if (writeSsulTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityWriteBinding((LinearLayout) rootView, jobEpilogueSpinnerCategory, writeBtn,
+          writeContextLinear, writeSpinner, writeSsulContext, writeSsulTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

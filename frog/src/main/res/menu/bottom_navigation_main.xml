@@ -4,25 +4,25 @@
         android:id="@+id/action_home"
         android:icon="@drawable/ic_home"
         android:enabled="true"
-        android:title="home"/>
+        android:title="@string/ssul"/>
 
     <item
         android:id="@+id/job_epilogue"
         android:icon="@drawable/ic_home"
         android:enabled="true"
-        android:title="@string/home"/>
+        android:title="@string/community"/>
 
     <item
         android:id="@+id/community"
         android:icon="@drawable/ic_home"
         android:enabled="true"
-        android:title="@string/home"/>
+        android:title="@string/find_job"/>
 
     <item
         android:id="@+id/find_job"
         android:icon="@drawable/ic_home"
         android:enabled="true"
-        android:title="@string/home"/>
+        android:title="@string/my_page"/>
 
 
 

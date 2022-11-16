@@ -1,0 +1,24 @@
+kr/co/ky/kozoltime/BuildConfig.java
+ kr.co.ky.kozoltime.BuildConfig
+kr/co/ky/kozoltime/databinding/SplashLayoutBinding.java
+ kr.co.ky.kozoltime.databinding.SplashLayoutBinding
+kr/co/ky/kozoltime/databinding/FragmentNewOfficeBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentNewOfficeBinding
+kr/co/ky/kozoltime/databinding/FragmentFindJobBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentFindJobBinding
+kr/co/ky/kozoltime/databinding/FragmentCommunityBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentCommunityBinding
+kr/co/ky/kozoltime/databinding/ActivityOfficeBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityOfficeBinding
+kr/co/ky/kozoltime/databinding/FragmentDetailBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentDetailBinding
+kr/co/ky/kozoltime/databinding/FragmentJobEpilogueBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentJobEpilogueBinding
+kr/co/ky/kozoltime/databinding/OfficeCardviewBinding.java
+ kr.co.ky.kozoltime.databinding.OfficeCardviewBinding
+kr/co/ky/kozoltime/databinding/ActivityLoginJoinBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityLoginJoinBinding
+kr/co/ky/kozoltime/databinding/ActivityMainBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityMainBinding
+kr/co/ky/kozoltime/databinding/ActivityWriteBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityWriteBinding

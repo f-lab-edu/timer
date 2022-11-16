@@ -26,6 +26,9 @@
             android:name="kr.co.ky.kozoltime.LoginJoinActivity"
             android:exported="false" />
         <activity
+            android:name="kr.co.ky.kozoltime.CommunityWriteActivity"
+            android:exported="false" />
+        <activity
             android:name="kr.co.ky.kozoltime.OfficeActivity"
             android:exported="false" />
         <activity

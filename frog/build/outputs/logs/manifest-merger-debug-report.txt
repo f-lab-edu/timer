@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/hi-macbook/.gradle/caches/transforms-3/1d4d22d4b6436e473305c76a2a164434/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/7ffa70fd5f5dbdcf1854545df00393bd/transformed/jetified-lifecycle-livedata-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:2:1-20:12
@@ -70,20 +70,20 @@ MERGED from [androidx.tracing:tracing:1.0.0] /Users/hi-macbook/.gradle/caches/tr
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/3d6e9de270d97c17bdde1231caeef0ab/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/hi-macbook/.gradle/caches/transforms-3/32bd3b91e73d8bbec5ad9ab9f166572a/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/4c1178228d33a46cdc6481a689b05486/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:3:5-33
 		INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml
 		INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
 		INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-38:12
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:1-41:12
 		INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:2:11-69
@@ -98,7 +98,7 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.g
 	android:name
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:7:5-36:19
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:7:5-39:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
@@ -155,40 +155,46 @@ ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:17:13-37
 	android:name
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:16:13-46
-activity#kr.co.ky.kozoltime.OfficeActivity
+activity#kr.co.ky.kozoltime.CommunityWriteActivity
 ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:19:13-43
-activity#kr.co.ky.kozoltime.WriteActivity
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:19:13-51
+activity#kr.co.ky.kozoltime.OfficeActivity
 ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:22:13-42
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:22:13-43
+activity#kr.co.ky.kozoltime.WriteActivity
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:25:13-42
 activity#kr.co.ky.kozoltime.SplashActivity
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:24:9-32:20
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:27:9-35:20
 	android:exported
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:26:13-36
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:25:13-43
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:28:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:28:17-69
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:30:17-77
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:33:27-74
 activity#kr.co.ky.kozoltime.MainActivity
-ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:33:9-35:40
+ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:34:13-41
+		ADDED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml:37:13-41
 uses-sdk
 INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/hi-macbook/Documents/kozol2/frog/src/main/AndroidManifest.xml

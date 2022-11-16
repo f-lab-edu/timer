@@ -1997,6 +1997,16 @@ id clockwise
 id closest
 id collapseActionView
 id community
+id community_btn
+id community_context_linear
+id community_edit
+id community_linear
+id community_linear2
+id community_rv
+id community_search_btn
+id community_ssul_context
+id community_ssul_title
+id community_tv
 id confirm_button
 id constraint
 id container
@@ -2056,6 +2066,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fabWrite
+id fabWrite_community
 id fade
 id fill
 id fill_horizontal
@@ -2118,6 +2129,7 @@ id layout
 id left
 id leftToRight
 id legacy
+id legend_community_btn
 id legend_office_btn
 id light
 id line1
@@ -2189,6 +2201,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_community_btn
 id new_office_btn
 id noScroll
 id noState
@@ -2541,6 +2554,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout write_community_activity
 menu bottom_navigation_main
 plurals mtrl_badge_content_description
 raw firebase_common_keep

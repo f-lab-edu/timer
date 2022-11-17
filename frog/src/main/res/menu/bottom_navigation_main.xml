@@ -13,13 +13,13 @@
         android:title="@string/ssul"/>
 
     <item
-        android:id="@+id/action_home"
+        android:id="@+id/find_job"
         android:icon="@drawable/ic_home"
         android:enabled="true"
         android:title="@string/find_job"/>
 
     <item
-        android:id="@+id/find_job"
+        android:id="@+id/action_home"
         android:icon="@drawable/ic_home"
         android:enabled="true"
         android:title="@string/my_page"/>

@@ -23,6 +23,9 @@
         android:theme="@style/Theme.Kozoltime"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="kr.co.ky.kozoltime.NickNameActivity"
+            android:exported="false" />
+        <activity
             android:name="kr.co.ky.kozoltime.LoginJoinActivity"
             android:exported="false" />
         <activity

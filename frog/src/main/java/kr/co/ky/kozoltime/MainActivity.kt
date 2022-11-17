@@ -12,9 +12,7 @@ import navigation.JobEpilogueFragment
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
-
-
-
+        val jobEpilogueFragment = JobEpilogueFragment()
         override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 
             when (p0.itemId) {
@@ -53,6 +51,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             setContentView(R.layout.activity_main)
             bottom_navigation.setOnNavigationItemSelectedListener(this)
 
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame,jobEpilogueFragment).commit()
         }
 
 }

@@ -2,7 +2,8 @@
   "project_info": {
     "project_number": "558492715774",
     "project_id": "kozoltime",
-    "storage_bucket": "kozoltime.appspot.com"
+    "storage_bucket": "kozoltime.appspot.com",
+    "firebase_url": "https://firebase-adminsdk-s1vjx@kozoltime.iam.gserviceaccount.com"
   },
   "client": [
     {

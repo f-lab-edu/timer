@@ -2644,6 +2644,7 @@ string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string fb_login_protocol_scheme
 string find_job
+string firebase_database_url
 string frog
 string gcm_defaultSenderId
 string google_api_key

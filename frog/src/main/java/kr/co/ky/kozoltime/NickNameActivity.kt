@@ -8,6 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_nick_name.*
 import kotlinx.android.synthetic.main.fragment_detail.*
@@ -15,23 +19,18 @@ import navigation.DetailViewFragment
 
 class NickNameActivity : AppCompatActivity() {
 
-    var fbAuth = FirebaseAuth.getInstance()
-    var fbFirestore = FirebaseFirestore.getInstance()
-    var nickInfo = NickNameDataClass()
-
+    val fbAuth = FirebaseAuth.getInstance()
+    val fbFirestore = FirebaseFirestore.getInstance()
+    val databaseReference = FirebaseDatabase.getInstance().getReference()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nick_name)
 
         nick_set_btn.setOnClickListener{
-            val edit = nick_edit.text.toString()
-            nickInfo.emailId = fbAuth?.currentUser?.email
-            nickInfo.nickname = edit
 
-            bringNick(nickInfo.nickname)
             val writeData = hashMapOf(
-                "eamilId" to nickInfo.emailId,
-                "nickname" to nickInfo.nickname,
+                "eamilId" to fbAuth?.currentUser?.email,
+                "nickname" to nick_edit.text.toString()
             )
             val bucket = fbFirestore.collection("nickname")
             bucket.add(writeData).addOnSuccessListener {
@@ -40,6 +39,9 @@ class NickNameActivity : AppCompatActivity() {
                 .addOnFailureListener{
                     Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
                 }
+        }
+        nick_overlap_btn.setOnClickListener{
+            nickOverlap()
         }
         }
     fun bringNick(inputNick:String?){
@@ -50,5 +52,21 @@ class NickNameActivity : AppCompatActivity() {
         val manager:FragmentManager = getSupportFragmentManager()
         val transaction : FragmentTransaction = manager.beginTransaction()
 //        transaction.replace(R.id.frame_nick, DetailViewFragment()).commit()
+    }
+    fun nickOverlap(){
+        databaseReference.child("nickname").orderByChild("nickname").equalTo(nick_edit.text.toString())
+            .addListenerForSingleValueEvent(object: ValueEventListener{
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    if(!dataSnapshot.exists()){
+                        Toast.makeText(applicationContext,"사용하셔도 되는 닉네임입니다.",Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(applicationContext,"중복된 닉네임입니다.",Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                override fun onCancelled(dataError: DatabaseError) {
+                    Toast.makeText(applicationContext,"중복 검사에 실패 하셨습니다.",Toast.LENGTH_SHORT).show()
+                }
+            })
     }
     }

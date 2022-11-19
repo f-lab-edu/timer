@@ -10,8 +10,8 @@ import kotlinx.android.synthetic.main.write_community_activity.*
 
 class CommunityWriteActivity : AppCompatActivity() {
 
-    var fbAuth = FirebaseAuth.getInstance()
-    var fbFirestore = FirebaseFirestore.getInstance()
+    val fbAuth = FirebaseAuth.getInstance()
+    val fbFirestore = FirebaseFirestore.getInstance()
     var communityInfo = CommunityDataClass()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,14 +20,10 @@ class CommunityWriteActivity : AppCompatActivity() {
 
         community_btn.setOnClickListener{
 
-            communityInfo.id = fbAuth?.currentUser?.email
-            communityInfo.title = community_ssul_title.text.toString()
-            communityInfo.context = community_ssul_context.text.toString()
-
             val writeData = hashMapOf(
-                "id" to communityInfo.id,
-                "title" to communityInfo.title,
-                "context" to communityInfo.context
+                "id" to fbAuth?.currentUser?.email,
+                "title" to community_ssul_title.text.toString(),
+                "context" to community_ssul_context.text.toString()
             )
             val bucket = fbFirestore.collection("community")
             bucket.add(writeData).addOnSuccessListener {

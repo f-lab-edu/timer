@@ -12,10 +12,11 @@ class CommunityAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     init {
         val firestore = FirebaseFirestore.getInstance()
         firestore.collection("community").addSnapshotListener{querySnapshot,firebaseFirestoreException -> communityList.clear()
-
-            for(snapshot in querySnapshot!!.documents){
-                var item = snapshot.toObject(CommunityDataClass::class.java)
-                communityList.add(item!!)
+            if(querySnapshot != null) {
+                for (snapshot in querySnapshot!!.documents) {
+                    var item = snapshot.toObject(CommunityDataClass::class.java)
+                    communityList.add(item!!)
+                }
             }
             notifyDataSetChanged()
         }

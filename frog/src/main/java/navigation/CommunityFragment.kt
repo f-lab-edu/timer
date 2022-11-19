@@ -24,8 +24,8 @@ class CommunityFragment : Fragment(){
         return view
     }
 
-    override fun onStart() {
-        super.onStart()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         community_rv.adapter = CommunityAdapter()
         community_rv.layoutManager = LinearLayoutManager(getActivity())

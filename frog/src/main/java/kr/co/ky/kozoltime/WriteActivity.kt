@@ -10,27 +10,22 @@ import kotlinx.android.synthetic.main.activity_write.*
 
 class WriteActivity : AppCompatActivity() {
 
-    var fbAuth = FirebaseAuth.getInstance()
-    var fbFirestore = FirebaseFirestore.getInstance()
-    var postInfo = Post()
+    val fbAuth = FirebaseAuth.getInstance()
+    val fbFirestore = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_write)
 
         write_spinner.adapter = ArrayAdapter.createFromResource(this,R.array.itemList,android.R.layout.simple_spinner_item)
-        write_spinner.prompt="직종을 선택해주세요."
+        write_spinner.prompt= getString(R.string.job_select)
 
         write_btn.setOnClickListener{
 
-            postInfo.id = fbAuth?.currentUser?.email
-            postInfo.title = write_ssul_title.text.toString()
-            postInfo.context = write_ssul_context.text.toString()
-
             val writeData = hashMapOf(
-                "id" to postInfo.id,
-                "title" to postInfo.title,
-                "context" to postInfo.context
+                "id" to fbAuth?.currentUser?.email,
+                "title" to write_ssul_title.text.toString(),
+                "context" to write_ssul_context.text.toString()
             )
             val bucket = fbFirestore.collection("kozoltime")
             bucket.add(writeData).addOnSuccessListener {

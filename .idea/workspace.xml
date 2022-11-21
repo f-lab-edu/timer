@@ -12,10 +12,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="writeActivity fix">
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/CommunityAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/CommunityAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/CommunityWriteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/CommunityWriteActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/navigation/CommunityFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/navigation/CommunityFragment.kt" afterDir="false" />
+
+    <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/kozol2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/fragment_detail-layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/data_binding_layout_info_type_merge/debug/out/fragment_detail-layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/WriteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/WriteActivity.kt" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/office_job2" />
+        <entry key="$PROJECT_DIR$" value="feature/my_page" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

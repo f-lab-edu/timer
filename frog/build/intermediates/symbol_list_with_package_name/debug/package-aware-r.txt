@@ -2034,6 +2034,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detail_layout
 id dialog_button
 id dimensions
 id direct
@@ -2138,6 +2139,7 @@ id linear
 id listMode
 id list_item
 id login_btn
+id logout
 id main_content
 id masked
 id match_constraint
@@ -2196,6 +2198,9 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id my_page_frame
+id my_page_linear
+id my_page_linear2
 id nav_division
 id navigation_header_container
 id never
@@ -2203,6 +2208,12 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id new_community_btn
 id new_office_btn
+id nick_btn
+id nick_edit
+id nick_layout
+id nick_overlap_btn
+id nick_set_btn
+id nick_tv
 id noScroll
 id noState
 id none
@@ -2452,6 +2463,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login_join
 layout activity_main
+layout activity_nick_name
 layout activity_office
 layout activity_write
 layout browser_actions_context_menu_page
@@ -2634,6 +2646,8 @@ string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string fb_login_protocol_scheme
 string find_job
+string firebase_database_url
+string frog
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -2648,6 +2662,8 @@ string item_view_role_description
 string job_select
 string join
 string legend_post
+string like
+string logout
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2699,10 +2715,15 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string my_page
+string my_writing
 string new_post
 string next_join
+string nick_name
+string nick_setting
+string nick_write
 string nurse
 string office
+string overlap
 string password
 string password_toggle_content_description
 string path_password_eye

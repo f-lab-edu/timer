@@ -4,20 +4,52 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 import kr.co.ky.kozoltime.R;
 
 public final class FragmentDetailBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private FragmentDetailBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final Button logout;
+
+  @NonNull
+  public final FrameLayout myPageFrame;
+
+  @NonNull
+  public final LinearLayout myPageLinear;
+
+  @NonNull
+  public final LinearLayout myPageLinear2;
+
+  @NonNull
+  public final Button nickBtn;
+
+  @NonNull
+  public final TextView nickTv;
+
+  private FragmentDetailBinding(@NonNull ConstraintLayout rootView, @NonNull Button logout,
+      @NonNull FrameLayout myPageFrame, @NonNull LinearLayout myPageLinear,
+      @NonNull LinearLayout myPageLinear2, @NonNull Button nickBtn, @NonNull TextView nickTv) {
     this.rootView = rootView;
+    this.logout = logout;
+    this.myPageFrame = myPageFrame;
+    this.myPageLinear = myPageLinear;
+    this.myPageLinear2 = myPageLinear2;
+    this.nickBtn = nickBtn;
+    this.nickTv = nickTv;
   }
 
   @Override
@@ -43,10 +75,50 @@ public final class FragmentDetailBinding implements ViewBinding {
 
   @NonNull
   public static FragmentDetailBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.logout;
+      Button logout = ViewBindings.findChildViewById(rootView, id);
+      if (logout == null) {
+        break missingId;
+      }
 
-    return new FragmentDetailBinding((ConstraintLayout) rootView);
+      id = R.id.my_page_frame;
+      FrameLayout myPageFrame = ViewBindings.findChildViewById(rootView, id);
+      if (myPageFrame == null) {
+        break missingId;
+      }
+
+      id = R.id.my_page_linear;
+      LinearLayout myPageLinear = ViewBindings.findChildViewById(rootView, id);
+      if (myPageLinear == null) {
+        break missingId;
+      }
+
+      id = R.id.my_page_linear2;
+      LinearLayout myPageLinear2 = ViewBindings.findChildViewById(rootView, id);
+      if (myPageLinear2 == null) {
+        break missingId;
+      }
+
+      id = R.id.nick_btn;
+      Button nickBtn = ViewBindings.findChildViewById(rootView, id);
+      if (nickBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.nick_tv;
+      TextView nickTv = ViewBindings.findChildViewById(rootView, id);
+      if (nickTv == null) {
+        break missingId;
+      }
+
+      return new FragmentDetailBinding((ConstraintLayout) rootView, logout, myPageFrame,
+          myPageLinear, myPageLinear2, nickBtn, nickTv);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

@@ -47,4 +47,6 @@
     <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
     <string name="job_select">직종 선택</string>
     <string name="sharing">꿀팁 공유</string>
+
+    <!-- fragment_community -->
 </resources>

@@ -1196,6 +1196,7 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="community">커뮤니티</string>
     <string name="context">context</string>
+    <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="default_web_client_id" translatable="false">558492715774-09ak4uvi64m0sk2n8m1jc54sh7r0sqel.apps.googleusercontent.com</string>
     <string name="delivery">배달부</string>
@@ -1224,6 +1225,7 @@
     <string name="influencer">인플루언서</string>
     <string name="it">it 개발자</string>
     <string name="item_view_role_description">Tab</string>
+    <string name="job_select">직종 선택</string>
     <string name="join">이메일로 회원가입</string>
     <string name="legend_post">레전드</string>
     <string name="material_clock_display_divider" translatable="false">:</string>
@@ -1291,6 +1293,7 @@
     <string name="public_official">공무원</string>
     <string name="search_menu_title">Search</string>
     <string name="service">서비스업</string>
+    <string name="sharing">꿀팁 공유</string>
     <string name="signin_email">이메일 로그인</string>
     <string name="signin_google">구글 로그인</string>
     <string name="social_login">소셜 로그인</string>
@@ -1298,6 +1301,7 @@
     <string name="ssul">취업 후기</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title">title</string>
+    <string name="title_plz">제목</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="AndroidThemeColorAccentYellow" ns2:ignore="NewApi">
@@ -3864,7 +3868,7 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
-    <style name="Theme.Kozoltime" parent="Theme.AppCompat.Light">
+    <style name="Theme.Kozoltime" parent="Theme.AppCompat.Light.NoActionBar">
 
         parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->

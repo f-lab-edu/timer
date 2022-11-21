@@ -1,3 +1,3 @@
 package kr.co.ky.kozoltime
 
-data class Post( val context:String= "",val id: String="", val title:String="")
+data class Post( var context:String?=null,var id: String?=null, var title:String?=null)

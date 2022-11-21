@@ -19,6 +19,9 @@
             android:name=".OfficeActivity"
             android:exported="false" />
         <activity
+            android:name=".WriteActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>

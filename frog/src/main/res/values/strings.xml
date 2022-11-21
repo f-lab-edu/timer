@@ -41,4 +41,10 @@
     <!-- activity_office -->
     <string name="legend_post">레전드</string>
     <string name="new_post">새 글</string>
+
+    <!-- activity_write -->
+    <string name="title_plz">제목</string>
+    <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
+    <string name="job_select">직종 선택</string>
+    <string name="sharing">꿀팁 공유</string>
 </resources>

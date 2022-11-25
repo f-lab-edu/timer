@@ -59,4 +59,5 @@
     <!-- nick -->
     <string name="overlap">중복 확인</string>
     <string name="nick_write">닉네임을 입력하세요.</string>
+    <string name="com">community</string>
 </resources>

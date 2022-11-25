@@ -27,7 +27,7 @@ class NickNameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nick_name)
 
         nick_set_btn.setOnClickListener{
-
+            bringNick(nick_edit.text.toString())
             val writeData = hashMapOf(
                 "eamilId" to fbAuth?.currentUser?.email,
                 "nickname" to nick_edit.text.toString()
@@ -51,7 +51,7 @@ class NickNameActivity : AppCompatActivity() {
         fragment_detail.setArguments(bundle)
         val manager:FragmentManager = getSupportFragmentManager()
         val transaction : FragmentTransaction = manager.beginTransaction()
-//        transaction.replace(R.id.frame_nick, DetailViewFragment()).commit()
+//         transaction.replace(R.id.nick_frame, DetailViewFragment()).commit()
     }
     fun nickOverlap(){
         databaseReference.child("nickname").orderByChild("nickname").equalTo(nick_edit.text.toString())

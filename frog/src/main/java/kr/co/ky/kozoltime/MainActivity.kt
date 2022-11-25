@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             bottom_navigation.setOnNavigationItemSelectedListener(this)
 
             getSupportFragmentManager().beginTransaction().replace(R.id.frame,jobEpilogueFragment).commit()
+
         }
+
 
 }

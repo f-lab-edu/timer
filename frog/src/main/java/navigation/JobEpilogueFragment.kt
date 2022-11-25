@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_job_epilogue.*
-import kr.co.ky.kozoltime.OfficeActivity
 import kr.co.ky.kozoltime.R
+import office.OfficeActivity
 
 class JobEpilogueFragment : Fragment(){
     override fun onCreateView(

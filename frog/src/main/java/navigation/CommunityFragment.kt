@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import data.TimeCallback
+import kr.co.ky.kozoltime.FirebaseData
 import kotlinx.android.synthetic.main.fragment_community.*
-import kotlinx.android.synthetic.main.write_community_activity.*
-import kr.co.ky.kozoltime.CommunityAdapter
-import kr.co.ky.kozoltime.CommunityWriteActivity
-import kr.co.ky.kozoltime.R
-import kr.co.ky.kozoltime.WriteActivity
+import kr.co.ky.kozoltime.*
+
 
 class CommunityFragment : Fragment(){
+    val firebaseData = FirebaseData()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,13 +26,18 @@ class CommunityFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        community_rv.adapter = CommunityAdapter()
-        community_rv.layoutManager = LinearLayoutManager(getActivity())
+        firebaseData.communityFirebase(getString(R.string.com), DataListener())
 
         fabWrite_community.setOnClickListener{
             val intent = Intent(getContext(), CommunityWriteActivity::class.java)
             startActivity(intent)
+        }
+    }
+    inner class DataListener : TimeCallback {
+        override fun adapter(mutableList: MutableList<CommunityDataClass>){
+             community_rv.adapter =CommunityAdapter(mutableList)
+            (community_rv.adapter as CommunityAdapter).notifyDataSetChanged()
+            community_rv.layoutManager = LinearLayoutManager(getActivity())
         }
     }
 }

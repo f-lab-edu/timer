@@ -12,7 +12,6 @@ class CommunityWriteActivity : AppCompatActivity() {
 
     val fbAuth = FirebaseAuth.getInstance()
     val fbFirestore = FirebaseFirestore.getInstance()
-    var communityInfo = CommunityDataClass()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

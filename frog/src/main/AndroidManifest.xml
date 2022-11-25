@@ -22,7 +22,7 @@
             android:name=".CommunityWriteActivity"
             android:exported="false" />
         <activity
-            android:name=".OfficeActivity"
+            android:name="office.OfficeActivity"
             android:exported="false" />
         <activity
             android:name=".WriteActivity"

@@ -57,8 +57,8 @@
 33-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-37
 34        <activity
 34-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:9-26:40
-35            android:name="kr.co.ky.kozoltime.OfficeActivity"
-35-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:13-43
+35            android:name="office.OfficeActivity"
+35-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:13-49
 36            android:exported="false" />
 36-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-37
 37        <activity
@@ -254,6 +254,17 @@
 138-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
 139            android:value="@integer/google_play_services_version" />
 139-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-140    </application>
-141
-142</manifest>
+140
+141        <provider
+141-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+142            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+142-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+143            android:authorities="kr.co.ky.kozoltime.lifecycle-process"
+143-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+144            android:exported="false"
+144-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+145            android:multiprocess="true" />
+145-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+146    </application>
+147
+148</manifest>

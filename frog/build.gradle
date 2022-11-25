@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'com.google.gms.google-services'
     id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -30,6 +31,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+        freeCompilerArgs = ['-Xjvm-default=compatibility']
     }
     buildFeatures {
         viewBinding true
@@ -40,6 +42,8 @@ android {
 
 
 dependencies {
+    kapt 'android.arch.lifecycle:compiler:1.1.1'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
     implementation 'com.google.firebase:firebase-database:19.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'

@@ -32,7 +32,7 @@
             android:name="kr.co.ky.kozoltime.CommunityWriteActivity"
             android:exported="false" />
         <activity
-            android:name="kr.co.ky.kozoltime.OfficeActivity"
+            android:name="office.OfficeActivity"
             android:exported="false" />
         <activity
             android:name="kr.co.ky.kozoltime.WriteActivity"
@@ -137,6 +137,12 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="kr.co.ky.kozoltime.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

@@ -2034,7 +2034,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id detail_layout
 id dialog_button
 id dimensions
 id direct
@@ -2210,7 +2209,7 @@ id new_community_btn
 id new_office_btn
 id nick_btn
 id nick_edit
-id nick_layout
+id nick_frame
 id nick_overlap_btn
 id nick_set_btn
 id nick_tv
@@ -2608,6 +2607,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string cleric
+string com
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title

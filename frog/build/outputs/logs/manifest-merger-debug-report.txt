@@ -9,6 +9,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /Users/hi-macbook/
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/d04847b4a1aa4f70022cdb7ba359ac37/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/00aab18ca30250343b5289ff70f7771f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/3fd6e966a11049b4abbab33d59f3e0ab/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/200d409eb6b2093946e0d74c44e473b0/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -55,8 +56,10 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hi-mac
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/3880adfc820ea9e7f425a214cd6f43d2/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hi-macbook/.gradle/caches/transforms-3/25497eaa87ed6fff67e9df61d1603096/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/5986fddf070ab221045ab34d6e4251f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fdeba71a162431cd24f2d5f9ce30e6d6/transformed/jetified-lifecycle-service-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/de5bc797c810551710c6e5f7adbaa325/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/5986fddf070ab221045ab34d6e4251f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/a770b98344c80440601b1ead69c25f1d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/3e2c50448659618d791ea724f140d4aa/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/0e22cab893f4cec697f7876f3f66aada/transformed/jetified-lifecycle-livedata-core-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
@@ -103,6 +106,8 @@ MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macboo
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.material:material:1.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/3fd6e966a11049b4abbab33d59f3e0ab/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/3fd6e966a11049b4abbab33d59f3e0ab/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/hi-macbook/.gradle/caches/transforms-3/ad69a62f077a9aadb45a147a66878dae/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -133,6 +138,8 @@ MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transfor
 MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hi-macbook/.gradle/caches/transforms-3/25497eaa87ed6fff67e9df61d1603096/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hi-macbook/.gradle/caches/transforms-3/25497eaa87ed6fff67e9df61d1603096/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -167,12 +174,12 @@ ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:21
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-37
 	android:name
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:22:13-51
-activity#kr.co.ky.kozoltime.OfficeActivity
+activity#office.OfficeActivity
 ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:13-43
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:13-49
 activity#kr.co.ky.kozoltime.WriteActivity
 ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:27:9-29:40
 	android:exported
@@ -215,6 +222,8 @@ MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/d04847b4a1aa4f70022cdb7ba359ac37/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/d04847b4a1aa4f70022cdb7ba359ac37/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/00aab18ca30250343b5289ff70f7771f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/00aab18ca30250343b5289ff70f7771f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/3fd6e966a11049b4abbab33d59f3e0ab/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
@@ -307,10 +316,14 @@ MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transfor
 MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hi-macbook/.gradle/caches/transforms-3/25497eaa87ed6fff67e9df61d1603096/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hi-macbook/.gradle/caches/transforms-3/25497eaa87ed6fff67e9df61d1603096/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/5986fddf070ab221045ab34d6e4251f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/5986fddf070ab221045ab34d6e4251f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fdeba71a162431cd24f2d5f9ce30e6d6/transformed/jetified-lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fdeba71a162431cd24f2d5f9ce30e6d6/transformed/jetified-lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/de5bc797c810551710c6e5f7adbaa325/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/de5bc797c810551710c6e5f7adbaa325/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/5986fddf070ab221045ab34d6e4251f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/5986fddf070ab221045ab34d6e4251f1/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/a770b98344c80440601b1ead69c25f1d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/a770b98344c80440601b1ead69c25f1d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/3e2c50448659618d791ea724f140d4aa/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:20:5-22:41
@@ -501,3 +514,13 @@ ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macb
 		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79

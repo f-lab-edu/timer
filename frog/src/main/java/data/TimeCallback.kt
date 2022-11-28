@@ -1,8 +1,5 @@
 package data
 
-import kr.co.ky.kozoltime.CommunityAdapter
-import kr.co.ky.kozoltime.CommunityDataClass
-
 interface TimeCallback {
-    fun adapter(mutableList :MutableList<CommunityDataClass>)
+    fun adapter(mutableList :MutableList<kr.co.ky.community.CommunityDataClass>)
 }

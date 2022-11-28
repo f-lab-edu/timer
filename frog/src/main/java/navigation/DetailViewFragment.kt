@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_detail.*
-import kr.co.ky.kozoltime.NickNameActivity
+import kr.co.ky.nicknamePackage.NickNameActivity
 import kr.co.ky.kozoltime.R
 
 class DetailViewFragment : Fragment(){

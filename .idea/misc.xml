@@ -12,14 +12,14 @@
         <entry key="frog/src/main/res/layout/activity_login.xml" value="0.45" />
         <entry key="frog/src/main/res/layout/activity_login_join.xml" value="0.27395833333333336" />
         <entry key="frog/src/main/res/layout/activity_main.xml" value="0.375" />
-        <entry key="frog/src/main/res/layout/activity_office.xml" value="0.1391941391941392" />
+        <entry key="frog/src/main/res/layout/activity_office.xml" value="0.335" />
         <entry key="frog/src/main/res/layout/activity_write.xml" value="0.3388888888888889" />
         <entry key="frog/src/main/res/layout/fragment_alarm.xml" value="0.22708333333333333" />
         <entry key="frog/src/main/res/layout/fragment_community.xml" value="0.18611111111111112" />
         <entry key="frog/src/main/res/layout/fragment_detail.xml" value="0.22708333333333333" />
         <entry key="frog/src/main/res/layout/fragment_find_job.xml" value="0.1" />
         <entry key="frog/src/main/res/layout/fragment_grid.xml" value="0.22708333333333333" />
-        <entry key="frog/src/main/res/layout/fragment_job_epilogue.xml" value="0.25" />
+        <entry key="frog/src/main/res/layout/fragment_job_epilogue.xml" value="0.19117647058823528" />
         <entry key="frog/src/main/res/layout/fragment_new_office.xml" value="0.1" />
         <entry key="frog/src/main/res/layout/fragment_user.xml" value="0.22708333333333333" />
         <entry key="frog/src/main/res/layout/office_cardview.xml" value="0.335" />
@@ -29,6 +29,9 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/frog/src/main/java/data/sample.kt" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

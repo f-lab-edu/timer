@@ -23,22 +23,22 @@
         android:theme="@style/Theme.Kozoltime"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="kr.co.ky.kozoltime.NickNameActivity"
+            android:name="kr.co.ky.nicknamePackage.NickNameActivity"
             android:exported="false" />
         <activity
-            android:name="kr.co.ky.kozoltime.LoginJoinActivity"
+            android:name="kr.co.ky.login.LoginJoinActivity"
             android:exported="false" />
         <activity
-            android:name="kr.co.ky.kozoltime.CommunityWriteActivity"
+            android:name="kr.co.ky.community.CommunityWriteActivity"
             android:exported="false" />
         <activity
-            android:name="office.OfficeActivity"
+            android:name="kr.co.ky.office.OfficeActivity"
             android:exported="false" />
         <activity
             android:name="kr.co.ky.kozoltime.WriteActivity"
             android:exported="false" />
         <activity
-            android:name="kr.co.ky.kozoltime.SplashActivity"
+            android:name="kr.co.ky.login.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

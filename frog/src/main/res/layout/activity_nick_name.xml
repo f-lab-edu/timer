@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="kr.co.ky.kozoltime.kr.co.ky.nicknamePackage.NickNameActivity">
+    tools:context="kr.co.ky.nicknamePackage.NickNameActivity">
 
     <EditText
         android:id="@+id/nick_edit"

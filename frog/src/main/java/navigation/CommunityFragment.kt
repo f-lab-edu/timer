@@ -1,5 +1,6 @@
 package navigation
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -31,19 +32,20 @@ class CommunityFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        firebaseData.communityFirebase(getString(R.string.com), object : DataListener() {
+        val path = "community"
+        firebaseData.communityFirebase(path, object : DataListener() {
+            @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
 
                 community_rv.adapter = CommunityAdapter(mutableList)
                 communityAdapter = CommunityAdapter(mutableList)
                 (community_rv.adapter as CommunityAdapter).notifyDataSetChanged()
-                community_rv.layoutManager = LinearLayoutManager(getActivity())
+                community_rv.layoutManager = LinearLayoutManager(activity)
             }
         })
 
         fabWrite_community.setOnClickListener{
-            val intent = Intent(getContext(), CommunityWriteActivity::class.java)
+            val intent = Intent(context, CommunityWriteActivity::class.java)
             startActivity(intent)
         }
     }

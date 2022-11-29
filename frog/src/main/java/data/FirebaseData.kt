@@ -11,16 +11,15 @@ import kr.co.ky.community.CommunityDataClass
 
 
 class FirebaseData(){
-//    var database = FirebaseDatabase.getInstance().reference
-    fun communityFirebase(path: String="community", finishedCallback: TimeCallback) {
+    fun communityFirebase(path: String, finishedCallback: TimeCallback) {
     var communityList: MutableList<CommunityDataClass> = mutableListOf()
     var database = Firebase.firestore
-    database.collection("community").get().addOnSuccessListener { result ->
+    database.collection(path).get().addOnSuccessListener { result ->
         communityList.clear()
         for (document in result) {
-            var item = CommunityDataClass(document["id"] as String,
-                document["context"] as String,
-                document["title"] as String)
+            var item = CommunityDataClass(document["id"] as? String,
+                document["context"] as? String,
+                document["title"] as? String)
             communityList.add(item)
             finishedCallback.adapter(communityList)
         }

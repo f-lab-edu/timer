@@ -26,7 +26,7 @@ class JobEpilogueFragment : Fragment(){
         super.onStart()
 
         office_btn.setOnClickListener{
-            val intent = Intent(getActivity(), OfficeActivity::class.java)
+            val intent = Intent(activity, OfficeActivity::class.java)
             startActivity(intent)
         }
     }

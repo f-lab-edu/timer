@@ -24,11 +24,11 @@ class DetailViewFragment : Fragment(){
         super.onStart()
 
         nick_btn.setOnClickListener{
-            val intent = Intent(getActivity(), NickNameActivity::class.java)
+            val intent = Intent(activity, NickNameActivity::class.java)
             startActivity(intent)
         }
-        var message = this.getArguments()?.getString("nickname")
+        var message = this.arguments?.getString("nickname")
 
-        nick_tv.setText(message)
+        nick_tv.text = message
     }
 }

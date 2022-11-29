@@ -40,6 +40,9 @@ class DetailViewFragment : Fragment(){
             }
     })
 
+        var message = this.arguments?.getString("nickname")
+
+        nick_tv.text = message
     }
 
 }

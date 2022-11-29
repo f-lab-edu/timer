@@ -12,6 +12,10 @@
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
+<<<<<<< HEAD
     <timeTargetWasSelectedWithDropDown value="2022-12-03T12:49:39.975589Z" />
+=======
+    <timeTargetWasSelectedWithDropDown value="2022-11-29T04:38:51.605665Z" />
+>>>>>>> a38d387 (adapter & data seperate success2)
   </component>
 </project>

@@ -16,6 +16,7 @@ import kr.co.ky.kozoltime.WriteActivity
 
 class OfficeActivity : AppCompatActivity() {
         private val firebaseData = FirebaseData()
+        lateinit var officeAdapter: CommunityAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_office)

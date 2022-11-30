@@ -32,14 +32,16 @@ class CommunityWriteActivity : AppCompatActivity() {
     val fbFirestore = FirebaseFirestore.getInstance()
     val storage: FirebaseStorage = FirebaseStorage.getInstance()
     var firebaseUri: Uri? = null
-    var launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
-        it.data?.data?.let { uri ->
-            firebaseUri= uri
-            community_ssul_image.setImageURI(uri)
-            contentResolver.takePersistableUriPermission(uri, FLAG_GRANT_READ_URI_PERMISSION)
-            Log.e("text", uri.toString())
+    var launcher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
+            it.data?.data?.let { uri ->
+                firebaseUri = uri
+                community_ssul_image.setImageURI(uri)
+                contentResolver.takePersistableUriPermission(uri, FLAG_GRANT_READ_URI_PERMISSION)
+                Log.e("text", uri.toString())
+            }
         }
-    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.write_community_activity)
@@ -56,70 +58,87 @@ class CommunityWriteActivity : AppCompatActivity() {
                     val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
                     intent.type = "image/*"
                     launcher.launch(intent)
+                    val writeData = hashMapOf(
+                        "id" to fbAuth.currentUser?.email,
+                        "title" to community_ssul_title.text.toString(),
+                        "context" to community_ssul_context.text.toString()
+                    )
+                    val bucket = fbFirestore.collection("community")
+                    bucket.add(writeData).addOnSuccessListener {
+                        Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
+                    }
+                        .addOnFailureListener {
+                            Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
+                        }
                 }
-                shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
-                    showPermissionContextPopup()
+                    shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
+                        showPermissionContextPopup()
+                    }
+                    else -> {
+                        requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                            1000)
+                    }
                 }
-                else -> {
+            }
+
+
+            community_btn.setOnClickListener {
+                if (firebaseUri != null) {
+                    val fileName = "IMAGE_${SingleDate.invoke()}_.png"
+                    val imageRef = storage.reference.child("image/").child(fileName)
+                    imageRef.putFile(firebaseUri!!)
+                        .continueWithTask { task: Task<UploadTask.TaskSnapshot> ->
+                            return@continueWithTask imageRef.downloadUrl
+                        }.addOnSuccessListener {
+                        val communityDataClass = CommunityDataClass(
+                            title = community_ssul_title.text.toString(),
+                            context = community_ssul_context.text.toString(),
+                            id = fbAuth.currentUser?.email,
+                            uid = fbAuth.currentUser?.uid,
+                            imageUri = it.toString(),
+                            timestamp = System.currentTimeMillis()
+                        )
+
+                        fbFirestore.collection("community").document(fileName)
+                            .set(communityDataClass)
+                        finish()
+                        Toast.makeText(this, "서버로 데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
+                    }.addOnFailureListener {
+                        Toast.makeText(this, "이미지를 부르는데 실패하였습니다.", Toast.LENGTH_SHORT).show()
+                    }
+
+
+                } else {
+                    val writeData = hashMapOf(
+                        "id" to fbAuth.currentUser?.email,
+                        "title" to community_ssul_title.text.toString(),
+                        "context" to community_ssul_context.text.toString(),
+                        "timestamp" to System.currentTimeMillis()
+                    )
+                    val bucket = fbFirestore.collection("community")
+                    bucket.document().set(writeData).addOnSuccessListener {
+                        Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
+                    }
+                        .addOnFailureListener {
+                            Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
+                        }
+                }
+            }
+        }
+
+        private fun showPermissionContextPopup() {
+            AlertDialog.Builder(this)
+                .setTitle("권한이 필요합니다.")
+                .setMessage("사진을 불러오기 위해서 권한이 필요합니다.")
+                .setPositiveButton("동의") { _, _ ->
                     requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
                         1000)
                 }
-            }
-
-        }
-        community_btn.setOnClickListener {
-            if (firebaseUri != null) {
-                val fileName = "IMAGE_${SingleDate.invoke()}_.png"
-                val imageRef = storage.reference.child("image/").child(fileName)
-                imageRef.putFile(firebaseUri!!).continueWithTask { task: Task<UploadTask.TaskSnapshot> ->
-                    return@continueWithTask imageRef.downloadUrl
-                }.addOnSuccessListener {
-                    val communityDataClass = CommunityDataClass(
-                        title = community_ssul_title.text.toString(),
-                        context = community_ssul_context.text.toString(),
-                        id = fbAuth.currentUser?.email,
-                        uid = fbAuth.currentUser?.uid,
-                        imageUri = it.toString(),
-                        timestamp = System.currentTimeMillis()
-                    )
-
-                    fbFirestore.collection("community").document(fileName).set(communityDataClass)
-                    finish()
-                    Toast.makeText(this, "서버로 데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(this, "이미지를 부르는데 실패하였습니다.", Toast.LENGTH_SHORT).show()
-                }
-
-
-            } else {
-                val writeData = hashMapOf(
-                    "id" to fbAuth.currentUser?.email,
-                    "title" to community_ssul_title.text.toString(),
-                    "context" to community_ssul_context.text.toString(),
-                    "timestamp" to System.currentTimeMillis()
-                )
-                val bucket = fbFirestore.collection("community")
-                bucket.document().set(writeData).addOnSuccessListener {
-                    Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
-                }
-                    .addOnFailureListener {
-                        Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
-                    }
-            }
+                .setNegativeButton("취소") { _, _ -> }
+                .create()
+                .show()
         }
     }
 
-    private fun showPermissionContextPopup() {
-        AlertDialog.Builder(this)
-            .setTitle("권한이 필요합니다.")
-            .setMessage("사진을 불러오기 위해서 권한이 필요합니다.")
-            .setPositiveButton("동의") { _, _ ->
-                requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 1000)
-            }
-            .setNegativeButton("취소") { _, _ -> }
-            .create()
-            .show()
-    }
-}
 
 

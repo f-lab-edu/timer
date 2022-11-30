@@ -14,26 +14,31 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="image setting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
     <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="adapter &amp; data seperate success">
       <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+=======
+    <list default="true" id="033ed17e-e0dd-49d3-8133-945c367e6840" name="Default Changelist" comment="adapter &amp; data seperate success2">
+>>>>>>> f3337b8 (adapter & data seperate fix)
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/frog/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/data/FirebaseData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/data/FirebaseData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/data/TimeCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/data/TimeCallback.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/community/CommunityWriteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/community/CommunityWriteActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/WriteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/kozoltime/WriteActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/nicknamePackage/NickNameActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/nicknamePackage/NickNameActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/login/LoginJoinActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/login/LoginJoinActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/office/OfficeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/office/OfficeActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/office/OfficeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/kr/co/ky/office/OfficeAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/navigation/CommunityFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/navigation/CommunityFragment.kt" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/navigation/DetailViewFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/navigation/DetailViewFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/java/navigation/JobEpilogueFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/java/navigation/JobEpilogueFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frog/src/main/res/layout/activity_nick_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frog/src/main/res/layout/activity_nick_name.xml" afterDir="false" />
 >>>>>>> a38d387 (adapter & data seperate success2)
+=======
+>>>>>>> f3337b8 (adapter & data seperate fix)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,6 +378,9 @@
       <updated>1669628455307</updated>
     </task>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3337b8 (adapter & data seperate fix)
     <task id="LOCAL-00012" summary="adapter &amp; data seperate success2">
       <created>1669707607398</created>
       <option name="number" value="00012" />
@@ -380,6 +388,7 @@
       <option name="project" value="LOCAL" />
       <updated>1669707607398</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00013" summary="adapter &amp; data seperate fix">
       <created>1669804778937</created>
       <option name="number" value="00013" />
@@ -412,6 +421,9 @@
 =======
     <option name="localTasksCounter" value="12" />
 >>>>>>> a38d387 (adapter & data seperate success2)
+=======
+    <option name="localTasksCounter" value="13" />
+>>>>>>> f3337b8 (adapter & data seperate fix)
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,6 +460,7 @@
     <MESSAGE value="callback with fragment" />
     <MESSAGE value="adapter &amp; data seperate success" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <MESSAGE value="adapter &amp; data seperate success2" />
     <MESSAGE value="adapter &amp; data seperate fix" />
     <MESSAGE value="nickname setting" />
@@ -456,5 +469,9 @@
 =======
     <option name="LAST_COMMIT_MESSAGE" value="adapter &amp; data seperate success" />
 >>>>>>> a38d387 (adapter & data seperate success2)
+=======
+    <MESSAGE value="adapter &amp; data seperate success2" />
+    <option name="LAST_COMMIT_MESSAGE" value="adapter &amp; data seperate success2" />
+>>>>>>> f3337b8 (adapter & data seperate fix)
   </component>
 </project>

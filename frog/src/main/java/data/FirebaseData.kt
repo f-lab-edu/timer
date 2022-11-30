@@ -11,7 +11,7 @@ import kr.co.ky.community.CommunityDataClass
 
 
 class FirebaseData(){
-    fun communityFirebase(path: String, finishedCallback: TimeCallback) {
+    fun sendFirebase(path: String, finishedCallback: TimeCallback) {
     var communityList: MutableList<CommunityDataClass> = mutableListOf()
     var database = Firebase.firestore
     database.collection(path).get().addOnSuccessListener { result ->
@@ -27,7 +27,7 @@ class FirebaseData(){
         .addOnFailureListener { exception ->
             Log.w("실패", "$exception")
         }
-}
+    }
     }
 
 

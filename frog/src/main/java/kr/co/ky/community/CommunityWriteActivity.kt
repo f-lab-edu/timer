@@ -24,7 +24,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                 "title" to community_ssul_title.text.toString(),
                 "context" to community_ssul_context.text.toString()
             )
-            val bucket = fbFirestore.collection("kr/co/ky/community")
+            val bucket = fbFirestore.collection("community")
             bucket.add(writeData).addOnSuccessListener {
                 Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
             }

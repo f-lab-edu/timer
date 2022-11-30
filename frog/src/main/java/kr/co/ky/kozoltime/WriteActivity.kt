@@ -27,8 +27,8 @@ class WriteActivity : AppCompatActivity() {
                 "title" to write_ssul_title.text.toString(),
                 "context" to write_ssul_context.text.toString()
             )
-            val kozoltime = "kozoltime"
-            val bucket = fbFirestore.collection(kozoltime)
+            val collection = "kozoltime"
+            val bucket = fbFirestore.collection(collection)
             bucket.add(writeData).addOnSuccessListener {
                 Toast.makeText(this,"데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
             }

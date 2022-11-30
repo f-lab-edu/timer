@@ -3,7 +3,6 @@ package navigation
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,7 +18,7 @@ import kr.co.ky.kozoltime.*
 
 
 class CommunityFragment : Fragment(){
-    val firebaseData = FirebaseData()
+    private val firebaseData = FirebaseData()
     lateinit var communityAdapter: CommunityAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,14 +32,15 @@ class CommunityFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val path = "community"
-        firebaseData.communityFirebase(path, object : DataListener() {
+        community_rv.layoutManager = LinearLayoutManager(activity)
+        firebaseData.sendFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
 
                 community_rv.adapter = CommunityAdapter(mutableList)
                 communityAdapter = CommunityAdapter(mutableList)
                 (community_rv.adapter as CommunityAdapter).notifyDataSetChanged()
-                community_rv.layoutManager = LinearLayoutManager(activity)
+
             }
         })
 

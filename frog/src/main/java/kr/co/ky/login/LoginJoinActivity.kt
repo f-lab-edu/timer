@@ -50,7 +50,7 @@ class LoginJoinActivity : AppCompatActivity() {
         just_look_btn.setOnClickListener {
             guestMoveMainPage()
         }
-        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
@@ -58,7 +58,7 @@ class LoginJoinActivity : AppCompatActivity() {
     }
 
     fun googleLogin() {
-        var signInIntent = googleSignInClient?.signInIntent
+        val signInIntent = googleSignInClient?.signInIntent
         startForResult.launch(signInIntent)
     }
 
@@ -81,8 +81,8 @@ class LoginJoinActivity : AppCompatActivity() {
 
     fun firebaseAuthWithGoogle(account: GoogleSignInAccount?) {
         var credential = GoogleAuthProvider.getCredential(account?.idToken, null)
-        auth?.signInWithCredential(credential)
-            ?.addOnCompleteListener { task ->
+        auth.signInWithCredential(credential)
+            .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     moveMainPage(task.result?.user)
                 } else {
@@ -92,25 +92,25 @@ class LoginJoinActivity : AppCompatActivity() {
     }
 
     fun signinAndSignup() {
-        auth?.signInWithEmailAndPassword(
+        auth.signInWithEmailAndPassword(
             id_edit.text.toString(),
             password_edit.text.toString()
-        )?.addOnCompleteListener { task ->
+        ).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 moveMainPage(task.result?.user)
             } else if (task.exception?.message.isNullOrEmpty()) {
                 Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
             } else {
-//                signinEmail()
+    //                signinEmail()
             }
         }
     }
 
     fun signinEmail() {
-        auth?.createUserWithEmailAndPassword(
+        auth.createUserWithEmailAndPassword(
             id_edit.text.toString(),
             password_edit.text.toString()
-        )?.addOnCompleteListener { task ->
+        ).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 moveMainPage(task.result?.user)
             } else {

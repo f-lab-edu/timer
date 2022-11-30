@@ -11,85 +11,85 @@
 9-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
 12-->[com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:22-76
 13
 14    <application
-14-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:7:5-42:19
+14-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:8:5-43:19
 15        android:allowBackup="true"
-15-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:8:9-35
+15-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:extractNativeLibs="false"
 19        android:icon="@drawable/ic_baseline_account_circle_24"
-19-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:9:9-63
+19-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:10:9-63
 20        android:label="@string/app_name"
-20-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:10:9-41
+20-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:11:9-41
 21        android:roundIcon="@drawable/ic_arrow_back"
-21-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:11:9-52
+21-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:12:9-52
 22        android:supportsRtl="true"
-22-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:12:9-35
+22-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:13:9-35
 23        android:theme="@style/Theme.Kozoltime"
-23-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:13:9-47
+23-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:14:9-47
 24        android:usesCleartextTraffic="true" >
-24-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:14:9-44
+24-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:15:9-44
 25        <activity
-25-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:15:9-17:40
-26            android:name="kr.co.ky.kozoltime.NickNameActivity"
-26-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:16:13-45
+25-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:16:9-18:40
+26            android:name="kr.co.ky.nicknamePackage.NickNameActivity"
+26-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:17:13-69
 27            android:exported="false" />
-27-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:17:13-37
+27-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:18:13-37
 28        <activity
-28-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:18:9-20:40
-29            android:name="kr.co.ky.kozoltime.LoginJoinActivity"
-29-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:19:13-46
+28-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:19:9-21:40
+29            android:name="kr.co.ky.login.LoginJoinActivity"
+29-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:20:13-60
 30            android:exported="false" />
-30-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:20:13-37
+30-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:21:13-37
 31        <activity
-31-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:21:9-23:40
-32            android:name="kr.co.ky.kozoltime.CommunityWriteActivity"
-32-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:22:13-51
+31-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:22:9-24:40
+32            android:name="kr.co.ky.community.CommunityWriteActivity"
+32-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-69
 33            android:exported="false" />
-33-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-37
+33-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:13-37
 34        <activity
-34-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:9-26:40
-35            android:name="kr.co.ky.kozoltime.OfficeActivity"
-35-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:13-43
+34-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:9-27:40
+35            android:name="kr.co.ky.office.OfficeActivity"
+35-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-58
 36            android:exported="false" />
-36-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-37
+36-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:27:13-37
 37        <activity
-37-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:27:9-29:40
+37-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:28:9-30:40
 38            android:name="kr.co.ky.kozoltime.WriteActivity"
-38-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:28:13-42
+38-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:29:13-42
 39            android:exported="false" />
-39-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:29:13-37
+39-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:30:13-37
 40        <activity
-40-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:30:9-38:20
-41            android:name="kr.co.ky.kozoltime.SplashActivity"
-41-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:31:13-43
+40-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:31:9-39:20
+41            android:name="kr.co.ky.login.SplashActivity"
+41-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:32:13-57
 42            android:exported="true" >
-42-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:32:13-36
+42-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:33:13-36
 43            <intent-filter>
-43-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:33:13-37:29
+43-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:34:13-38:29
 44                <action android:name="android.intent.action.MAIN" />
-44-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:34:17-69
-44-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:34:25-66
+44-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:35:17-69
+44-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:35:25-66
 45
 46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:36:17-77
-46-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:36:27-74
+46-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:17-77
+46-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:27-74
 47            </intent-filter>
 48        </activity>
 49        <activity
-49-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:39:9-41:40
+49-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:40:9-42:40
 50            android:name="kr.co.ky.kozoltime.MainActivity"
-50-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:40:13-41
+50-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:41:13-41
 51            android:exported="false" />
-51-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:41:13-37
+51-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:42:13-37
 52
 53        <service
 53-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
@@ -254,6 +254,17 @@
 138-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
 139            android:value="@integer/google_play_services_version" />
 139-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-140    </application>
-141
-142</manifest>
+140
+141        <provider
+141-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+142            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+142-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+143            android:authorities="kr.co.ky.kozoltime.lifecycle-process"
+143-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+144            android:exported="false"
+144-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+145            android:multiprocess="true" />
+145-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fa86eee0a54c4186af2d258bcadc9586/transformed/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+146    </application>
+147
+148</manifest>

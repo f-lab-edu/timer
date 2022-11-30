@@ -10,8 +10,8 @@ import kotlinx.android.synthetic.main.activity_write.*
 
 class WriteActivity : AppCompatActivity() {
 
-    val fbAuth = FirebaseAuth.getInstance()
-    val fbFirestore = FirebaseFirestore.getInstance()
+    private val fbAuth = FirebaseAuth.getInstance()
+    private val fbFirestore = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +23,12 @@ class WriteActivity : AppCompatActivity() {
         write_btn.setOnClickListener{
 
             val writeData = hashMapOf(
-                "id" to fbAuth?.currentUser?.email,
+                "id" to fbAuth.currentUser?.email,
                 "title" to write_ssul_title.text.toString(),
                 "context" to write_ssul_context.text.toString()
             )
-            val bucket = fbFirestore.collection("kozoltime")
+            val collection = "kozoltime"
+            val bucket = fbFirestore.collection(collection)
             bucket.add(writeData).addOnSuccessListener {
                 Toast.makeText(this,"데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
             }

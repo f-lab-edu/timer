@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_detail.*
-import kr.co.ky.kozoltime.NickNameActivity
+import kr.co.ky.nicknamePackage.NickNameActivity
 import kr.co.ky.kozoltime.R
 
 class DetailViewFragment : Fragment(){
@@ -24,11 +24,11 @@ class DetailViewFragment : Fragment(){
         super.onStart()
 
         nick_btn.setOnClickListener{
-            val intent = Intent(getActivity(), NickNameActivity::class.java)
+            val intent = Intent(activity, NickNameActivity::class.java)
             startActivity(intent)
         }
-        var message = this.getArguments()?.getString("nickname")
+        var message = this.arguments?.getString("nickname")
 
-        nick_tv.setText(message)
+        nick_tv.text = message
     }
 }

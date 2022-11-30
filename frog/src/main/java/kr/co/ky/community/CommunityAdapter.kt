@@ -1,29 +1,17 @@
-package kr.co.ky.kozoltime
+package kr.co.ky.community
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.office_cardview.view.*
+import kr.co.ky.kozoltime.R
 
-class CommunityAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    var communityList:MutableList<CommunityDataClass> = mutableListOf()
-    init {
-        val firestore = FirebaseFirestore.getInstance()
-        firestore.collection("community").addSnapshotListener{querySnapshot,firebaseFirestoreException -> communityList.clear()
-            if(querySnapshot != null) {
-                for (snapshot in querySnapshot!!.documents) {
-                    var item = snapshot.toObject(CommunityDataClass::class.java)
-                    communityList.add(item!!)
-                }
-            }
-            notifyDataSetChanged()
-        }
-    }
+class CommunityAdapter(var communityList:MutableList<CommunityDataClass>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.office_cardview, parent, false)
+        var view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.office_cardview, parent, false)
         return ViewHolder(view)
     }
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view){
@@ -41,4 +29,5 @@ class CommunityAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun getItemCount(): Int {
         return communityList.size
     }
+
 }

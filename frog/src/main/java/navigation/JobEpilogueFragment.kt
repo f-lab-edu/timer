@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_job_epilogue.*
-import kr.co.ky.kozoltime.OfficeActivity
 import kr.co.ky.kozoltime.R
+import kr.co.ky.office.OfficeActivity
 
 class JobEpilogueFragment : Fragment(){
     override fun onCreateView(
@@ -26,7 +26,7 @@ class JobEpilogueFragment : Fragment(){
         super.onStart()
 
         office_btn.setOnClickListener{
-            val intent = Intent(getActivity(), OfficeActivity::class.java)
+            val intent = Intent(activity, OfficeActivity::class.java)
             startActivity(intent)
         }
     }

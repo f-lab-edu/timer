@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="kr.co.ky.kozoltime">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,22 +14,22 @@
         android:theme="@style/Theme.Kozoltime"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".NickNameActivity"
+            android:name="kr.co.ky.nicknamePackage.NickNameActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginJoinActivity"
+            android:name="kr.co.ky.login.LoginJoinActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunityWriteActivity"
+            android:name="kr.co.ky.community.CommunityWriteActivity"
             android:exported="false" />
         <activity
-            android:name=".OfficeActivity"
+            android:name="kr.co.ky.office.OfficeActivity"
             android:exported="false" />
         <activity
             android:name=".WriteActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name="kr.co.ky.login.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

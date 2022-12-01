@@ -2,11 +2,9 @@ package data
 
 import android.content.ContentValues.TAG
 import android.util.Log
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import kr.co.ky.community.CommunityDataClass
 
 class NickFirebase {
     fun sendNickFirebase(nickCallback: NickCallback) {
@@ -21,11 +19,7 @@ class NickFirebase {
                     Log.w(TAG, "Listen failed", e)
                 }
                 if(snapshot != null && snapshot.exists()){
-                    nickList.clear()
-                    val item = NickDataClass(snapshot["id"] as? String,
-                        snapshot["nickname"] as? String)
-                    nickList.add(item)
-                    nickCallback.setNickTv(nickList[0].nickname)
+                    nickCallback.setNickTextView(snapshot["nickname"] as? String)
                 }
             }
         } else {

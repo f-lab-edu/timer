@@ -1,5 +1,5 @@
 package data
 
 interface NickCallback {
-    fun setNickTv( nick:String?)
+    fun setNickTextView(nick:String?)
 }

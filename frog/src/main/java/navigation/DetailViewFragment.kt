@@ -35,7 +35,7 @@ class DetailViewFragment : Fragment(){
             FirebaseAuth.getInstance().signOut()
         }
         nickFirebase.sendNickFirebase(object : NickCallback{
-            override fun setNickTv(nick: String?) {
+            override fun setNickTextView(nick: String?) {
                 nick_tv.setText(nick)
             }
     })

@@ -34,12 +34,18 @@ class NickNameActivity : AppCompatActivity() {
                 nickname to nick_edit.text.toString()
             )
             val bucket = fbFirestore.collection(nickname)
-            bucket.add(writeData).addOnSuccessListener {
-                Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
-            }
-                .addOnFailureListener {
-                    Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
+            val email = fbAuth.currentUser?.email
+
+            if(email != null) {
+                bucket.document(email).set(writeData).addOnSuccessListener {
+                    Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
                 }
+                    .addOnFailureListener {
+                        Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
+                    }
+            } else{
+                Toast.makeText(this, "아이디 입력 또는 회원 가입을 해주세요.", Toast.LENGTH_SHORT).show()
+            }
         }
         nick_overlap_btn.setOnClickListener {
             nickOverlap()

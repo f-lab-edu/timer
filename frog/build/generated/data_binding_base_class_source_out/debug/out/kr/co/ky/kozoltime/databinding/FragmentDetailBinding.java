@@ -22,7 +22,7 @@ public final class FragmentDetailBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final Button logout;
+  public final Button logoutBtn;
 
   @NonNull
   public final FrameLayout myPageFrame;
@@ -42,12 +42,12 @@ public final class FragmentDetailBinding implements ViewBinding {
   @NonNull
   public final TextView nickTv;
 
-  private FragmentDetailBinding(@NonNull FrameLayout rootView, @NonNull Button logout,
+  private FragmentDetailBinding(@NonNull FrameLayout rootView, @NonNull Button logoutBtn,
       @NonNull FrameLayout myPageFrame, @NonNull LinearLayout myPageLinear,
       @NonNull LinearLayout myPageLinear2, @NonNull Button nickBtn, @NonNull FrameLayout nickFrame,
       @NonNull TextView nickTv) {
     this.rootView = rootView;
-    this.logout = logout;
+    this.logoutBtn = logoutBtn;
     this.myPageFrame = myPageFrame;
     this.myPageLinear = myPageLinear;
     this.myPageLinear2 = myPageLinear2;
@@ -83,9 +83,9 @@ public final class FragmentDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.logout;
-      Button logout = ViewBindings.findChildViewById(rootView, id);
-      if (logout == null) {
+      id = R.id.logout_btn;
+      Button logoutBtn = ViewBindings.findChildViewById(rootView, id);
+      if (logoutBtn == null) {
         break missingId;
       }
 
@@ -121,7 +121,7 @@ public final class FragmentDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDetailBinding((FrameLayout) rootView, logout, myPageFrame, myPageLinear,
+      return new FragmentDetailBinding((FrameLayout) rootView, logoutBtn, myPageFrame, myPageLinear,
           myPageLinear2, nickBtn, nickFrame, nickTv);
     }
     String missingId = rootView.getResources().getResourceName(id);

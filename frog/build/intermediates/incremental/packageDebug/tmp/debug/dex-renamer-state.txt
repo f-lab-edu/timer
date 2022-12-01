@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Tue Dec 06 14:36:50 KST 2022
 path.4=13/classes.dex
 path.3=10/classes.dex
@@ -8,6 +9,9 @@ path.3=10/classes.dex
 =======
 #Thu Dec 01 13:19:52 KST 2022
 >>>>>>> 6ac337d (nickname setting)
+=======
+#Thu Dec 01 20:29:43 KST 2022
+>>>>>>> 7e4e4f0 (nickname setting)
 path.4=2/classes.dex
 path.3=13/classes.dex
 >>>>>>> a38d387 (adapter & data seperate success2)

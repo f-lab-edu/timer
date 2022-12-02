@@ -1970,9 +1970,10 @@ id cache_measures
 id callMeasure
 id cancel_action
 id cancel_button
-id card1
 id card_context
+id card_date
 id card_id
+id card_image
 id card_title
 id carryVelocity
 id center
@@ -1998,13 +1999,13 @@ id closest
 id collapseActionView
 id community
 id community_btn
-id community_context_linear
 id community_edit
 id community_linear
 id community_linear2
 id community_rv
 id community_search_btn
 id community_ssul_context
+id community_ssul_image
 id community_ssul_title
 id community_tv
 id confirm_button
@@ -2308,6 +2309,7 @@ id square
 id src_atop
 id src_in
 id src_over
+id ssul_spinner
 id standard
 id start
 id startHorizontal
@@ -2630,6 +2632,7 @@ string community
 string context
 string context_plz
 string copy_toast_msg
+string date
 string default_web_client_id
 string delivery
 string ect

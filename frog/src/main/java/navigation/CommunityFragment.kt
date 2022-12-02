@@ -19,7 +19,6 @@ import kr.co.ky.kozoltime.*
 
 class CommunityFragment : Fragment(){
     private val firebaseData = FirebaseData()
-    lateinit var communityAdapter: CommunityAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -38,7 +37,6 @@ class CommunityFragment : Fragment(){
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
 
                 community_rv.adapter = CommunityAdapter(mutableList)
-                communityAdapter = CommunityAdapter(mutableList)
                 (community_rv.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }

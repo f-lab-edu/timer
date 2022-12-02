@@ -7,9 +7,7 @@ import android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.provider.DocumentsContract
 import android.util.Log
-import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -41,6 +39,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                 Log.e("text", uri.toString())
             }
         }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -139,6 +138,4 @@ class CommunityWriteActivity : AppCompatActivity() {
                 .show()
         }
     }
-
-
 

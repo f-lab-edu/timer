@@ -23,6 +23,7 @@ class FirebaseData(){
                 title = document["title"] as? String,
                 imageUri = document["imageUri"] as? String,
                 timestamp = document["timestamp"] as? Long)
+
             communityList.add(item)
             finishedCallback.adapter(communityList)
         }

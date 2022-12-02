@@ -15,4 +15,5 @@ data class CommunityDataClass(val title : String? = null,
                        val comment : String? = null,
                        val timestamp : Long? = null)
 
+
 }

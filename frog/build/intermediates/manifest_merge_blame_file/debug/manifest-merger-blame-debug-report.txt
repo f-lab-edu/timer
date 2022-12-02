@@ -24,14 +24,21 @@
 14-->[com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:22-76
 15
 16    <application
+<<<<<<< HEAD
 16-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:10:5-45:19
 17        android:allowBackup="true"
 17-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:11:9-35
+=======
+16-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:11:5-46:19
+17        android:allowBackup="true"
+17-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:12:9-35
+>>>>>>> 5297fbe (image setting)
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:extractNativeLibs="false"
 21        android:icon="@drawable/ic_baseline_account_circle_24"
+<<<<<<< HEAD
 21-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:12:9-63
 22        android:label="@string/app_name"
 22-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:13:9-41
@@ -96,6 +103,72 @@
 52-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:43:13-41
 53            android:exported="false" />
 53-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:44:13-37
+=======
+21-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:13:9-63
+22        android:label="@string/app_name"
+22-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:14:9-41
+23        android:roundIcon="@drawable/ic_arrow_back"
+23-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:15:9-52
+24        android:supportsRtl="true"
+24-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:16:9-35
+25        android:theme="@style/Theme.Kozoltime"
+25-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:17:9-47
+26        android:usesCleartextTraffic="true" >
+26-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:18:9-44
+27        <activity
+27-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:19:9-21:40
+28            android:name="kr.co.ky.nicknamePackage.NickNameActivity"
+28-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:20:13-69
+29            android:exported="false" />
+29-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:21:13-37
+30        <activity
+30-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:22:9-24:40
+31            android:name="kr.co.ky.login.LoginJoinActivity"
+31-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-60
+32            android:exported="false" />
+32-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:13-37
+33        <activity
+33-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:9-27:40
+34            android:name="kr.co.ky.community.CommunityWriteActivity"
+34-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-69
+35            android:exported="false" />
+35-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:27:13-37
+36        <activity
+36-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:28:9-30:40
+37            android:name="kr.co.ky.office.OfficeActivity"
+37-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:29:13-58
+38            android:exported="false" />
+38-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:30:13-37
+39        <activity
+39-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:31:9-33:40
+40            android:name="kr.co.ky.kozoltime.WriteActivity"
+40-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:32:13-42
+41            android:exported="false" />
+41-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:33:13-37
+42        <activity
+42-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:34:9-42:20
+43            android:name="kr.co.ky.login.SplashActivity"
+43-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:35:13-57
+44            android:exported="true" >
+44-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:36:13-36
+45            <intent-filter>
+45-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:13-41:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:38:17-69
+46-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:38:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:40:17-77
+48-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:40:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:43:9-45:40
+52            android:name="kr.co.ky.kozoltime.MainActivity"
+52-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:44:13-41
+53            android:exported="false" />
+53-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:45:13-37
+>>>>>>> 5297fbe (image setting)
 54
 55        <service
 55-->[com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:11:9-17:19
@@ -130,11 +203,19 @@
 70                android:value="com.google.firebase.components.ComponentRegistrar" />
 70-->[com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
 71            <meta-data
+<<<<<<< HEAD
 71-->[com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:32:13-34:85
 72                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
 72-->[com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:33:17-109
 73                android:value="com.google.firebase.components.ComponentRegistrar" />
 73-->[com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:34:17-82
+=======
+71-->[com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:32:13-34:85
+72                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+72-->[com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:33:17-109
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:34:17-82
+>>>>>>> 5297fbe (image setting)
 74            <meta-data
 74-->[com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
 75                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"

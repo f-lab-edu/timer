@@ -7,6 +7,7 @@ import android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.provider.DocumentsContract
 import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -40,7 +41,6 @@ class CommunityWriteActivity : AppCompatActivity() {
             }
         }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.write_community_activity)
@@ -66,9 +66,6 @@ class CommunityWriteActivity : AppCompatActivity() {
                     bucket.add(writeData).addOnSuccessListener {
                         Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
                     }
-                        .addOnFailureListener {
-                            Toast.makeText(this, "데이터 추가에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
-                        }
                 }
                     shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
                         showPermissionContextPopup()
@@ -77,10 +74,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                         requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
                             1000)
                     }
-                }
             }
-
-
             community_btn.setOnClickListener {
                 if (firebaseUri != null) {
                     val fileName = "IMAGE_${SingleDate.invoke()}_.png"
@@ -89,22 +83,22 @@ class CommunityWriteActivity : AppCompatActivity() {
                         .continueWithTask { task: Task<UploadTask.TaskSnapshot> ->
                             return@continueWithTask imageRef.downloadUrl
                         }.addOnSuccessListener {
-                        val communityDataClass = CommunityDataClass(
-                            title = community_ssul_title.text.toString(),
-                            context = community_ssul_context.text.toString(),
-                            id = fbAuth.currentUser?.email,
-                            uid = fbAuth.currentUser?.uid,
-                            imageUri = it.toString(),
-                            timestamp = System.currentTimeMillis()
-                        )
+                            val communityDataClass = CommunityDataClass(
+                                title = community_ssul_title.text.toString(),
+                                context = community_ssul_context.text.toString(),
+                                id = fbAuth.currentUser?.email,
+                                uid = fbAuth.currentUser?.uid,
+                                imageUri = it.toString(),
+                                timestamp = System.currentTimeMillis()
+                            )
 
-                        fbFirestore.collection("community").document(fileName)
-                            .set(communityDataClass)
-                        finish()
-                        Toast.makeText(this, "서버로 데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
-                    }.addOnFailureListener {
-                        Toast.makeText(this, "이미지를 부르는데 실패하였습니다.", Toast.LENGTH_SHORT).show()
-                    }
+                            fbFirestore.collection("community").document(fileName)
+                                .set(communityDataClass)
+                            finish()
+                            Toast.makeText(this, "서버로 데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
+                        }.addOnFailureListener {
+                            Toast.makeText(this, "이미지를 부르는데 실패하였습니다.", Toast.LENGTH_SHORT).show()
+                        }
 
 
                 } else {
@@ -124,7 +118,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                 }
             }
         }
-
+    }
         private fun showPermissionContextPopup() {
             AlertDialog.Builder(this)
                 .setTitle("권한이 필요합니다.")
@@ -137,5 +131,4 @@ class CommunityWriteActivity : AppCompatActivity() {
                 .create()
                 .show()
         }
-    }
-
+}

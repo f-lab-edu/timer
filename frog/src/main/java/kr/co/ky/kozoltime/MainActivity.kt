@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             bottom_navigation.setOnNavigationItemSelectedListener(this)
 
             supportFragmentManager.beginTransaction().replace(R.id.frame,jobEpilogueFragment).commit()
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),1)
 
         }
 

@@ -9,8 +9,11 @@
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 5297fbe (image setting)
 
+=======
+>>>>>>> 8866060 (image setting finish)
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_baseline_account_circle_24"

@@ -18,11 +18,11 @@ class FirebaseData(){
         communityList.clear()
         for (document in result) {
             val item = CommunityDataClass(
-                document["id"] as? String,
-                document["context"] as? String,
-                document["title"] as? String,
-                document["imageUri"] as? String,
-                document["timestamp"] as? String)
+                id = document["id"] as? String,
+                context = document["context"] as? String,
+                title = document["title"] as? String,
+                imageUri = document["imageUri"] as? String,
+                timestamp = document["timestamp"] as? Long)
             communityList.add(item)
             finishedCallback.adapter(communityList)
         }

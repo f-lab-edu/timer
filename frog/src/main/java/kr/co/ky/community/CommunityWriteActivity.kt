@@ -1,15 +1,20 @@
 package kr.co.ky.community
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
+import android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.provider.DocumentsContract
 import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,42 +30,64 @@ class CommunityWriteActivity : AppCompatActivity() {
 
     val fbAuth = FirebaseAuth.getInstance()
     val fbFirestore = FirebaseFirestore.getInstance()
-    val storage : FirebaseStorage = FirebaseStorage.getInstance()
-    var imageRef = storage.reference.child("images/")
-    var uri: Uri? = null
-    val laucher = registerForActivityResult(ActivityResultContracts.GetContent()) { it ->
-        uri = it
-        community_ssul_image.setImageURI(uri)
-        Log.e("text", uri.toString())
+    val storage: FirebaseStorage = FirebaseStorage.getInstance()
+    var firebaseUri: Uri? = null
+    var launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
+        it.data?.data?.let { uri ->
+            firebaseUri= uri
+            community_ssul_image.setImageURI(uri)
+            contentResolver.takePersistableUriPermission(uri, FLAG_GRANT_READ_URI_PERMISSION)
+            Log.e("text", uri.toString())
+        }
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.write_community_activity)
 
-        ssul_spinner.adapter = ArrayAdapter.createFromResource(this,R.array.itemList,android.R.layout.simple_spinner_item)
-        ssul_spinner.prompt= getString(R.string.job_select)
+        ssul_spinner.adapter = ArrayAdapter.createFromResource(this,
+            R.array.itemList,
+            android.R.layout.simple_spinner_item)
+        ssul_spinner.prompt = getString(R.string.job_select)
 
         community_ssul_image.setOnClickListener {
-            laucher.launch("images/*")
+            when {
+                ContextCompat.checkSelfPermission(this,
+                    android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED -> {
+                    val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
+                    intent.type = "image/*"
+                    launcher.launch(intent)
+                }
+                shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
+                    showPermissionContextPopup()
+                }
+                else -> {
+                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                        1000)
+                }
+            }
+
         }
-        community_btn.setOnClickListener{
-            val fileName = "${SimpleDateFormat("yyyymmdd_HHmm").format(Date())}_${fbAuth.currentUser?.email}"
-            if(uri != null) {
-                imageRef.putFile(uri!!).continueWithTask{ task: Task<UploadTask.TaskSnapshot> ->
+        community_btn.setOnClickListener {
+            if (firebaseUri != null) {
+                val fileName = "IMAGE_${SingleDate.invoke()}_.png"
+                val imageRef = storage.reference.child("image/").child(fileName)
+                imageRef.putFile(firebaseUri!!).continueWithTask { task: Task<UploadTask.TaskSnapshot> ->
                     return@continueWithTask imageRef.downloadUrl
                 }.addOnSuccessListener {
-                    val communityDataClass = CommunityDataClass()
-                    communityDataClass.imageUri = it.toString()
-                    communityDataClass.context = community_ssul_context.text.toString()
-                    communityDataClass.title = community_ssul_title.text.toString()
-                    communityDataClass.id = fbAuth.currentUser?.email
-                    communityDataClass.timestamp = System.currentTimeMillis()
+                    val communityDataClass = CommunityDataClass(
+                        title = community_ssul_title.text.toString(),
+                        context = community_ssul_context.text.toString(),
+                        id = fbAuth.currentUser?.email,
+                        uid = fbAuth.currentUser?.uid,
+                        imageUri = it.toString(),
+                        timestamp = System.currentTimeMillis()
+                    )
 
                     fbFirestore.collection("community").document(fileName).set(communityDataClass)
                     finish()
                     Toast.makeText(this, "서버로 데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener{
-                    Toast.makeText(this,"이미지를 부르는데 실패하였습니다.",Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener {
+                    Toast.makeText(this, "이미지를 부르는데 실패하였습니다.", Toast.LENGTH_SHORT).show()
                 }
 
 
@@ -72,7 +99,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                     "timestamp" to System.currentTimeMillis()
                 )
                 val bucket = fbFirestore.collection("community")
-                bucket.document(fileName).set(writeData).addOnSuccessListener {
+                bucket.document().set(writeData).addOnSuccessListener {
                     Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
                 }
                     .addOnFailureListener {
@@ -82,7 +109,17 @@ class CommunityWriteActivity : AppCompatActivity() {
         }
     }
 
+    private fun showPermissionContextPopup() {
+        AlertDialog.Builder(this)
+            .setTitle("권한이 필요합니다.")
+            .setMessage("사진을 불러오기 위해서 권한이 필요합니다.")
+            .setPositiveButton("동의") { _, _ ->
+                requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 1000)
+            }
+            .setNegativeButton("취소") { _, _ -> }
+            .create()
+            .show()
+    }
 }
-
 
 

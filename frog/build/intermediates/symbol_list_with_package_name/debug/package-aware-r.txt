@@ -2138,7 +2138,7 @@ id linear
 id listMode
 id list_item
 id login_btn
-id logout
+id logout_btn
 id main_content
 id masked
 id match_constraint

@@ -55,6 +55,7 @@ class LoginJoinActivity : AppCompatActivity() {
             .requestEmail()
             .build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
+
     }
 
     fun googleLogin() {

@@ -2137,7 +2137,7 @@ int id linear 0x7f090114
 int id listMode 0x7f090115
 int id list_item 0x7f090116
 int id login_btn 0x7f090117
-int id logout 0x7f090118
+int id logout_btn 0x7f090118
 int id main_content 0x7f090119
 int id masked 0x7f09011a
 int id match_constraint 0x7f09011b

@@ -30,7 +30,6 @@ class OfficeActivity : AppCompatActivity() {
         firebaseData.sendFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
-
                 office_rv.adapter = CommunityAdapter(mutableList)
                 (office_rv.adapter as CommunityAdapter).notifyDataSetChanged()
 

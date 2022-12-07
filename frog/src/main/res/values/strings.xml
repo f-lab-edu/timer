@@ -37,6 +37,7 @@
     <string name="id">id</string>
     <string name="title">title</string>
     <string name="context">context</string>
+    <string name="date">date</string>
 
     <!-- activity_office -->
     <string name="legend_post">레전드</string>

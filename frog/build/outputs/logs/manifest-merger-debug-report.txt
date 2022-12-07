@@ -1,14 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/hi-macbook/.gradle/caches/transforms-3/1d4d22d4b6436e473305c76a2a164434/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/7ffa70fd5f5dbdcf1854545df00393bd/transformed/jetified-lifecycle-livedata-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/d04847b4a1aa4f70022cdb7ba359ac37/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/2e1511d698e1752895a63ab26debe861/transformed/jetified-glide-4.7.1/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/00aab18ca30250343b5289ff70f7771f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/3fd6e966a11049b4abbab33d59f3e0ab/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
@@ -17,7 +19,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/hi-macbook
 MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/843d13e70051f5f03ecafd9ed390cb87/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/c4be30edda3b42d53ad02a609b80efc5/transformed/jetified-play-services-auth-20.3.0/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/a4aa12c2f322edbab8f73d2b10bb5f16/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/61549569b774bec886eecd2a5856c48e/transformed/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:15:1-25:12
@@ -40,13 +43,14 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/hi-
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/fb65a82671846080a5e44677cfae1d59/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/4906579d66edbaa2ab5dfd51ef53b2e9/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/d3aaaf4d176dddea8960874299786153/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/89a61c144b74080dc8cbdc8ff591adfc/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/82c1b0a560ff55796d0c094a511a91f4/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/f22f48b8c084f50bcce8af0470f51f97/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/2cd7c1896b4b478d6d5934932edf85fe/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/2abccc0176a4b733338c862c0fd2d423/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/cb0898bff97cd2b508c0798fb9509623/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/c644da73add2180d6d9beaf6ee01dff9/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/29d60be72d832a6c2bdd2c6de360bbe8/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/82c1b0a560ff55796d0c094a511a91f4/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/0c4e881b38fc63b1cb8ed79eff640436/transformed/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/098b36dd1d3cc90283a6eea80604e8b5/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/eadcf250c9b55741d0e7f600928a4516/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -73,22 +77,22 @@ MERGED from [androidx.tracing:tracing:1.0.0] /Users/hi-macbook/.gradle/caches/tr
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/3d6e9de270d97c17bdde1231caeef0ab/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/hi-macbook/.gradle/caches/transforms-3/32bd3b91e73d8bbec5ad9ab9f166572a/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/4c1178228d33a46cdc6481a689b05486/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:4:5-33
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:1-47:12
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:2:11-69
@@ -96,18 +100,32 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:6:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:8:5-43:19
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:10:5-45:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/2e1511d698e1752895a63ab26debe861/transformed/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/2e1511d698e1752895a63ab26debe861/transformed/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.material:material:1.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/3fd6e966a11049b4abbab33d59f3e0ab/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
@@ -118,8 +136,10 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/c4be30edda3b42d53ad02a609b80efc5/transformed/jetified-play-services-auth-20.3.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/c4be30edda3b42d53ad02a609b80efc5/transformed/jetified-play-services-auth-20.3.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/a4aa12c2f322edbab8f73d2b10bb5f16/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
@@ -136,6 +156,8 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/hi-macboo
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/5adfe9043c39037f7a143f0e221fd3e3/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/11a0b45af2f7b1aab4f69d2f43b03296/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/89a61c144b74080dc8cbdc8ff591adfc/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/89a61c144b74080dc8cbdc8ff591adfc/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hi-macbook/.gradle/caches/transforms-3/25497eaa87ed6fff67e9df61d1603096/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
@@ -145,77 +167,79 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/hi-macbook/.grad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/1d61187d2445abc53f37e86a70e68727/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:12:9-52
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:14:9-52
 	android:icon
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:10:9-63
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:12:9-63
 	android:allowBackup
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:14:9-47
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:16:9-47
 	android:usesCleartextTraffic
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:15:9-44
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:17:9-44
 activity#kr.co.ky.nicknamePackage.NickNameActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:16:9-18:40
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:18:9-20:40
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:18:13-37
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:17:13-69
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:19:13-69
 activity#kr.co.ky.login.LoginJoinActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:19:9-21:40
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:21:9-23:40
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:21:13-37
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:20:13-60
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:22:13-60
 activity#kr.co.ky.community.CommunityWriteActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:22:9-24:40
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:24:13-37
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:23:13-69
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:13-69
 activity#kr.co.ky.office.OfficeActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:25:9-27:40
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:27:13-37
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:26:13-58
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:28:13-58
 activity#kr.co.ky.kozoltime.WriteActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:28:9-30:40
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:30:13-37
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:29:13-42
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:31:13-42
 activity#kr.co.ky.login.SplashActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:31:9-39:20
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:33:9-41:20
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:33:13-36
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:32:13-57
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:34:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:34:13-38:29
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:35:17-69
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:35:25-66
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:17-77
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:37:27-74
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:39:27-74
 activity#kr.co.ky.kozoltime.MainActivity
-ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:40:9-42:40
+ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:42:9-44:40
 	android:exported
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:42:13-37
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:41:13-41
+		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:43:13-41
 uses-sdk
 INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/hi-macbook/.gradle/caches/transforms-3/1d4d22d4b6436e473305c76a2a164434/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/hi-macbook/.gradle/caches/transforms-3/1d4d22d4b6436e473305c76a2a164434/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/7ffa70fd5f5dbdcf1854545df00393bd/transformed/jetified-lifecycle-livedata-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/7ffa70fd5f5dbdcf1854545df00393bd/transformed/jetified-lifecycle-livedata-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:5:5-7:41
@@ -224,6 +248,8 @@ MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/d04847b4a1aa4f70022cdb7ba359ac37/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/d04847b4a1aa4f70022cdb7ba359ac37/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/2e1511d698e1752895a63ab26debe861/transformed/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/2e1511d698e1752895a63ab26debe861/transformed/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/bcaef82916e05eb837ac66debae77d70/transformed/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/00aab18ca30250343b5289ff70f7771f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
@@ -240,8 +266,10 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/c4be30edda3b42d53ad02a609b80efc5/transformed/jetified-play-services-auth-20.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/c4be30edda3b42d53ad02a609b80efc5/transformed/jetified-play-services-auth-20.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/a4aa12c2f322edbab8f73d2b10bb5f16/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
@@ -286,6 +314,10 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hi-macbook/.gradle
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/4906579d66edbaa2ab5dfd51ef53b2e9/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/d3aaaf4d176dddea8960874299786153/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/hi-macbook/.gradle/caches/transforms-3/d3aaaf4d176dddea8960874299786153/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/89a61c144b74080dc8cbdc8ff591adfc/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hi-macbook/.gradle/caches/transforms-3/89a61c144b74080dc8cbdc8ff591adfc/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/82c1b0a560ff55796d0c094a511a91f4/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/82c1b0a560ff55796d0c094a511a91f4/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/f22f48b8c084f50bcce8af0470f51f97/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/f22f48b8c084f50bcce8af0470f51f97/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/2cd7c1896b4b478d6d5934932edf85fe/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -298,8 +330,6 @@ MERGED from [androidx.customview:customview:1.0.0] /Users/hi-macbook/.gradle/cac
 MERGED from [androidx.customview:customview:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/c644da73add2180d6d9beaf6ee01dff9/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/29d60be72d832a6c2bdd2c6de360bbe8/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/29d60be72d832a6c2bdd2c6de360bbe8/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/82c1b0a560ff55796d0c094a511a91f4/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/82c1b0a560ff55796d0c094a511a91f4/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/0c4e881b38fc63b1cb8ed79eff640436/transformed/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/hi-macbook/.gradle/caches/transforms-3/0c4e881b38fc63b1cb8ed79eff640436/transformed/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/098b36dd1d3cc90283a6eea80604e8b5/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -363,25 +393,35 @@ INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 		ADDED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 		INJECTED from /Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
+ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/8280318563a64742ddbb056c7dc87ac7/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/8280318563a64742ddbb056c7dc87ac7/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:32:9-36:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:13:13-37
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:13:13-37
 	tools:targetApi
 		ADDED from [com.google.firebase:firebase-common:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/8280318563a64742ddbb056c7dc87ac7/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:36:13-32
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/8280318563a64742ddbb056c7dc87ac7/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:12:13-84
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:12:13-84
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/72cb7b1a216c0e4b3a1d5b6203efa63b/transformed/jetified-firebase-storage-ktx-20.1.0/AndroidManifest.xml:15:17-122
 meta-data#com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar
 ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/c9926f93b44353a8c76c7141dd41daf7/transformed/jetified-firebase-firestore-ktx-24.4.0/AndroidManifest.xml:14:13-16:85
 	android:value
@@ -396,8 +436,10 @@ ADDED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.g
 		ADDED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/hi-macbook/.gradle/caches/transforms-3/26009ea5969e433010f93006e016ea49/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:15:17-113
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/197ccdc09406528cd1fb0233c29886a3/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/hi-macbook/.gradle/caches/transforms-3/32bd3b91e73d8bbec5ad9ab9f166572a/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
@@ -479,11 +521,17 @@ ADDED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:20.3.0] /Users/hi-macbook/.gradle/caches/transforms-3/c4be30edda3b42d53ad02a609b80efc5/transformed/jetified-play-services-auth-20.3.0/AndroidManifest.xml:34:13-89
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
-ADDED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:32:13-34:85
+ADDED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:32:13-34:85
 	android:value
-		ADDED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:34:17-82
+		ADDED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:34:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-database:19.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/46db4d5cd3be09fb7d575c770245a6b4/transformed/jetified-firebase-database-19.1.0/AndroidManifest.xml:33:17-109
+		ADDED from [com.google.firebase:firebase-database:19.6.0] /Users/hi-macbook/.gradle/caches/transforms-3/7e5f3f54077f6c111ca4c1b1d7226106/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] /Users/hi-macbook/.gradle/caches/transforms-3/346707ec327578b6d9d1693dd3c313a9/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:24.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/2f96a7ef328ab531c8d8d05680d83aa3/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
 	android:value

@@ -12,14 +12,17 @@ import kr.co.ky.community.CommunityDataClass
 
 class FirebaseData(){
     fun sendFirebase(path: String, finishedCallback: TimeCallback) {
-    var communityList: MutableList<CommunityDataClass> = mutableListOf()
-    var database = Firebase.firestore
+    val communityList: MutableList<CommunityDataClass> = mutableListOf()
+    val database = Firebase.firestore
     database.collection(path).get().addOnSuccessListener { result ->
         communityList.clear()
         for (document in result) {
-            var item = CommunityDataClass(document["id"] as? String,
-                document["context"] as? String,
-                document["title"] as? String)
+            val item = CommunityDataClass(
+                id = document["id"] as? String,
+                context = document["context"] as? String,
+                title = document["title"] as? String,
+                imageUri = document["imageUri"] as? String,
+                timestamp = document["timestamp"] as? Long)
             communityList.add(item)
             finishedCallback.adapter(communityList)
         }

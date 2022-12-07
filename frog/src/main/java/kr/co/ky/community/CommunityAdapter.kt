@@ -1,9 +1,13 @@
 package kr.co.ky.community
 
+import android.net.Uri
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.office_cardview.view.*
 import kr.co.ky.kozoltime.R
 
@@ -24,6 +28,16 @@ class CommunityAdapter(var communityList:MutableList<CommunityDataClass>): Recyc
         viewHolder.card_title.text = communityList[position].title
         viewHolder.card_id.text = communityList[position].id
         viewHolder.card_context.text = communityList[position].context
+        viewHolder.card_date.text = communityList[position].timestamp.toString()
+
+        if (communityList[position].imageUri != null) {
+            Glide.with(holder.itemView)
+                .load(communityList[position].imageUri)
+                .into(viewHolder.card_image)
+            Log.d("glide", "glide")
+        } else {
+            Log.d("null", "null")
+        }
     }
 
     override fun getItemCount(): Int {

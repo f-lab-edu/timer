@@ -7,34 +7,43 @@
     android:orientation="vertical"
     tools:context=".WriteActivity">
 
-    <LinearLayout
-        android:id="@+id/community_context_linear"
-        android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:orientation="vertical"
-        android:layout_margin="5dp">
+        <Spinner
+            android:id="@+id/ssul_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingVertical="10dp"
+            android:spinnerMode="dialog" />
+
         <EditText
             android:id="@+id/community_ssul_title"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="text"
             android:hint="@string/title_plz"/>
+
         <EditText
             android:id="@+id/community_ssul_context"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             android:hint="@string/context_plz"
             android:gravity="top"
             android:inputType="text" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/community_ssul_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_a_photo"
+            android:padding="60dp"
+            android:background="@color/colorLightGray"/>
 
-    <Button
-        android:id="@+id/community_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sharing"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/purple"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/community_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sharing"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple"
+            android:textStyle="bold" />
 </LinearLayout>

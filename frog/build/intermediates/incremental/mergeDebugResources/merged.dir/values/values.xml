@@ -1199,6 +1199,7 @@
     <string name="context">context</string>
     <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
+    <string name="date">date</string>
     <string name="default_web_client_id" translatable="false">558492715774-09ak4uvi64m0sk2n8m1jc54sh7r0sqel.apps.googleusercontent.com</string>
     <string name="delivery">배달부</string>
     <string name="ect">기타등등</string>

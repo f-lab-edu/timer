@@ -1233,6 +1233,8 @@
     <string name="join">이메일로 회원가입</string>
     <string name="legend_post">레전드</string>
     <string name="like">좋아요</string>
+    <string name="like_count">개</string>
+    <string name="like_number">0</string>
     <string name="logout">로그 아웃</string>
     <string name="material_clock_display_divider" translatable="false">:</string>
     <string description="Description for the toggle to choose between AM and PM [CHAR_LIMIT=NONE] " name="material_clock_toggle_content_description">Select AM or PM</string>

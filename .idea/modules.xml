@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/kozol2.iml" filepath="$PROJECT_DIR$/.idea/kozol2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kozoltime.iml" filepath="$PROJECT_DIR$/.idea/modules/kozoltime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.iml" filepath="$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.iml" />
     </modules>
   </component>
 </project>

@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/community"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_community"
         android:enabled="true"
         android:title="@string/community"/>
 
     <item
         android:id="@+id/job_epilogue"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_job_epilogue"
         android:enabled="true"
         android:title="@string/ssul"/>
 
     <item
         android:id="@+id/find_job"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_find_job"
         android:enabled="true"
         android:title="@string/find_job"/>
 
     <item
         android:id="@+id/action_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_home2"
         android:enabled="true"
         android:title="@string/my_page"/>
 

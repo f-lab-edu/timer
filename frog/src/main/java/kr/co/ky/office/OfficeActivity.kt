@@ -13,6 +13,7 @@ import kr.co.ky.community.CommunityAdapter
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.kozoltime.R
 import kr.co.ky.kozoltime.WriteActivity
+import kr.co.ky.like.Like
 
 class OfficeActivity : AppCompatActivity() {
         private val firebaseData = FirebaseData()
@@ -27,10 +28,11 @@ class OfficeActivity : AppCompatActivity() {
         val path = "kozoltime"
         office_rv.layoutManager = LinearLayoutManager(this@OfficeActivity)
 
-        firebaseData.sendFirebase(path, object : DataListener() {
+        firebaseData.receiveFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
-                office_rv.adapter = CommunityAdapter(mutableList)
+                val like =  Like()
+                office_rv.adapter = CommunityAdapter(mutableList,path,like)
                 (office_rv.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }

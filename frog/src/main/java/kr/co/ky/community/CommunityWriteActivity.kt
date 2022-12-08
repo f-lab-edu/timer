@@ -57,15 +57,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                     val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
                     intent.type = "image/*"
                     launcher.launch(intent)
-                    val writeData = hashMapOf(
-                        "id" to fbAuth.currentUser?.email,
-                        "title" to community_ssul_title.text.toString(),
-                        "context" to community_ssul_context.text.toString()
-                    )
-                    val bucket = fbFirestore.collection("community")
-                    bucket.add(writeData).addOnSuccessListener {
-                        Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
-                    }
+
                 }
                     shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
                         showPermissionContextPopup()
@@ -89,7 +81,8 @@ class CommunityWriteActivity : AppCompatActivity() {
                                 id = fbAuth.currentUser?.email,
                                 uid = fbAuth.currentUser?.uid,
                                 imageUri = it.toString(),
-                                timestamp = System.currentTimeMillis()
+                                timestamp = System.currentTimeMillis(),
+                                document = fileName
                             )
 
                             fbFirestore.collection("community").document(fileName)

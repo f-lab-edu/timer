@@ -6,17 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 5297fbe (image setting)
-
-=======
->>>>>>> 8866060 (image setting finish)
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:icon="@drawable/ic_add_a_photo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_arrow_back"
         android:supportsRtl="true"

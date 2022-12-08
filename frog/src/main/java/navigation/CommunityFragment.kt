@@ -15,6 +15,7 @@ import kr.co.ky.community.CommunityAdapter
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.community.CommunityWriteActivity
 import kr.co.ky.kozoltime.*
+import kr.co.ky.like.Like
 
 
 class CommunityFragment : Fragment(){
@@ -32,11 +33,11 @@ class CommunityFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
         val path = "community"
         community_rv.layoutManager = LinearLayoutManager(activity)
-        firebaseData.sendFirebase(path, object : DataListener() {
+        firebaseData.receiveFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
-
-                community_rv.adapter = CommunityAdapter(mutableList)
+                val like = Like()
+                community_rv.adapter = CommunityAdapter(mutableList,path,like)
                 (community_rv.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }

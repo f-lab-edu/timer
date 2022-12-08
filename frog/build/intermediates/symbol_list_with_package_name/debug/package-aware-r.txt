@@ -1801,18 +1801,15 @@ drawable ic_account
 drawable ic_add
 drawable ic_add_a_photo
 drawable ic_arrow_back
-drawable ic_baseline_account_circle_24
 drawable ic_chat_black
 drawable ic_clock_black_24dp
 drawable ic_community
 drawable ic_favorite
 drawable ic_favorite_border
 drawable ic_find_job
-drawable ic_home
 drawable ic_home2
 drawable ic_job_epilogue
 drawable ic_keyboard_black_24dp
-drawable ic_launcher_background
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1982,6 +1979,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chat_image
 id checkbox
 id checked
 id chip
@@ -2133,6 +2131,8 @@ id legacy
 id legend_community_btn
 id legend_office_btn
 id light
+id like_count
+id like_image
 id line1
 id line3
 id linear
@@ -2666,6 +2666,8 @@ string job_select
 string join
 string legend_post
 string like
+string like_count
+string like_number
 string logout
 string material_clock_display_divider
 string material_clock_toggle_content_description

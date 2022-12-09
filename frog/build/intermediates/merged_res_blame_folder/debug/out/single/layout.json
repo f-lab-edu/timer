@@ -8,6 +8,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_write.xml"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detail.xml",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_detail.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_find_job.xml",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_find_job.xml"
     },

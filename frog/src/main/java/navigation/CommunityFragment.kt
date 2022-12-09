@@ -33,6 +33,7 @@ class CommunityFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
         val path = "community"
         community_rv.layoutManager = LinearLayoutManager(activity)
+
         firebaseData.receiveFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {

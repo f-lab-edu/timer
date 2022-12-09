@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import androidx.annotation.NonNull;
@@ -25,31 +26,31 @@ public final class ActivityWriteBinding implements ViewBinding {
   public final LinearLayout jobEpilogueSpinnerCategory;
 
   @NonNull
-  public final Button writeBtn;
+  public final Button jobWriteBtn;
 
   @NonNull
-  public final LinearLayout writeContextLinear;
+  public final EditText jobWriteContext;
+
+  @NonNull
+  public final ImageView jobWriteImage;
+
+  @NonNull
+  public final EditText jobWriteTitle;
 
   @NonNull
   public final Spinner writeSpinner;
 
-  @NonNull
-  public final EditText writeSsulContext;
-
-  @NonNull
-  public final EditText writeSsulTitle;
-
   private ActivityWriteBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout jobEpilogueSpinnerCategory, @NonNull Button writeBtn,
-      @NonNull LinearLayout writeContextLinear, @NonNull Spinner writeSpinner,
-      @NonNull EditText writeSsulContext, @NonNull EditText writeSsulTitle) {
+      @NonNull LinearLayout jobEpilogueSpinnerCategory, @NonNull Button jobWriteBtn,
+      @NonNull EditText jobWriteContext, @NonNull ImageView jobWriteImage,
+      @NonNull EditText jobWriteTitle, @NonNull Spinner writeSpinner) {
     this.rootView = rootView;
     this.jobEpilogueSpinnerCategory = jobEpilogueSpinnerCategory;
-    this.writeBtn = writeBtn;
-    this.writeContextLinear = writeContextLinear;
+    this.jobWriteBtn = jobWriteBtn;
+    this.jobWriteContext = jobWriteContext;
+    this.jobWriteImage = jobWriteImage;
+    this.jobWriteTitle = jobWriteTitle;
     this.writeSpinner = writeSpinner;
-    this.writeSsulContext = writeSsulContext;
-    this.writeSsulTitle = writeSsulTitle;
   }
 
   @Override
@@ -85,15 +86,27 @@ public final class ActivityWriteBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.write_btn;
-      Button writeBtn = ViewBindings.findChildViewById(rootView, id);
-      if (writeBtn == null) {
+      id = R.id.job_write_btn;
+      Button jobWriteBtn = ViewBindings.findChildViewById(rootView, id);
+      if (jobWriteBtn == null) {
         break missingId;
       }
 
-      id = R.id.write_context_linear;
-      LinearLayout writeContextLinear = ViewBindings.findChildViewById(rootView, id);
-      if (writeContextLinear == null) {
+      id = R.id.job_write_context;
+      EditText jobWriteContext = ViewBindings.findChildViewById(rootView, id);
+      if (jobWriteContext == null) {
+        break missingId;
+      }
+
+      id = R.id.job_write_image;
+      ImageView jobWriteImage = ViewBindings.findChildViewById(rootView, id);
+      if (jobWriteImage == null) {
+        break missingId;
+      }
+
+      id = R.id.job_write_title;
+      EditText jobWriteTitle = ViewBindings.findChildViewById(rootView, id);
+      if (jobWriteTitle == null) {
         break missingId;
       }
 
@@ -103,20 +116,8 @@ public final class ActivityWriteBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.write_ssul_context;
-      EditText writeSsulContext = ViewBindings.findChildViewById(rootView, id);
-      if (writeSsulContext == null) {
-        break missingId;
-      }
-
-      id = R.id.write_ssul_title;
-      EditText writeSsulTitle = ViewBindings.findChildViewById(rootView, id);
-      if (writeSsulTitle == null) {
-        break missingId;
-      }
-
-      return new ActivityWriteBinding((LinearLayout) rootView, jobEpilogueSpinnerCategory, writeBtn,
-          writeContextLinear, writeSpinner, writeSsulContext, writeSsulTitle);
+      return new ActivityWriteBinding((LinearLayout) rootView, jobEpilogueSpinnerCategory,
+          jobWriteBtn, jobWriteContext, jobWriteImage, jobWriteTitle, writeSpinner);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

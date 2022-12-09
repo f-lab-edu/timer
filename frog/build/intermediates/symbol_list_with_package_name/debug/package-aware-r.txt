@@ -2117,6 +2117,10 @@ id italic
 id item_touch_helper_previous_elevation
 id job_epilogue
 id job_epilogue_spinner_category
+id job_write_btn
+id job_write_context
+id job_write_image
+id job_write_title
 id join_btn
 id jumpToEnd
 id jumpToStart
@@ -2309,7 +2313,6 @@ id square
 id src_atop
 id src_in
 id src_over
-id ssul_spinner
 id standard
 id start
 id startHorizontal
@@ -2393,11 +2396,7 @@ id withinBounds
 id wrap
 id wrap_content
 id wrap_content_constrained
-id write_btn
-id write_context_linear
 id write_spinner
-id write_ssul_context
-id write_ssul_title
 id x_left
 id x_right
 id zero_corner_chip
@@ -2462,6 +2461,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detail
 layout activity_login_join
 layout activity_main
 layout activity_nick_name

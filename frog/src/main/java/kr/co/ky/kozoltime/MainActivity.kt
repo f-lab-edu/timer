@@ -3,15 +3,12 @@ package kr.co.ky.kozoltime
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.core.content.ContextCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import navigation.CommunityFragment
-import navigation.DetailViewFragment
+import navigation.MyPage
 import navigation.FindJobFragment
 import navigation.JobEpilogueFragment
-import android.Manifest
-import androidx.core.app.ActivityCompat
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -20,7 +17,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
             when (p0.itemId) {
                 R.id.action_home -> {
-                    var detailViewFragment = DetailViewFragment()
+                    var detailViewFragment = MyPage()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame, detailViewFragment).commit()
                     return true

@@ -45,11 +45,6 @@ class CommunityWriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.write_community_activity)
 
-        ssul_spinner.adapter = ArrayAdapter.createFromResource(this,
-            R.array.itemList,
-            android.R.layout.simple_spinner_item)
-        ssul_spinner.prompt = getString(R.string.job_select)
-
         community_ssul_image.setOnClickListener {
             when {
                 ContextCompat.checkSelfPermission(this,
@@ -71,6 +66,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                 if (firebaseUri != null) {
                     val fileName = "IMAGE_${SingleDate.invoke()}_.png"
                     val imageRef = storage.reference.child("image/").child(fileName)
+
                     imageRef.putFile(firebaseUri!!)
                         .continueWithTask { task: Task<UploadTask.TaskSnapshot> ->
                             return@continueWithTask imageRef.downloadUrl
@@ -81,7 +77,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                                 id = fbAuth.currentUser?.email,
                                 uid = fbAuth.currentUser?.uid,
                                 imageUri = it.toString(),
-                                timestamp = System.currentTimeMillis(),
+                                timestamp = SingleDate.invoke(),
                                 document = fileName
                             )
 
@@ -95,14 +91,18 @@ class CommunityWriteActivity : AppCompatActivity() {
 
 
                 } else {
+                    val fileName = "IMAGE_${SingleDate.invoke()}_.png"
+
                     val writeData = hashMapOf(
                         "id" to fbAuth.currentUser?.email,
                         "title" to community_ssul_title.text.toString(),
                         "context" to community_ssul_context.text.toString(),
-                        "timestamp" to System.currentTimeMillis()
+                        "uid" to fbAuth.currentUser?.uid,
+                        "timestamp" to System.currentTimeMillis(),
+                        "document" to fileName
                     )
                     val bucket = fbFirestore.collection("community")
-                    bucket.document().set(writeData).addOnSuccessListener {
+                    bucket.document(fileName).set(writeData).addOnSuccessListener {
                         Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
                     }
                         .addOnFailureListener {

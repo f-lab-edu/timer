@@ -57,7 +57,7 @@
     <string name="logout">로그 아웃</string>
     <string name="my_writing">내가 쓴 글</string>
     <string name="like">좋아요</string>
-    
+
     <!-- nick -->
     <string name="overlap">중복 확인</string>
     <string name="nick_write">닉네임을 입력하세요.</string>

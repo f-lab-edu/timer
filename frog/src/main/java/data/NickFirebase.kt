@@ -9,7 +9,6 @@ import com.google.firebase.ktx.Firebase
 class NickFirebase {
     fun sendNickFirebase(nickCallback: NickCallback) {
         val fbAuth = FirebaseAuth.getInstance()
-        val nickList: MutableList<NickDataClass> = mutableListOf()
         val database = Firebase.firestore
         val email = fbAuth.currentUser?.email
         val firebaseCollection = database.collection("nickname")

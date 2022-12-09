@@ -18,7 +18,7 @@ import kotlin.properties.Delegates
 
 class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    var uid = FirebaseAuth.getInstance().currentUser?.uid
+    private val uid = FirebaseAuth.getInstance().currentUser?.uid
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -49,16 +49,10 @@ class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val co
         }
 
         viewHolder.like_image.setOnClickListener {
-
-            if (collection == "kozoltime") {
                 likeInterface.ClickLike(collection,communityList, position)
-
-            } else if (collection == "community") {
-                likeInterface.ClickLike(collection, communityList, position)
-
-            }
         }
-        if(communityList[position].like.containsKey(uid)){
+
+        if(uid?.let { communityList[position].like?.containsKey(it) } == true){
             viewHolder.like_image.setImageResource(R.drawable.ic_favorite)
         } else {
             viewHolder.like_image.setImageResource(R.drawable.ic_favorite_border)

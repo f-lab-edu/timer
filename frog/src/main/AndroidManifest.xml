@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Kozoltime"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="kr.co.ky.detail.detailPage"
+            android:name="kr.co.ky.detail.DetailPage"
             android:exported="false" />
         <activity
             android:name="kr.co.ky.nicknamePackage.NickNameActivity"

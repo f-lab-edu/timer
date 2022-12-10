@@ -5,6 +5,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import data.TimeCallback
 import kr.co.ky.community.CommunityDataClass
+import kr.co.ky.firestoreKey.FirestoreKey
 
 class Like:LikeInterface {
     override fun ClickLike(collection:String, documentList: MutableList<CommunityDataClass>, position:Int) {
@@ -15,7 +16,7 @@ class Like:LikeInterface {
 
         firestore.runTransaction { transaction ->
 
-            var uid = FirebaseAuth.getInstance().currentUser?.uid
+            var uid = FirestoreKey.auth.currentUser?.uid
             var communityDataClass = doc?.let { transaction.get(it).toObject(CommunityDataClass::class.java) }
 
             if (communityDataClass?.like!!.containsKey(uid)) {

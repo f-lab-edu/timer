@@ -28,7 +28,7 @@ class FirebaseData(){
                         title = document["title"] as? String,
                         imageUri = document["imageUri"] as? String,
                         spinner = document["spinner"] as? String,
-                        timestamp = document["timestamp"] ,
+                        singleDate = document["singleDate"] as? String,
                         document = document["document"] as? String,
                         likeCount = document["likeCount"] as? Long,
                         like = document["like"] as? MutableMap<String, Boolean>)

@@ -18,13 +18,15 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_login_join.*
 import kotlinx.android.synthetic.main.activity_login_join.google_button
+import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.MainActivity
 import kr.co.ky.kozoltime.R
 
 class LoginJoinActivity : AppCompatActivity() {
-    var auth: FirebaseAuth = FirebaseAuth.getInstance()
+    var auth = FirestoreKey.auth
     var googleSignInClient: GoogleSignInClient? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

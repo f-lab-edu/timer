@@ -22,11 +22,12 @@ import kotlinx.android.synthetic.main.write_community_activity.*
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.community.CommunityWriteActivity
 import kr.co.ky.community.SingleDate
+import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.office.OfficeActivity
 
 class WriteActivity : AppCompatActivity() {
 
-    private val fbAuth = FirebaseAuth.getInstance()
+    private val fbAuth = FirestoreKey.auth
     private val fbFirestore = FirebaseFirestore.getInstance()
     var firebaseUri: Uri? = null
     val collection = "kozoltime"
@@ -92,7 +93,7 @@ class WriteActivity : AppCompatActivity() {
                                 id = fbAuth.currentUser?.email,
                                 uid = fbAuth.currentUser?.uid,
                                 imageUri = it.toString(),
-                                timestamp = SingleDate.invoke(),
+                                singleDate = SingleDate.invoke(),
                                 document = fileName,
                                 spinner = writeSpinner
                             )
@@ -111,7 +112,7 @@ class WriteActivity : AppCompatActivity() {
                         "title" to community_ssul_title.text.toString(),
                         "context" to community_ssul_context.text.toString(),
                         "uid" to fbAuth.currentUser?.uid,
-                        "timestamp" to System.currentTimeMillis(),
+                        "singleDate" to System.currentTimeMillis(),
                         "document" to fileName
                     )
                     val bucket = fbFirestore.collection(collection)
@@ -132,8 +133,11 @@ class WriteActivity : AppCompatActivity() {
                 .setTitle("권한이 필요합니다.")
                 .setMessage("사진을 불러오기 위해서 권한이 필요합니다.")
                 .setPositiveButton("동의") { _, _ ->
-                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
-                        1000)
+                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 1000)
+
+                    val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
+                    intent.type = "image/*"
+                    launcher.launch(intent)
                 }
                 .setNegativeButton("취소") { _, _ -> }
                 .create()

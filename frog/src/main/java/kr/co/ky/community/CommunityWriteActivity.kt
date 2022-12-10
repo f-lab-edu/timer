@@ -21,15 +21,16 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.activity_write.*
 import kotlinx.android.synthetic.main.write_community_activity.*
+import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
 import java.text.SimpleDateFormat
 import java.util.*
 
 class CommunityWriteActivity : AppCompatActivity() {
 
-    val fbAuth = FirebaseAuth.getInstance()
+    val fbAuth = FirestoreKey.auth
     val fbFirestore = FirebaseFirestore.getInstance()
-    val storage: FirebaseStorage = FirebaseStorage.getInstance()
+    val storage = FirestoreKey.storage
     var firebaseUri: Uri? = null
     var launcher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
@@ -77,7 +78,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                                 id = fbAuth.currentUser?.email,
                                 uid = fbAuth.currentUser?.uid,
                                 imageUri = it.toString(),
-                                timestamp = SingleDate.invoke(),
+                                singleDate = SingleDate.invoke(),
                                 document = fileName
                             )
 
@@ -98,7 +99,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                         "title" to community_ssul_title.text.toString(),
                         "context" to community_ssul_context.text.toString(),
                         "uid" to fbAuth.currentUser?.uid,
-                        "timestamp" to System.currentTimeMillis(),
+                        "singleDate" to System.currentTimeMillis(),
                         "document" to fileName
                     )
                     val bucket = fbFirestore.collection("community")
@@ -117,8 +118,11 @@ class CommunityWriteActivity : AppCompatActivity() {
                 .setTitle("권한이 필요합니다.")
                 .setMessage("사진을 불러오기 위해서 권한이 필요합니다.")
                 .setPositiveButton("동의") { _, _ ->
-                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
-                        1000)
+                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 1000)
+
+                    val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
+                    intent.type = "image/*"
+                    launcher.launch(intent)
                 }
                 .setNegativeButton("취소") { _, _ -> }
                 .create()

@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.annotation.GlideModule
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.office_cardview.view.*
+import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
 import kr.co.ky.like.Like
 import kr.co.ky.like.LikeInterface
@@ -18,7 +19,7 @@ import kotlin.properties.Delegates
 
 class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private val uid = FirebaseAuth.getInstance().currentUser?.uid
+    val uid = FirestoreKey.auth.currentUser?.uid
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -36,7 +37,7 @@ class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val co
         viewHolder.card_title.text = communityList[position].title
         viewHolder.card_id.text = communityList[position].id
         viewHolder.card_context.text = communityList[position].context
-        viewHolder.card_date.text = communityList[position].timestamp.toString()
+        viewHolder.card_date.text = communityList[position].singleDate
         viewHolder.like_count.text = communityList[position].likeCount.toString()
 
         @GlideModule

@@ -46,7 +46,7 @@
 27-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:17:9-44
 28        <activity
 28-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:18:9-20:40
-29            android:name="kr.co.ky.detail.detailPage"
+29            android:name="kr.co.ky.detail.DetailPage"
 29-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:19:13-54
 30            android:exported="false" />
 30-->/Users/hi-macbook/Desktop/kozol2/frog/src/main/AndroidManifest.xml:20:13-37

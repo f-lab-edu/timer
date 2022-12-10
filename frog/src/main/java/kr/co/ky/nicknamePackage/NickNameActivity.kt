@@ -7,11 +7,12 @@ import androidx.core.widget.addTextChangedListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_nick_name.*
+import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
 
 class NickNameActivity : AppCompatActivity() {
 
-    private val fbAuth = FirebaseAuth.getInstance()
+    private val fbAuth = FirestoreKey.auth
     private val fbFirestore = FirebaseFirestore.getInstance()
     private val emailId = "emailId"
     private val nickname = "nickname"

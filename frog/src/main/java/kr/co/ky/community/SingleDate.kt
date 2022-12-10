@@ -7,7 +7,7 @@ import java.util.*
 object SingleDate {
 
     @SuppressLint("SimpleDateFormat")
-    operator fun invoke(): Any {
+    operator fun invoke(): String {
         return SimpleDateFormat("yyyy.MM.dd_HH:mm:ss").format(Date())
     }
 }

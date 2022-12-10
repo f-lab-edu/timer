@@ -12,7 +12,6 @@ import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import com.google.android.gms.tasks.Task
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.UploadTask
@@ -20,10 +19,10 @@ import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.activity_write.*
 import kotlinx.android.synthetic.main.write_community_activity.*
 import kr.co.ky.community.CommunityDataClass
-import kr.co.ky.community.CommunityWriteActivity
-import kr.co.ky.community.SingleDate
 import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.office.OfficeActivity
+import java.text.SimpleDateFormat
+import java.util.*
 
 class WriteActivity : AppCompatActivity() {
 
@@ -31,6 +30,7 @@ class WriteActivity : AppCompatActivity() {
     private val fbFirestore = FirebaseFirestore.getInstance()
     var firebaseUri: Uri? = null
     val collection = "kozoltime"
+    val dateformat = SimpleDateFormat("yyyy.MM.dd_HH:mm:ss")
     lateinit var writeSpinner:String
     var launcher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
@@ -79,8 +79,9 @@ class WriteActivity : AppCompatActivity() {
                         1000)
                 }
             }
+        }
             job_write_btn.setOnClickListener {
-                val fileName = "kozoltime_${SingleDate.invoke()}"
+                val fileName = dateformat.format(Date())
                 if(firebaseUri != null) {
                     val imageRef = Firebase.storage.reference.child("image/").child(fileName)
                     imageRef.putFile(firebaseUri!!)
@@ -93,7 +94,7 @@ class WriteActivity : AppCompatActivity() {
                                 id = fbAuth.currentUser?.email,
                                 uid = fbAuth.currentUser?.uid,
                                 imageUri = it.toString(),
-                                singleDate = SingleDate.invoke(),
+                                singleDate = fileName,
                                 document = fileName,
                                 spinner = writeSpinner
                             )
@@ -109,10 +110,10 @@ class WriteActivity : AppCompatActivity() {
                 } else{
                     val writeData = hashMapOf(
                         "id" to fbAuth.currentUser?.email,
-                        "title" to community_ssul_title.text.toString(),
-                        "context" to community_ssul_context.text.toString(),
+                        "title" to job_write_title.text.toString(),
+                        "context" to job_write_context.text.toString(),
                         "uid" to fbAuth.currentUser?.uid,
-                        "singleDate" to System.currentTimeMillis(),
+                        "singleDate" to fileName,
                         "document" to fileName
                     )
                     val bucket = fbFirestore.collection(collection)
@@ -127,7 +128,7 @@ class WriteActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-    }
+
         fun showPermissionContextPopup() {
             AlertDialog.Builder(this)
                 .setTitle("권한이 필요합니다.")

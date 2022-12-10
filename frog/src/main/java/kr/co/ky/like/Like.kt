@@ -13,22 +13,21 @@ class Like:LikeInterface {
         val doc = documentList[position].document?.let {
             firestore.collection(collection).document(it)
         }
-
         firestore.runTransaction { transaction ->
 
-            var uid = FirestoreKey.auth.currentUser?.uid
-            var communityDataClass = doc?.let { transaction.get(it).toObject(CommunityDataClass::class.java) }
+            val uid = FirestoreKey.auth.currentUser?.uid
+            val communityDataClass = doc?.let { transaction.get(it).toObject(CommunityDataClass::class.java) }
 
             if (communityDataClass?.like!!.containsKey(uid)) {
                 communityDataClass.likeCount = communityDataClass.likeCount?.minus(1)
-                communityDataClass.like!!.remove(uid)
+                communityDataClass.like.remove(uid)
             } else {
-                communityDataClass.likeCount = communityDataClass?.likeCount?.plus(1)
-                communityDataClass.like!![uid!!] = true
+                communityDataClass.likeCount = communityDataClass.likeCount?.plus(1)
+                communityDataClass.like[uid!!] = true
             }
-            if (doc != null) {
+
                 transaction.set(doc, communityDataClass)
-            }
+
         }
     }
 }

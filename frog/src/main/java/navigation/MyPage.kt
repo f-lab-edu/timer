@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import data.NickCallback
-import data.NickDataClass
 import data.NickFirebase
 import kotlinx.android.synthetic.main.fragment_detail.*
 import kr.co.ky.nicknamePackage.NickNameActivity

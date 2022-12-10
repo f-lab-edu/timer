@@ -28,9 +28,10 @@ import java.util.*
 
 class CommunityWriteActivity : AppCompatActivity() {
 
-    val fbAuth = FirestoreKey.auth
-    val fbFirestore = FirebaseFirestore.getInstance()
-    val storage = FirestoreKey.storage
+    private val fbAuth = FirestoreKey.auth
+    private val fbFirestore = FirebaseFirestore.getInstance()
+    private val storage = FirestoreKey.storage
+    private val dateformat = SimpleDateFormat("yyyy.MM.dd_HH:mm:ss")
     var firebaseUri: Uri? = null
     var launcher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
@@ -55,17 +56,19 @@ class CommunityWriteActivity : AppCompatActivity() {
                     launcher.launch(intent)
 
                 }
-                    shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
-                        showPermissionContextPopup()
-                    }
-                    else -> {
-                        requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
-                            1000)
-                    }
+                shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
+                    showPermissionContextPopup()
+                }
+                else -> {
+                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                        1000)
+                }
+            }
             }
             community_btn.setOnClickListener {
+                val fileName = dateformat.format(Date())
+
                 if (firebaseUri != null) {
-                    val fileName = "IMAGE_${SingleDate.invoke()}_.png"
                     val imageRef = storage.reference.child("image/").child(fileName)
 
                     imageRef.putFile(firebaseUri!!)
@@ -78,7 +81,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                                 id = fbAuth.currentUser?.email,
                                 uid = fbAuth.currentUser?.uid,
                                 imageUri = it.toString(),
-                                singleDate = SingleDate.invoke(),
+                                singleDate = fileName,
                                 document = fileName
                             )
 
@@ -92,14 +95,13 @@ class CommunityWriteActivity : AppCompatActivity() {
 
 
                 } else {
-                    val fileName = "IMAGE_${SingleDate.invoke()}_.png"
 
                     val writeData = hashMapOf(
                         "id" to fbAuth.currentUser?.email,
                         "title" to community_ssul_title.text.toString(),
                         "context" to community_ssul_context.text.toString(),
                         "uid" to fbAuth.currentUser?.uid,
-                        "singleDate" to System.currentTimeMillis(),
+                        "singleDate" to fileName,
                         "document" to fileName
                     )
                     val bucket = fbFirestore.collection("community")
@@ -111,7 +113,6 @@ class CommunityWriteActivity : AppCompatActivity() {
                         }
                 }
             }
-        }
     }
         private fun showPermissionContextPopup() {
             AlertDialog.Builder(this)

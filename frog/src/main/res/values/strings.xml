@@ -49,7 +49,7 @@
     <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
     <string name="job_select">직종 선택</string>
     <string name="sharing">꿀팁 공유</string>
-
+    <string name="image">이미지뷰 입니다.</string>
     <!-- my_page -->
     <string name="nick_name">닉네임:</string>
     <string name="frog">개구리</string>

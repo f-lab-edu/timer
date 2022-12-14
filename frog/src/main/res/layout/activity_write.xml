@@ -46,7 +46,9 @@
         android:layout_gravity="center"
         android:src="@drawable/ic_add_a_photo"
         android:padding="60dp"
-        android:background="@color/colorLightGray"/>
+        android:scaleType="centerCrop"
+        android:background="@color/colorLightGray"
+        android:contentDescription="@string/image" />
 
     <Button
         android:id="@+id/job_write_btn"

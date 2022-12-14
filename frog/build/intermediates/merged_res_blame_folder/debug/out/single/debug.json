@@ -128,12 +128,12 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_chat_black.png"
     },
     {
-        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat",
-        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_login_join.xml"
-    },
-    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_splash_layout.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/splash_layout.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_login_join.xml"
     },
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_arrow_back.png.flat",

@@ -14,14 +14,15 @@ import androidx.core.content.ContextCompat
 import com.google.android.gms.tasks.Task
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.UploadTask
-import kotlinx.android.synthetic.main.write_community_activity.*
 import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
+import kr.co.ky.kozoltime.databinding.WriteCommunityActivityBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
 class CommunityWriteActivity : AppCompatActivity() {
 
+    private lateinit var binding: WriteCommunityActivityBinding
     private val fbAuth = FirestoreKey.auth
     private val fbFirestore = FirebaseFirestore.getInstance()
     private val storage = FirestoreKey.storage
@@ -31,22 +32,23 @@ class CommunityWriteActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
             it.data?.data?.let { uri ->
                 firebaseUri = uri
-                community_ssul_image.setImageURI(uri)
+                binding.communitySsulImage.setImageURI(uri)
                 Log.e("text", uri.toString())
             }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.write_community_activity)
-
-        community_ssul_image.setOnClickListener {
+        binding = WriteCommunityActivityBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+        binding.communitySsulImage.setOnClickListener {
             when {
                 ContextCompat.checkSelfPermission(this,
                     android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED -> {
-                    val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
-                    intent.type = "image/*"
-                    launcher.launch(intent)
+                    val intentImage = Intent(Intent.ACTION_OPEN_DOCUMENT)
+                    intentImage.type = "image/*"
+                    launcher.launch(intentImage)
                 }
                 shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
                     showPermissionContextPopup()
@@ -56,7 +58,7 @@ class CommunityWriteActivity : AppCompatActivity() {
                 }
             }
         }
-        community_btn.setOnClickListener {
+        binding.communityBtn.setOnClickListener {
             val fileName = dateformat.format(Date())
 
             if (firebaseUri != null) {
@@ -67,8 +69,8 @@ class CommunityWriteActivity : AppCompatActivity() {
                         return@continueWithTask imageRef.downloadUrl
                     }.addOnSuccessListener {
                         val communityDataClass = CommunityDataClass(
-                            title = community_ssul_title.text.toString(),
-                            context = community_ssul_context.text.toString(),
+                            title = binding.communitySsulTitle.text.toString(),
+                            context = binding.communitySsulContext.text.toString(),
                             id = fbAuth.currentUser?.email,
                             uid = fbAuth.currentUser?.uid,
                             imageUri = it.toString(),
@@ -89,8 +91,8 @@ class CommunityWriteActivity : AppCompatActivity() {
 
                 val writeData = hashMapOf(
                     "id" to fbAuth.currentUser?.email,
-                    "title" to community_ssul_title.text.toString(),
-                    "context" to community_ssul_context.text.toString(),
+                    "title" to binding.communitySsulTitle.text.toString(),
+                    "context" to binding.communitySsulContext.text.toString(),
                     "uid" to fbAuth.currentUser?.uid,
                     "singleDate" to fileName,
                     "document" to fileName
@@ -141,9 +143,9 @@ class CommunityWriteActivity : AppCompatActivity() {
         when (requestCode) {
             1000 -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
-                    intent.type = "image/*"
-                    launcher.launch(intent)
+                    val intentImage = Intent(Intent.ACTION_OPEN_DOCUMENT)
+                    intentImage.type = "image/*"
+                    launcher.launch(intentImage)
                 } else {
                     Toast.makeText(this, "권한을 거부했습니다.", Toast.LENGTH_SHORT).show()
                 }

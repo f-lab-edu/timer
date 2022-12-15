@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_main.*
+import kr.co.ky.kozoltime.databinding.ActivityMainBinding
 import navigation.CommunityFragment
 import navigation.MyPage
 import navigation.FindJobFragment
 import navigation.JobEpilogueFragment
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
-
+        private lateinit var binding: ActivityMainBinding
         val jobEpilogueFragment = JobEpilogueFragment()
         override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 
@@ -48,8 +48,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
-            bottom_navigation.setOnNavigationItemSelectedListener(this)
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            val view = binding.root
+            setContentView(view)
+            binding.bottomNavigation.setOnItemSelectedListener(this)
 
             supportFragmentManager.beginTransaction().replace(R.id.frame,jobEpilogueFragment).commit()
 

@@ -1,67 +1,75 @@
 package kr.co.ky.community
 
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.office_cardview.view.*
+import kotlinx.coroutines.NonDisposableHandle.parent
 import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
+import kr.co.ky.kozoltime.databinding.OfficeCardviewBinding
 import kr.co.ky.like.Like
 import kr.co.ky.like.LikeInterface
 import kotlin.properties.Delegates
 
-class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface): RecyclerView.Adapter<CommunityAdapter.ViewHolder>() {
 
     val uid = FirestoreKey.auth.currentUser?.uid
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    val option = RequestOptions().error(R.drawable.ic_add_a_photo)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.office_cardview, parent, false)
-        return ViewHolder(view)
+        val binding = OfficeCardviewBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        return ViewHolder(binding)
     }
-    inner class ViewHolder(view: View): RecyclerView.ViewHolder(view){
+    inner class ViewHolder(private val binding: OfficeCardviewBinding): RecyclerView.ViewHolder(binding.root){
+        val likeImage = binding.likeImage
+        fun bind(title:String?,id:String?,date:String?,likeCount:String?) {
+            binding.cardTitle.text = title
+            binding.cardId.text = id
+            binding.cardDate.text = date
+            binding.likeCount.text = likeCount
+            Glide.with(itemView)
+                .load(communityList[bindingAdapterPosition].imageUri)
+                .apply(option)
+                .into(binding.cardImage)
 
-    }
-
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-
-        val viewHolder = (holder as ViewHolder).itemView
-
-        viewHolder.card_title.text = communityList[position].title
-        viewHolder.card_id.text = communityList[position].id
-        viewHolder.card_context.text = communityList[position].context
-        viewHolder.card_date.text = communityList[position].singleDate
-        viewHolder.like_count.text = communityList[position].likeCount.toString()
-
-        @GlideModule
-        if (communityList[position].imageUri != null) {
-            Glide.with(holder.itemView)
-                .load(communityList[position].imageUri)
-                .into(viewHolder.card_image)
-        } else {
-            Log.d("null", "null")
         }
 
-        viewHolder.like_image.setOnClickListener {
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+//        val viewHolder = (holder as ViewHolder).itemView
+        if (communityList[position].imageUri != null) {
+            holder.bind(communityList[position].title,
+                communityList[position].id,
+                communityList[position].singleDate,
+                communityList[position].likeCount.toString())
+        }
+
+
+        holder.likeImage.setOnClickListener {
                 likeInterface.ClickLike(collection,communityList, position)
         }
 
         if(uid?.let { communityList[position].like?.containsKey(it) } == true){
-            viewHolder.like_image.setImageResource(R.drawable.ic_favorite)
+            holder.likeImage.setImageResource(R.drawable.ic_favorite)
         } else {
-            viewHolder.like_image.setImageResource(R.drawable.ic_favorite_border)
+            holder.likeImage.setImageResource(R.drawable.ic_favorite_border)
         }
     }
 
     override fun getItemCount(): Int {
         return communityList.size
     }
-
 }

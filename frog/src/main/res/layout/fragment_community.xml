@@ -6,51 +6,67 @@
     <LinearLayout
         android:id="@+id/community_linear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
-        <EditText
-            android:id="@+id/community_edit"
-            android:layout_width="320dp"
-            android:layout_height="50dp"/>
-        <Button
-            android:id="@+id/community_search_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_searching"
-            android:paddingLeft="30dp"
-            android:background="@color/purple"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/community_linear2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/community_linear"
-        app:layout_constraintStart_toStartOf="parent">
+
         <TextView
             android:id="@+id/community_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/community"
             android:textStyle="bold"
-            android:textSize="25sp"
-            android:layout_margin="5dp"/>
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/community_search_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/ic_baseline_search"
+            android:background="@drawable/no_color_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/community_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/light_purple"
+        app:layout_constraintTop_toBottomOf="@id/community_linear"
+        app:layout_constraintStart_toStartOf="parent">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
         <Button
             android:id="@+id/legend_community_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/legend_post"
             android:textStyle="bold"
+            android:layout_gravity="center"
             android:background="@color/purple_700"
             android:textColor="@color/white" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
         <Button
             android:id="@+id/new_community_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/new_post"
             android:textStyle="bold"
-            android:background="@color/purple"
+            android:layout_gravity="center"
+            android:background="@color/purple_500"
             android:textColor="@color/white" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/community_rv"

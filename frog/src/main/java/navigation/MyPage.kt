@@ -9,39 +9,38 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import data.NickCallback
 import data.NickFirebase
-import kotlinx.android.synthetic.main.fragment_detail.*
 import kr.co.ky.nicknamePackage.NickNameActivity
 import kr.co.ky.kozoltime.R
+import kr.co.ky.kozoltime.databinding.FragmentDetailBinding
 
 class MyPage : Fragment(){
+    private var _binding: FragmentDetailBinding? = null
+    private val binding get() = _binding!!
     private val nickFirebase = NickFirebase()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = LayoutInflater.from(activity).inflate(R.layout.fragment_detail,container,false)
+        _binding = FragmentDetailBinding.inflate(inflater,container,false)
+        val view = binding.root
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        nick_btn.setOnClickListener{
+        binding.nickBtn.setOnClickListener{
             val intent = Intent(activity, NickNameActivity::class.java)
             startActivity(intent)
         }
-        logout_btn.setOnClickListener{
+        binding.logoutBtn.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
         }
         nickFirebase.sendNickFirebase(object : NickCallback{
             override fun setNickTextView(nick: String?) {
-                nick_tv.setText(nick)
+                binding.nickTv.setText(nick)
             }
     })
-
-        var message = this.arguments?.getString("nickname")
-
-
     }
 
 }

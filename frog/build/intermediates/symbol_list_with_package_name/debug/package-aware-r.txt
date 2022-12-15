@@ -1301,6 +1301,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_purple
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2526,9 +2527,11 @@ drawable ic_account
 drawable ic_add
 drawable ic_add_a_photo
 drawable ic_arrow_back
+drawable ic_baseline_search
 drawable ic_chat_black
 drawable ic_clock_black_24dp
 drawable ic_community
+drawable ic_error_background
 drawable ic_favorite
 drawable ic_favorite_border
 drawable ic_find_job
@@ -2576,6 +2579,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_overlay
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable no_color_button
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2706,7 +2710,6 @@ id cache_measures
 id callMeasure
 id cancel_action
 id cancel_button
-id card_context
 id card_date
 id card_id
 id card_image
@@ -2720,6 +2723,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chat_count
 id chat_image
 id checkbox
 id checked
@@ -2738,7 +2742,6 @@ id closest
 id collapseActionView
 id community
 id community_btn
-id community_edit
 id community_linear
 id community_linear2
 id community_rv
@@ -2837,6 +2840,7 @@ id gone
 id google_button
 id graph
 id graph_wrap
+id grid_button
 id group_divider
 id grouping
 id groups
@@ -2845,7 +2849,6 @@ id header_title
 id hideable
 id home
 id homeAsUp
-id home_edit
 id home_linear
 id home_search_btn
 id honorRequest
@@ -2866,8 +2869,10 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id job_cardview
 id job_epilogue
 id job_epilogue_spinner_category
+id job_linear
 id job_write_btn
 id job_write_context
 id job_write_image

@@ -19,37 +19,39 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.storage.FirebaseStorage
-import kotlinx.android.synthetic.main.activity_login_join.*
-import kotlinx.android.synthetic.main.activity_login_join.google_button
 import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.MainActivity
 import kr.co.ky.kozoltime.R
+import kr.co.ky.kozoltime.databinding.ActivityLoginJoinBinding
 
 class LoginJoinActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginJoinBinding
     var auth = FirestoreKey.auth
     var googleSignInClient: GoogleSignInClient? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_join)
-        login_btn.setOnClickListener {
-            if (id_edit.length() == 0 && password_edit.length() == 0) {
+        binding = ActivityLoginJoinBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+        binding.loginBtn.setOnClickListener {
+            if (binding.idEdit.length() == 0 && binding.passwordEdit.length() == 0) {
                 detectEmailAndPasswordEmpty()
             } else {
                 signinAndSignup()
             }
         }
-        google_button.setOnClickListener {
+        binding.googleButton.setOnClickListener {
             googleLogin()
         }
-        join_btn.setOnClickListener {
-            if (id_edit.length() == 0 && password_edit.length() == 0) {
+        binding.joinBtn.setOnClickListener {
+            if (binding.idEdit.length() == 0 && binding.passwordEdit.length() == 0) {
                 detectEmailAndPasswordEmpty()
             } else {
                 signinEmail()
             }
         }
-        just_look_btn.setOnClickListener {
+        binding.justLookBtn.setOnClickListener {
             guestMoveMainPage()
         }
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -96,8 +98,8 @@ class LoginJoinActivity : AppCompatActivity() {
 
     fun signinAndSignup() {
         auth.signInWithEmailAndPassword(
-            id_edit.text.toString(),
-            password_edit.text.toString()
+            binding.idEdit.text.toString(),
+            binding.passwordEdit.text.toString()
         ).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 moveMainPage(task.result?.user)
@@ -111,8 +113,8 @@ class LoginJoinActivity : AppCompatActivity() {
 
     fun signinEmail() {
         auth.createUserWithEmailAndPassword(
-            id_edit.text.toString(),
-            password_edit.text.toString()
+            binding.idEdit.text.toString(),
+            binding.passwordEdit.text.toString()
         ).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 moveMainPage(task.result?.user)
@@ -138,23 +140,23 @@ class LoginJoinActivity : AppCompatActivity() {
     }
 
     private fun detectEmailAndPasswordEmpty() {
-        login_btn.isEnabled = false
-        join_btn.isEnabled = false
+        binding.loginBtn.isEnabled = false
+        binding.joinBtn.isEnabled = false
 
-        id_edit.addTextChangedListener {
-            val email = id_edit.text.toString()
-            val password = password_edit.text.toString()
+        binding.idEdit.addTextChangedListener {
+            val email = binding.idEdit.text.toString()
+            val password = binding.passwordEdit.text.toString()
             var enabled = email.isNotEmpty() && password.isNotEmpty()
-            login_btn.isEnabled = enabled
-            join_btn.isEnabled = enabled
+            binding.loginBtn.isEnabled = enabled
+            binding.joinBtn.isEnabled = enabled
         }
 
-        password_edit.addTextChangedListener {
-            val email = id_edit.text.toString()
-            val password = password_edit.text.toString()
+        binding.passwordEdit.addTextChangedListener {
+            val email = binding.idEdit.text.toString()
+            val password = binding.passwordEdit.text.toString()
             var enabled = email.isNotEmpty() && password.isNotEmpty()
-            login_btn.isEnabled = enabled
-            join_btn.isEnabled = enabled
+            binding.loginBtn.isEnabled = enabled
+            binding.joinBtn.isEnabled = enabled
         }
     }
 }

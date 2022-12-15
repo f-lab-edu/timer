@@ -7,12 +7,6 @@
     android:orientation="vertical"
     tools:context=".WriteActivity">
 
-        <Spinner
-            android:id="@+id/ssul_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingVertical="10dp"
-            android:spinnerMode="dialog" />
 
         <EditText
             android:id="@+id/community_ssul_title"

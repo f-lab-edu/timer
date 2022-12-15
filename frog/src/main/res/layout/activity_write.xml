@@ -20,35 +20,38 @@
     <Spinner
         android:id="@+id/write_spinner"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingVertical="10dp"
-        android:spinnerMode="dialog" />
+        android:entries="@array/itemList"
+        android:layout_height="50dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/write_context_linear"
+    <EditText
+        android:id="@+id/job_write_title"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:orientation="vertical"
-        android:layout_margin="5dp">
-        <EditText
-            android:id="@+id/write_ssul_title"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="text"
-            android:hint="@string/title_plz"/>
-        <EditText
-            android:id="@+id/write_ssul_context"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/context_plz"
-            android:gravity="top"
-            android:inputType="text" />
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:hint="@string/title_plz"/>
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/job_write_context"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="@string/context_plz"
+        android:gravity="top"
+        android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/job_write_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_a_photo"
+        android:padding="60dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorLightGray"
+        android:contentDescription="@string/image" />
 
     <Button
-        android:id="@+id/write_btn"
+        android:id="@+id/job_write_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sharing"

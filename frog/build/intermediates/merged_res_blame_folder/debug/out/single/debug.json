@@ -20,6 +20,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_find_job.xml"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_error_background.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_error_background.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_add.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_add.xml"
     },
@@ -52,6 +56,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/lens.png"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_baseline_search.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_baseline_search.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_community.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_community.xml"
     },
@@ -78,6 +86,10 @@
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_community.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_community.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_detail.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_detail.xml"
     },
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_find_job.xml.flat",
@@ -112,6 +124,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_office.xml"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_no_color_button.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/no_color_button.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_nick_name.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_nick_name.xml"
     },
@@ -124,12 +140,12 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_chat_black.png"
     },
     {
-        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat",
-        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_login_join.xml"
-    },
-    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_splash_layout.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/splash_layout.xml"
+    },
+    {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_login_join.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_login_join.xml"
     },
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_arrow_back.png.flat",

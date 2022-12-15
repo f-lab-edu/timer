@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,9 +22,6 @@ import kr.co.ky.kozoltime.R;
 public final class FragmentCommunityBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
-
-  @NonNull
-  public final EditText communityEdit;
 
   @NonNull
   public final LinearLayout communityLinear;
@@ -52,13 +48,11 @@ public final class FragmentCommunityBinding implements ViewBinding {
   public final Button newCommunityBtn;
 
   private FragmentCommunityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText communityEdit, @NonNull LinearLayout communityLinear,
-      @NonNull LinearLayout communityLinear2, @NonNull RecyclerView communityRv,
-      @NonNull Button communitySearchBtn, @NonNull TextView communityTv,
-      @NonNull FloatingActionButton fabWriteCommunity, @NonNull Button legendCommunityBtn,
-      @NonNull Button newCommunityBtn) {
+      @NonNull LinearLayout communityLinear, @NonNull LinearLayout communityLinear2,
+      @NonNull RecyclerView communityRv, @NonNull Button communitySearchBtn,
+      @NonNull TextView communityTv, @NonNull FloatingActionButton fabWriteCommunity,
+      @NonNull Button legendCommunityBtn, @NonNull Button newCommunityBtn) {
     this.rootView = rootView;
-    this.communityEdit = communityEdit;
     this.communityLinear = communityLinear;
     this.communityLinear2 = communityLinear2;
     this.communityRv = communityRv;
@@ -96,12 +90,6 @@ public final class FragmentCommunityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.community_edit;
-      EditText communityEdit = ViewBindings.findChildViewById(rootView, id);
-      if (communityEdit == null) {
-        break missingId;
-      }
-
       id = R.id.community_linear;
       LinearLayout communityLinear = ViewBindings.findChildViewById(rootView, id);
       if (communityLinear == null) {
@@ -150,9 +138,9 @@ public final class FragmentCommunityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCommunityBinding((ConstraintLayout) rootView, communityEdit,
-          communityLinear, communityLinear2, communityRv, communitySearchBtn, communityTv,
-          fabWriteCommunity, legendCommunityBtn, newCommunityBtn);
+      return new FragmentCommunityBinding((ConstraintLayout) rootView, communityLinear,
+          communityLinear2, communityRv, communitySearchBtn, communityTv, fabWriteCommunity,
+          legendCommunityBtn, newCommunityBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

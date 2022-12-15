@@ -10,40 +10,44 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import data.DataListener
 import data.FirebaseData
-import kotlinx.android.synthetic.main.fragment_community.*
 import kr.co.ky.community.CommunityAdapter
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.community.CommunityWriteActivity
 import kr.co.ky.kozoltime.*
+import kr.co.ky.kozoltime.databinding.FragmentCommunityBinding
 import kr.co.ky.like.Like
 
 
 class CommunityFragment : Fragment(){
     private val firebaseData = FirebaseData()
+    private var _binding: FragmentCommunityBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = LayoutInflater.from(activity).inflate(R.layout.fragment_community,container,false)
+        _binding = FragmentCommunityBinding.inflate(inflater,container,false)
+        val view = binding.root
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val path = "community"
-        community_rv.layoutManager = LinearLayoutManager(activity)
+        binding.communityRv.layoutManager = LinearLayoutManager(activity)
+
         firebaseData.receiveFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
                 val like = Like()
-                community_rv.adapter = CommunityAdapter(mutableList,path,like)
-                (community_rv.adapter as CommunityAdapter).notifyDataSetChanged()
+                binding.communityRv.adapter = CommunityAdapter(mutableList,path,like)
+                (binding.communityRv.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }
         })
 
-        fabWrite_community.setOnClickListener{
+        binding.fabWriteCommunity.setOnClickListener{
             val intent = Intent(context, CommunityWriteActivity::class.java)
             startActivity(intent)
         }

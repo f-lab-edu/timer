@@ -18,7 +18,7 @@ class FirebaseData(){
         val communityList: MutableList<CommunityDataClass> = mutableListOf()
         val database = Firebase.firestore
         @Suppress("UNCHECKED_CAST")
-        database.collection(path).addSnapshotListener { snapshots, e ->
+        database.collection(path).addSnapshotListener { snapshots, _ ->
             communityList.clear()
             if (snapshots != null) {
                 for (document in snapshots) {
@@ -27,16 +27,17 @@ class FirebaseData(){
                         context = document["context"] as? String,
                         title = document["title"] as? String,
                         imageUri = document["imageUri"] as? String,
-                        timestamp = document["timestamp"] as? Long,
+                        spinner = document["spinner"] as? String,
+                        singleDate = document["singleDate"] as? String,
                         document = document["document"] as? String,
-                        likeCount = document["likeCount"] as Long,
-                        like = document["like"] as MutableMap<String, Boolean>)
+                        likeCount = document["likeCount"] as? Long,
+                        like = document["like"] as? MutableMap<String, Boolean>)
 
                     communityList.add(item)
                     finishedCallback.adapter(communityList)
                 }
             }
-      }
+        }
     }
 }
 

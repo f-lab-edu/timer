@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,7 +22,7 @@ public final class FragmentJobEpilogueBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText homeEdit;
+  public final GridLayout gridButton;
 
   @NonNull
   public final LinearLayout homeLinear;
@@ -36,11 +36,11 @@ public final class FragmentJobEpilogueBinding implements ViewBinding {
   @NonNull
   public final Button officeBtn;
 
-  private FragmentJobEpilogueBinding(@NonNull ConstraintLayout rootView, @NonNull EditText homeEdit,
-      @NonNull LinearLayout homeLinear, @NonNull Button homeSearchBtn,
-      @NonNull LinearLayout mainContent, @NonNull Button officeBtn) {
+  private FragmentJobEpilogueBinding(@NonNull ConstraintLayout rootView,
+      @NonNull GridLayout gridButton, @NonNull LinearLayout homeLinear,
+      @NonNull Button homeSearchBtn, @NonNull LinearLayout mainContent, @NonNull Button officeBtn) {
     this.rootView = rootView;
-    this.homeEdit = homeEdit;
+    this.gridButton = gridButton;
     this.homeLinear = homeLinear;
     this.homeSearchBtn = homeSearchBtn;
     this.mainContent = mainContent;
@@ -74,9 +74,9 @@ public final class FragmentJobEpilogueBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.home_edit;
-      EditText homeEdit = ViewBindings.findChildViewById(rootView, id);
-      if (homeEdit == null) {
+      id = R.id.grid_button;
+      GridLayout gridButton = ViewBindings.findChildViewById(rootView, id);
+      if (gridButton == null) {
         break missingId;
       }
 
@@ -104,7 +104,7 @@ public final class FragmentJobEpilogueBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentJobEpilogueBinding((ConstraintLayout) rootView, homeEdit, homeLinear,
+      return new FragmentJobEpilogueBinding((ConstraintLayout) rootView, gridButton, homeLinear,
           homeSearchBtn, mainContent, officeBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);

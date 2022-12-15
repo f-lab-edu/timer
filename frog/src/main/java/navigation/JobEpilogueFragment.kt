@@ -5,18 +5,23 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.GridLayout
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_job_epilogue.*
 import kr.co.ky.kozoltime.R
+import kr.co.ky.kozoltime.databinding.FragmentJobEpilogueBinding
 import kr.co.ky.office.OfficeActivity
 
 class JobEpilogueFragment : Fragment(){
+
+    private var _binding:FragmentJobEpilogueBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = LayoutInflater.from(activity).inflate(R.layout.fragment_job_epilogue,container,false)
+        _binding = FragmentJobEpilogueBinding.inflate(inflater,container,false)
+        val view = binding.root
         return view
 
 
@@ -25,7 +30,7 @@ class JobEpilogueFragment : Fragment(){
     override fun onStart() {
         super.onStart()
 
-        office_btn.setOnClickListener{
+        binding.officeBtn.setOnClickListener{
             val intent = Intent(activity, OfficeActivity::class.java)
             startActivity(intent)
         }

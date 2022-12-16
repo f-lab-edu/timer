@@ -16,6 +16,8 @@ kr/co/ky/kozoltime/databinding/ActivityMainBinding.java
  kr.co.ky.kozoltime.databinding.ActivityMainBinding
 kr/co/ky/kozoltime/BuildConfig.java
  kr.co.ky.kozoltime.BuildConfig
+kr/co/ky/kozoltime/databinding/ActivitySearchBinding.java
+ kr.co.ky.kozoltime.databinding.ActivitySearchBinding
 kr/co/ky/kozoltime/databinding/FragmentFindJobBinding.java
  kr.co.ky.kozoltime.databinding.FragmentFindJobBinding
 kr/co/ky/kozoltime/databinding/ActivityDetailBinding.java

@@ -69,7 +69,7 @@
             android:layout_weight="1"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/community_rv"
+        android:id="@+id/community_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/community_linear2"/>

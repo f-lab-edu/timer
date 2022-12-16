@@ -30,7 +30,7 @@ public final class FragmentCommunityBinding implements ViewBinding {
   public final LinearLayout communityLinear2;
 
   @NonNull
-  public final RecyclerView communityRv;
+  public final RecyclerView communityRecyclerview;
 
   @NonNull
   public final Button communitySearchBtn;
@@ -49,13 +49,13 @@ public final class FragmentCommunityBinding implements ViewBinding {
 
   private FragmentCommunityBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout communityLinear, @NonNull LinearLayout communityLinear2,
-      @NonNull RecyclerView communityRv, @NonNull Button communitySearchBtn,
+      @NonNull RecyclerView communityRecyclerview, @NonNull Button communitySearchBtn,
       @NonNull TextView communityTv, @NonNull FloatingActionButton fabWriteCommunity,
       @NonNull Button legendCommunityBtn, @NonNull Button newCommunityBtn) {
     this.rootView = rootView;
     this.communityLinear = communityLinear;
     this.communityLinear2 = communityLinear2;
-    this.communityRv = communityRv;
+    this.communityRecyclerview = communityRecyclerview;
     this.communitySearchBtn = communitySearchBtn;
     this.communityTv = communityTv;
     this.fabWriteCommunity = fabWriteCommunity;
@@ -102,9 +102,9 @@ public final class FragmentCommunityBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.community_rv;
-      RecyclerView communityRv = ViewBindings.findChildViewById(rootView, id);
-      if (communityRv == null) {
+      id = R.id.community_recyclerview;
+      RecyclerView communityRecyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (communityRecyclerview == null) {
         break missingId;
       }
 
@@ -139,8 +139,8 @@ public final class FragmentCommunityBinding implements ViewBinding {
       }
 
       return new FragmentCommunityBinding((ConstraintLayout) rootView, communityLinear,
-          communityLinear2, communityRv, communitySearchBtn, communityTv, fabWriteCommunity,
-          legendCommunityBtn, newCommunityBtn);
+          communityLinear2, communityRecyclerview, communitySearchBtn, communityTv,
+          fabWriteCommunity, legendCommunityBtn, newCommunityBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

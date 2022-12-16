@@ -36,6 +36,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_job_epilogue.xml"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search.xml",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_search.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_community.xml",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_community.xml"
     },

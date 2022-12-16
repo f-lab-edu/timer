@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import kr.co.ky.kozoltime.R
 import kr.co.ky.kozoltime.databinding.FragmentJobEpilogueBinding
 import kr.co.ky.office.OfficeActivity
+import kr.co.ky.search.SearchActivity
 
 class JobEpilogueFragment : Fragment(){
 
@@ -29,10 +30,13 @@ class JobEpilogueFragment : Fragment(){
 
     override fun onStart() {
         super.onStart()
-
+        binding.homeSearchBtn.setOnClickListener{
+            val intentSearch = Intent(activity, SearchActivity::class.java)
+            startActivity(intentSearch)
+        }
         binding.officeBtn.setOnClickListener{
-            val intent = Intent(activity, OfficeActivity::class.java)
-            startActivity(intent)
+            val intentOffice = Intent(activity, OfficeActivity::class.java)
+            startActivity(intentOffice)
         }
     }
 }

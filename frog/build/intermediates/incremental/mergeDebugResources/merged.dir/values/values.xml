@@ -14,8 +14,11 @@
         <item>간호조무사</item>
         <item>배달부</item>
         <item>기타등등</item>
-
-
+    </string-array>
+    <string-array name="searchList">
+        <item>커뮤니티</item>
+        <item>취업 후기</item>
+        <item>구인구직</item>
     </string-array>
     <attr format="enum" name="animateCircleAngleTo">
         <enum name="bestChoice" value="0"/>
@@ -855,6 +858,7 @@
     <color name="test_color">#000</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
+    <color name="very_light_purple">#00A0A8EF</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
@@ -1676,6 +1680,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="community">커뮤니티</string>
+    <string name="communityKey">community</string>
     <string name="context">context</string>
     <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
@@ -1695,6 +1700,7 @@
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
     <string name="fb_login_protocol_scheme">fb873009302900995</string>
+    <string name="findJobKey">findJob</string>
     <string name="find_job">구인란</string>
     <string name="firebase_database_url" translatable="false">https://firebase-adminsdk-s1vjx@kozoltime.iam.gserviceaccount.com</string>
     <string name="frog">개구리</string>
@@ -1712,6 +1718,7 @@
     <string name="item_view_role_description">Tab</string>
     <string name="job_select">직종 선택</string>
     <string name="join">이메일로 회원가입</string>
+    <string name="kozoltimeKey">kozoltime</string>
     <string name="label">Label</string>
     <string name="legend_post">레전드</string>
     <string name="like">좋아요</string>
@@ -1807,6 +1814,7 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="project_id" translatable="false">kozoltime</string>
     <string name="public_official">공무원</string>
+    <string name="search">검색어를 입력하세요.</string>
     <string name="search_menu_title">Search</string>
     <string name="service">서비스업</string>
     <string name="sharing">꿀팁 공유</string>

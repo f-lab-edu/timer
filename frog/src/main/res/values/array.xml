@@ -14,8 +14,10 @@
         <item>간호조무사</item>
         <item>배달부</item>
         <item>기타등등</item>
-
-
     </string-array>
-
+    <string-array name="searchList">
+        <item>커뮤니티</item>
+        <item>취업 후기</item>
+        <item>구인구직</item>
+    </string-array>
 </resources>

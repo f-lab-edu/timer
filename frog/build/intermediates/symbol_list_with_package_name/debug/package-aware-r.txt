@@ -64,6 +64,7 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array itemList
+array searchList
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -1810,6 +1811,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color very_light_purple
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2531,7 +2533,6 @@ drawable ic_baseline_search
 drawable ic_chat_black
 drawable ic_clock_black_24dp
 drawable ic_community
-drawable ic_error_background
 drawable ic_favorite
 drawable ic_favorite_border
 drawable ic_find_job
@@ -2744,7 +2745,7 @@ id community
 id community_btn
 id community_linear
 id community_linear2
-id community_rv
+id community_recyclerview
 id community_search_btn
 id community_ssul_context
 id community_ssul_image
@@ -3038,10 +3039,14 @@ id search_badge
 id search_bar
 id search_button
 id search_close_btn
+id search_edit
 id search_edit_frame
 id search_go_btn
+id search_linear
 id search_mag_icon
 id search_plate
+id search_recyclerview
+id search_spinner
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
@@ -3258,6 +3263,7 @@ layout activity_login_join
 layout activity_main
 layout activity_nick_name
 layout activity_office
+layout activity_search
 layout activity_write
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3430,6 +3436,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string community
+string communityKey
 string context
 string context_plz
 string copy_toast_msg
@@ -3449,6 +3456,7 @@ string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string fb_login_protocol_scheme
+string findJobKey
 string find_job
 string firebase_database_url
 string frog
@@ -3466,6 +3474,7 @@ string it
 string item_view_role_description
 string job_select
 string join
+string kozoltimeKey
 string label
 string legend_post
 string like
@@ -3561,6 +3570,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string public_official
+string search
 string search_menu_title
 string service
 string sharing

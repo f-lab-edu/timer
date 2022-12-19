@@ -3046,7 +3046,6 @@ id search_linear
 id search_mag_icon
 id search_plate
 id search_recyclerview
-id search_spinner
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
@@ -3069,6 +3068,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner_for_search
 id spline
 id split_action_bar
 id spread

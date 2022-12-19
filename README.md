@@ -7,10 +7,8 @@
 4. 고졸 취준생들의 고민을 나눌수 있는 고민 페이지
 
 ## 사용 기술 
-1. MVVM 패턴
-2. rest api
-3. kotlin
-4. firebase
+1. kotlin
+2. firebase
 
 ## 프로젝트 목표
 1. 앱을 출시하는 것

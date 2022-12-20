@@ -1825,6 +1825,7 @@
     <string name="ssul">취업 후기</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title">title</string>
+    <string name="title_colon">제목 : </string>
     <string name="title_plz">제목</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

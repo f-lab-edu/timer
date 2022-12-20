@@ -2716,6 +2716,7 @@ id card_id
 id card_image
 id card_title
 id carryVelocity
+id categoty_textview
 id center
 id centerCrop
 id centerInside
@@ -2828,6 +2829,7 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
+id fixed_title
 id flip
 id floating
 id forever
@@ -3284,9 +3286,9 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_community
-layout fragment_detail
 layout fragment_find_job
 layout fragment_job_epilogue
+layout fragment_my_page
 layout fragment_new_office
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3581,6 +3583,7 @@ string sports
 string ssul
 string status_bar_notification_info_overflow
 string title
+string title_colon
 string title_plz
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

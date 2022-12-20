@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/home_linear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
@@ -19,7 +19,8 @@
             android:textStyle="bold"
             android:textSize="35sp"
             android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"/>
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -29,7 +30,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:drawableStart="@drawable/ic_baseline_search"
-            android:background="@drawable/no_color_button"/>
+            android:background="@drawable/no_color_button"
+            android:layout_marginTop="15dp"/>
 
     </LinearLayout>
 

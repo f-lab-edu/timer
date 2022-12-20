@@ -4,11 +4,11 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -25,13 +25,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigation;
 
   @NonNull
-  public final FrameLayout frame;
+  public final FragmentContainerView frame;
 
   @NonNull
   public final LinearLayout navDivision;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigation, @NonNull FrameLayout frame,
+      @NonNull BottomNavigationView bottomNavigation, @NonNull FragmentContainerView frame,
       @NonNull LinearLayout navDivision) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
@@ -73,7 +73,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.frame;
-      FrameLayout frame = ViewBindings.findChildViewById(rootView, id);
+      FragmentContainerView frame = ViewBindings.findChildViewById(rootView, id);
       if (frame == null) {
         break missingId;
       }

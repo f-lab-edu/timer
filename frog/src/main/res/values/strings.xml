@@ -68,4 +68,7 @@
     <string name="communityKey">community</string>
     <string name="kozoltimeKey">kozoltime</string>
     <string name="findJobKey">findJob</string>
+
+    <!-- detail activity -->
+    <string name="title_colon">제목 : </string>
 </resources>

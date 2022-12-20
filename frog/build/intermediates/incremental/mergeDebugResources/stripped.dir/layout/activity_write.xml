@@ -29,6 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:inputType="text"
+        android:maxLength="40"
+        android:ellipsize="end"
         android:hint="@string/title_plz"/>
 
     <EditText

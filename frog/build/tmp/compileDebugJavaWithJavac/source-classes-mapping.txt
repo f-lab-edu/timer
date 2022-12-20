@@ -1,5 +1,7 @@
 kr/co/ky/kozoltime/databinding/ActivityNickNameBinding.java
  kr.co.ky.kozoltime.databinding.ActivityNickNameBinding
+kr/co/ky/kozoltime/databinding/FragmentMyPageBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentMyPageBinding
 kr/co/ky/kozoltime/databinding/SplashLayoutBinding.java
  kr.co.ky.kozoltime.databinding.SplashLayoutBinding
 kr/co/ky/kozoltime/databinding/FragmentNewOfficeBinding.java
@@ -22,8 +24,6 @@ kr/co/ky/kozoltime/databinding/FragmentFindJobBinding.java
  kr.co.ky.kozoltime.databinding.FragmentFindJobBinding
 kr/co/ky/kozoltime/databinding/ActivityDetailBinding.java
  kr.co.ky.kozoltime.databinding.ActivityDetailBinding
-kr/co/ky/kozoltime/databinding/FragmentDetailBinding.java
- kr.co.ky.kozoltime.databinding.FragmentDetailBinding
 kr/co/ky/kozoltime/databinding/FragmentJobEpilogueBinding.java
  kr.co.ky.kozoltime.databinding.FragmentJobEpilogueBinding
 kr/co/ky/kozoltime/databinding/OfficeCardviewBinding.java

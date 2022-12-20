@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import data.FirebaseData
@@ -20,7 +19,7 @@ class SearchActivity : AppCompatActivity() {
     private val firebaseData = FirebaseData()
     private val firestore = FirebaseFirestore.getInstance()
     private lateinit var binding: ActivitySearchBinding
-    lateinit var spinnerForSearch: String
+    lateinit var spinnerTextValue: String
     private var searchList: MutableList<CommunityDataClass> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,24 +45,24 @@ class SearchActivity : AppCompatActivity() {
             ) {
                 when (position) {
                     0 -> {
-                        spinnerForSearch = getString(R.string.communityKey)
+                        spinnerTextValue = getString(R.string.communityKey)
                     }
                     1 -> {
-                        spinnerForSearch = getString(R.string.kozoltimeKey)
+                        spinnerTextValue = getString(R.string.kozoltimeKey)
                     }
                     2 -> {
-                        spinnerForSearch = getString(R.string.findJobKey)
+                        spinnerTextValue = getString(R.string.findJobKey)
                     }
 
                 }
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                spinnerForSearch = getString(R.string.ssul)
+                spinnerTextValue = getString(R.string.ssul)
             }
         })
         binding.searchButton.setOnClickListener {
-            firestore.collection(spinnerForSearch)
+            firestore.collection(spinnerTextValue)
                 .whereLessThanOrEqualTo("context",binding.searchEdit.text.toString())
                 .get()
                 .addOnCompleteListener {
@@ -77,16 +76,13 @@ class SearchActivity : AppCompatActivity() {
                 }
                         val like = Like()
                         binding.searchRecyclerview.adapter =
-                            CommunityAdapter(searchList, spinnerForSearch, like)
+                            CommunityAdapter(searchList, spinnerTextValue, like)
                         binding.searchRecyclerview.layoutManager = LinearLayoutManager(this)
                         (binding.searchRecyclerview.adapter as CommunityAdapter).notifyDataSetChanged()
 
 
                     }
                 }
-            fun failToSearch(){
-                Toast.makeText(this,"검색어가 없습니다.",Toast.LENGTH_LONG).show()
-            }
         }
 
 

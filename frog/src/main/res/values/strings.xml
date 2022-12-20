@@ -62,4 +62,13 @@
     <string name="overlap">중복 확인</string>
     <string name="nick_write">닉네임을 입력하세요.</string>
     <string name="com">community</string>
+
+    <!-- search -->
+    <string name="search">검색어를 입력하세요.</string>
+    <string name="communityKey">community</string>
+    <string name="kozoltimeKey">kozoltime</string>
+    <string name="findJobKey">findJob</string>
+
+    <!-- detail activity -->
+    <string name="title_colon">제목 : </string>
 </resources>

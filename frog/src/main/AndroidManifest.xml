@@ -16,6 +16,13 @@
         android:theme="@style/Theme.Kozoltime"
         android:usesCleartextTraffic="true">
         <activity
+            android:name="kr.co.ky.search.SearchActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="kr.co.ky.detail.DetailPage"
             android:exported="false" />
         <activity

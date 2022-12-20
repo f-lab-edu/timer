@@ -17,25 +17,25 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
             when (p0.itemId) {
                 R.id.action_home -> {
-                    var detailViewFragment = MyPage()
+                    val detailViewFragment = MyPage()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame, detailViewFragment).commit()
                     return true
                 }
                 R.id.job_epilogue -> {
-                    var jobEpilogueFragment = JobEpilogueFragment()
+                    val jobEpilogueFragment = JobEpilogueFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame, jobEpilogueFragment).commit()
                     return true
                 }
                 R.id.community -> {
-                    var communityFragment = CommunityFragment()
+                    val communityFragment = CommunityFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame, communityFragment).commit()
                     return true
                 }
                 R.id.find_job -> {
-                    var findJobFragment = FindJobFragment()
+                    val findJobFragment = FindJobFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame, findJobFragment).commit()
                     return true

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_my_page.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_my_page.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_home2.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_home2.xml"
     },
@@ -18,10 +22,6 @@
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_find_job.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_find_job.xml"
-    },
-    {
-        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_error_background.xml.flat",
-        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_error_background.xml"
     },
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_add.xml.flat",
@@ -132,12 +132,12 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_nick_name.xml"
     },
     {
-        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_fragment_detail.xml.flat",
-        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/fragment_detail.xml"
-    },
-    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/drawable_ic_chat_black.png.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_chat_black.png"
+    },
+    {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_activity_search.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_search.xml"
     },
     {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_splash_layout.xml.flat",

@@ -11,10 +11,11 @@ import data.NickCallback
 import data.NickFirebase
 import kr.co.ky.nicknamePackage.NickNameActivity
 import kr.co.ky.kozoltime.R
-import kr.co.ky.kozoltime.databinding.FragmentDetailBinding
+import kr.co.ky.kozoltime.databinding.FragmentMyPageBinding
+
 
 class MyPage : Fragment(){
-    private var _binding: FragmentDetailBinding? = null
+    private var _binding: FragmentMyPageBinding? = null
     private val binding get() = _binding!!
     private val nickFirebase = NickFirebase()
     override fun onCreateView(
@@ -22,7 +23,7 @@ class MyPage : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDetailBinding.inflate(inflater,container,false)
+        _binding = FragmentMyPageBinding.inflate(inflater,container,false)
         val view = binding.root
         return view
     }

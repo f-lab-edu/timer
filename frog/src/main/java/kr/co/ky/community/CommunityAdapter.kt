@@ -49,14 +49,10 @@ class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val co
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-//        val viewHolder = (holder as ViewHolder).itemView
-        if (communityList[position].imageUri != null) {
             holder.bind(communityList[position].title,
                 communityList[position].id,
                 communityList[position].singleDate,
                 communityList[position].likeCount.toString())
-        }
-
 
         holder.likeImage.setOnClickListener {
                 likeInterface.ClickLike(collection,communityList, position)

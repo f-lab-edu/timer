@@ -16,6 +16,7 @@ import kr.co.ky.community.CommunityWriteActivity
 import kr.co.ky.kozoltime.*
 import kr.co.ky.kozoltime.databinding.FragmentCommunityBinding
 import kr.co.ky.like.Like
+import kr.co.ky.search.SearchActivity
 
 
 class CommunityFragment : Fragment(){
@@ -35,21 +36,26 @@ class CommunityFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val path = "community"
-        binding.communityRv.layoutManager = LinearLayoutManager(activity)
+
+        binding.communitySearchBtn.setOnClickListener{
+            val intentSearch = Intent(context, SearchActivity::class.java)
+            startActivity(intentSearch)
+        }
+        binding.communityRecyclerview.layoutManager = LinearLayoutManager(activity)
 
         firebaseData.receiveFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
                 val like = Like()
-                binding.communityRv.adapter = CommunityAdapter(mutableList,path,like)
-                (binding.communityRv.adapter as CommunityAdapter).notifyDataSetChanged()
+                binding.communityRecyclerview.adapter = CommunityAdapter(mutableList,path,like)
+                (binding.communityRecyclerview.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }
         })
 
         binding.fabWriteCommunity.setOnClickListener{
-            val intent = Intent(context, CommunityWriteActivity::class.java)
-            startActivity(intent)
+            val intentCommunity = Intent(context, CommunityWriteActivity::class.java)
+            startActivity(intentCommunity)
         }
     }
 

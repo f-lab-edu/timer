@@ -13,9 +13,9 @@ data class CommunityDataClass(val title : String? = null,
                               var likeCount : Long? = 0,
                               val like : MutableMap<String,Boolean>? = HashMap()){
     data class Comment(val uid : String? = null,
-                       val id : String? = null,
+                       val nickname : String? = null,
                        val comment : String? = null,
-                       val timestamp : Long? = null)
+                       val singleDate: String? = null)
 
 
 }

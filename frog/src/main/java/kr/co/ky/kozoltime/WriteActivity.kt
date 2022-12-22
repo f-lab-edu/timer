@@ -29,7 +29,7 @@ class WriteActivity : AppCompatActivity() {
     private val fbAuth = FirestoreKey.auth
     private val fbFirestore = FirebaseFirestore.getInstance()
     var firebaseUri: Uri? = null
-    val collection = "kozoltime"
+    val collection = "office"
     val dateformat = SimpleDateFormat("yyyy.MM.dd_HH:mm:ss")
     lateinit var writeSpinner:String
     var launcher =

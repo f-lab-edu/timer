@@ -18,6 +18,7 @@ class MyPage : Fragment(){
     private var _binding: FragmentMyPageBinding? = null
     private val binding get() = _binding!!
     private val nickFirebase = NickFirebase()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -39,7 +40,7 @@ class MyPage : Fragment(){
         }
         nickFirebase.sendNickFirebase(object : NickCallback{
             override fun setNickTextView(nick: String?) {
-                binding.nickTv.setText(nick)
+                binding.nickTv.text = nick
             }
     })
     }

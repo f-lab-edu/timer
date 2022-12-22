@@ -71,4 +71,7 @@
 
     <!-- detail activity -->
     <string name="title_colon">제목 : </string>
+    <string name="nickname">닉네임</string>
+    <string name="date_colon">날  짜 : </string>
+    <string name="chat">댓글을 입력하세요.</string>
 </resources>

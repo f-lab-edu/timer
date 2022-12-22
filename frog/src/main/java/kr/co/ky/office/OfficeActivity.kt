@@ -28,7 +28,7 @@ class OfficeActivity : AppCompatActivity() {
             val intent = Intent(this, WriteActivity::class.java)
             startActivity(intent)
         }
-        val path = "kozoltime"
+        val path = "office"
         binding.officeRv.layoutManager = LinearLayoutManager(this@OfficeActivity)
 
         firebaseData.receiveFirebase(path, object : DataListener() {

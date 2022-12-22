@@ -24,7 +24,8 @@
         </activity>
         <activity
             android:name="kr.co.ky.detail.DetailPage"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTop"/>
         <activity
             android:name="kr.co.ky.nicknamePackage.NickNameActivity"
             android:exported="false" />

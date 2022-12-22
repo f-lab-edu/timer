@@ -1,12 +1,72 @@
 package kr.co.ky.detail
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.firestore.FirebaseFirestore
+import data.DetailFirebase
+import data.DetailListener
+import data.NickCallback
+import data.NickFirebase
+import kr.co.ky.community.CommunityDataClass
+import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
+import kr.co.ky.kozoltime.databinding.ActivityDetailBinding
+import kr.co.ky.kozoltime.databinding.DetailCardviewBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 class DetailPage : AppCompatActivity() {
+
+    private lateinit var binding: ActivityDetailBinding
+    private var userNickname: String? = null
+    private val dateformat = SimpleDateFormat("yyyy.MM.dd_HH:mm:ss")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail)
+        binding = ActivityDetailBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        val receivedIntent = getIntent()
+        val page = receivedIntent.getStringExtra("page")
+        val documentFromAdapter = receivedIntent.getStringExtra("document")
+
+        if (page != null && documentFromAdapter != null) {
+            DetailFirebase().receiveDetailFirebase(page, documentFromAdapter, object : DetailListener {
+                override fun detail(mutableDetailList: MutableList<CommunityDataClass.Comment>) {
+                    binding.detailPageChatRecyclerview.layoutManager = LinearLayoutManager(binding.detailPageChatRecyclerview.context)
+                    binding.detailPageChatRecyclerview.adapter = DetailAdapter(mutableDetailList)
+                    (binding.detailPageChatRecyclerview.adapter as DetailAdapter).notifyDataSetChanged()
+                }
+            })
+        } else {
+            Toast.makeText(this,"정보를 불러오는 데 실패하였습니다.",Toast.LENGTH_SHORT).show()
+        }
+
+        binding.chatButton.setOnClickListener {
+
+            val comment = CommunityDataClass.Comment(
+                uid = FirestoreKey.auth.currentUser?.uid,
+                nickname = userNickname.toString(),
+                comment = binding.detailPageChatEditText.text.toString(),
+                singleDate = dateformat.format(Date()))
+
+            if (page != null && documentFromAdapter != null) {
+                FirebaseFirestore.getInstance().collection(page).document(documentFromAdapter)
+                    .collection("comments").document().set(comment)
+                finish()
+            } else {
+                Toast.makeText(this, "댓글 입력에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }

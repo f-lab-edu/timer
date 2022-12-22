@@ -20,6 +20,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/activity_nick_name.xml"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/detail_cardview.xml",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/detail_cardview.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/office_cardview.xml",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/office_cardview.xml"
     },

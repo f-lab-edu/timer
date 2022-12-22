@@ -2725,6 +2725,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chat_button
 id chat_count
 id chat_image
 id checkbox
@@ -2780,6 +2781,16 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detail_cardview
+id detail_cardview_context
+id detail_cardview_date
+id detail_cardview_nickname
+id detail_page_chat_editText
+id detail_page_chat_recyclerview
+id detail_page_date
+id detail_page_image
+id detail_page_nickname
+id detail_page_title
 id dialog_button
 id dimensions
 id direct
@@ -2829,6 +2840,8 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
+id fixed_date
+id fixed_nickname
 id fixed_title
 id flip
 id floating
@@ -3285,6 +3298,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout detail_cardview
 layout fragment_community
 layout fragment_find_job
 layout fragment_job_epilogue
@@ -3415,6 +3429,7 @@ string bottomsheet_action_expand_halfway
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string chat
 string chip_text
 string clear_text_end_icon_content_description
 string cleric
@@ -3443,6 +3458,7 @@ string context
 string context_plz
 string copy_toast_msg
 string date
+string date_colon
 string default_web_client_id
 string delivery
 string ect
@@ -3561,6 +3577,7 @@ string next_join
 string nick_name
 string nick_setting
 string nick_write
+string nickname
 string nurse
 string office
 string overlap

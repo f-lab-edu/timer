@@ -193,23 +193,23 @@ public final class CommunityDataClass {
         return null;
     }
     
-    @kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B5\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\bJ\u000b\u0010\u0010\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u0011\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003\u00a2\u0006\u0002\u0010\rJ>\u0010\u0014\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u00c6\u0001\u00a2\u0006\u0002\u0010\u0015J\u0013\u0010\u0016\u001a\u00020\u00172\b\u0010\u0018\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u0019\u001a\u00020\u001aH\u00d6\u0001J\t\u0010\u001b\u001a\u00020\u0003H\u00d6\u0001R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\nR\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\b\f\u0010\rR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\n\u00a8\u0006\u001c"}, d2 = {"Lkr/co/ky/community/CommunityDataClass$Comment;", "", "uid", "", "id", "comment", "timestamp", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V", "getComment", "()Ljava/lang/String;", "getId", "getTimestamp", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getUid", "component1", "component2", "component3", "component4", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)Lkr/co/ky/community/CommunityDataClass$Comment;", "equals", "", "other", "hashCode", "", "toString", "frog_debug"})
+    @kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B5\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0002\u0010\u0007J\u000b\u0010\r\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u000e\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u0010\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J9\u0010\u0011\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003H\u00c6\u0001J\u0013\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u0015\u001a\u00020\u0016H\u00d6\u0001J\t\u0010\u0017\u001a\u00020\u0003H\u00d6\u0001R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\tR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\tR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\t\u00a8\u0006\u0018"}, d2 = {"Lkr/co/ky/community/CommunityDataClass$Comment;", "", "uid", "", "nickname", "comment", "singleDate", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getComment", "()Ljava/lang/String;", "getNickname", "getSingleDate", "getUid", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "", "toString", "frog_debug"})
     public static final class Comment {
         @org.jetbrains.annotations.Nullable()
         private final java.lang.String uid = null;
         @org.jetbrains.annotations.Nullable()
-        private final java.lang.String id = null;
+        private final java.lang.String nickname = null;
         @org.jetbrains.annotations.Nullable()
         private final java.lang.String comment = null;
         @org.jetbrains.annotations.Nullable()
-        private final java.lang.Long timestamp = null;
+        private final java.lang.String singleDate = null;
         
         @org.jetbrains.annotations.NotNull()
         public final kr.co.ky.community.CommunityDataClass.Comment copy(@org.jetbrains.annotations.Nullable()
         java.lang.String uid, @org.jetbrains.annotations.Nullable()
-        java.lang.String id, @org.jetbrains.annotations.Nullable()
+        java.lang.String nickname, @org.jetbrains.annotations.Nullable()
         java.lang.String comment, @org.jetbrains.annotations.Nullable()
-        java.lang.Long timestamp) {
+        java.lang.String singleDate) {
             return null;
         }
         
@@ -236,9 +236,9 @@ public final class CommunityDataClass {
         
         public Comment(@org.jetbrains.annotations.Nullable()
         java.lang.String uid, @org.jetbrains.annotations.Nullable()
-        java.lang.String id, @org.jetbrains.annotations.Nullable()
+        java.lang.String nickname, @org.jetbrains.annotations.Nullable()
         java.lang.String comment, @org.jetbrains.annotations.Nullable()
-        java.lang.Long timestamp) {
+        java.lang.String singleDate) {
             super();
         }
         
@@ -258,7 +258,7 @@ public final class CommunityDataClass {
         }
         
         @org.jetbrains.annotations.Nullable()
-        public final java.lang.String getId() {
+        public final java.lang.String getNickname() {
             return null;
         }
         
@@ -273,12 +273,12 @@ public final class CommunityDataClass {
         }
         
         @org.jetbrains.annotations.Nullable()
-        public final java.lang.Long component4() {
+        public final java.lang.String component4() {
             return null;
         }
         
         @org.jetbrains.annotations.Nullable()
-        public final java.lang.Long getTimestamp() {
+        public final java.lang.String getSingleDate() {
             return null;
         }
     }

@@ -104,6 +104,10 @@
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/drawable/ic_favorite.png"
     },
     {
+        "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_detail_cardview.xml.flat",
+        "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/detail_cardview.xml"
+    },
+    {
         "merged": "/Users/hi-macbook/Desktop/kozol2/frog/build/intermediates/merged_res/debug/layout_write_community_activity.xml.flat",
         "source": "/Users/hi-macbook/Desktop/kozol2/frog/src/main/res/layout/write_community_activity.xml"
     },

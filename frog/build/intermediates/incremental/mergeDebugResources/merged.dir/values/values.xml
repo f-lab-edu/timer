@@ -1657,6 +1657,7 @@
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
+    <string name="chat">댓글을 입력하세요.</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="cleric">성직자</string>
@@ -1685,6 +1686,7 @@
     <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="date">date</string>
+    <string name="date_colon">날  짜 : </string>
     <string name="default_web_client_id" translatable="false">558492715774-09ak4uvi64m0sk2n8m1jc54sh7r0sqel.apps.googleusercontent.com</string>
     <string name="delivery">배달부</string>
     <string name="ect">기타등등</string>
@@ -1803,6 +1805,7 @@
     <string name="nick_name">닉네임:</string>
     <string name="nick_setting">닉네임 설정</string>
     <string name="nick_write">닉네임을 입력하세요.</string>
+    <string name="nickname">닉네임</string>
     <string name="nurse">간호조무사</string>
     <string name="office">사무직</string>
     <string name="overlap">중복 확인</string>

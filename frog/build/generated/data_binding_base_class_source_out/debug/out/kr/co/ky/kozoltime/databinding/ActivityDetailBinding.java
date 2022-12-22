@@ -4,10 +4,14 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -17,24 +21,64 @@ import kr.co.ky.kozoltime.R;
 
 public final class ActivityDetailBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextView categotyTextview;
 
   @NonNull
+  public final Button chatButton;
+
+  @NonNull
+  public final EditText detailPageChatEditText;
+
+  @NonNull
+  public final RecyclerView detailPageChatRecyclerview;
+
+  @NonNull
+  public final TextView detailPageDate;
+
+  @NonNull
+  public final ImageView detailPageImage;
+
+  @NonNull
+  public final TextView detailPageNickname;
+
+  @NonNull
+  public final TextView detailPageTitle;
+
+  @NonNull
+  public final TextView fixedDate;
+
+  @NonNull
+  public final TextView fixedNickname;
+
+  @NonNull
   public final TextView fixedTitle;
 
-  private ActivityDetailBinding(@NonNull LinearLayout rootView, @NonNull TextView categotyTextview,
-      @NonNull TextView fixedTitle) {
+  private ActivityDetailBinding(@NonNull ScrollView rootView, @NonNull TextView categotyTextview,
+      @NonNull Button chatButton, @NonNull EditText detailPageChatEditText,
+      @NonNull RecyclerView detailPageChatRecyclerview, @NonNull TextView detailPageDate,
+      @NonNull ImageView detailPageImage, @NonNull TextView detailPageNickname,
+      @NonNull TextView detailPageTitle, @NonNull TextView fixedDate,
+      @NonNull TextView fixedNickname, @NonNull TextView fixedTitle) {
     this.rootView = rootView;
     this.categotyTextview = categotyTextview;
+    this.chatButton = chatButton;
+    this.detailPageChatEditText = detailPageChatEditText;
+    this.detailPageChatRecyclerview = detailPageChatRecyclerview;
+    this.detailPageDate = detailPageDate;
+    this.detailPageImage = detailPageImage;
+    this.detailPageNickname = detailPageNickname;
+    this.detailPageTitle = detailPageTitle;
+    this.fixedDate = fixedDate;
+    this.fixedNickname = fixedNickname;
     this.fixedTitle = fixedTitle;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -65,13 +109,69 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.chat_button;
+      Button chatButton = ViewBindings.findChildViewById(rootView, id);
+      if (chatButton == null) {
+        break missingId;
+      }
+
+      id = R.id.detail_page_chat_editText;
+      EditText detailPageChatEditText = ViewBindings.findChildViewById(rootView, id);
+      if (detailPageChatEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.detail_page_chat_recyclerview;
+      RecyclerView detailPageChatRecyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (detailPageChatRecyclerview == null) {
+        break missingId;
+      }
+
+      id = R.id.detail_page_date;
+      TextView detailPageDate = ViewBindings.findChildViewById(rootView, id);
+      if (detailPageDate == null) {
+        break missingId;
+      }
+
+      id = R.id.detail_page_image;
+      ImageView detailPageImage = ViewBindings.findChildViewById(rootView, id);
+      if (detailPageImage == null) {
+        break missingId;
+      }
+
+      id = R.id.detail_page_nickname;
+      TextView detailPageNickname = ViewBindings.findChildViewById(rootView, id);
+      if (detailPageNickname == null) {
+        break missingId;
+      }
+
+      id = R.id.detail_page_title;
+      TextView detailPageTitle = ViewBindings.findChildViewById(rootView, id);
+      if (detailPageTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.fixed_date;
+      TextView fixedDate = ViewBindings.findChildViewById(rootView, id);
+      if (fixedDate == null) {
+        break missingId;
+      }
+
+      id = R.id.fixed_nickname;
+      TextView fixedNickname = ViewBindings.findChildViewById(rootView, id);
+      if (fixedNickname == null) {
+        break missingId;
+      }
+
       id = R.id.fixed_title;
       TextView fixedTitle = ViewBindings.findChildViewById(rootView, id);
       if (fixedTitle == null) {
         break missingId;
       }
 
-      return new ActivityDetailBinding((LinearLayout) rootView, categotyTextview, fixedTitle);
+      return new ActivityDetailBinding((ScrollView) rootView, categotyTextview, chatButton,
+          detailPageChatEditText, detailPageChatRecyclerview, detailPageDate, detailPageImage,
+          detailPageNickname, detailPageTitle, fixedDate, fixedNickname, fixedTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

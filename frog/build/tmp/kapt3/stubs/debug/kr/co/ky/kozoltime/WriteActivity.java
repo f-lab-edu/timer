@@ -10,7 +10,7 @@ public final class WriteActivity extends androidx.appcompat.app.AppCompatActivit
     @org.jetbrains.annotations.Nullable()
     private android.net.Uri firebaseUri;
     @org.jetbrains.annotations.NotNull()
-    private final java.lang.String collection = "kozoltime";
+    private final java.lang.String collection = "office";
     @org.jetbrains.annotations.NotNull()
     private final java.text.SimpleDateFormat dateformat = null;
     public java.lang.String writeSpinner;

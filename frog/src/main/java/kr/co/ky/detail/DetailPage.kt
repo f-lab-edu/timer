@@ -53,19 +53,8 @@ class DetailPage : AppCompatActivity() {
         }
 
         binding.chatButton.setOnClickListener {
-
-            val comment = CommunityDataClass.Comment(
-                uid = FirestoreKey.auth.currentUser?.uid,
-                nickname = userNickname.toString(),
-                comment = binding.detailPageChatEditText.text.toString(),
-                singleDate = dateformat.format(Date()))
-
             if (page != null && documentFromAdapter != null) {
-                FirebaseFirestore.getInstance().collection(page).document(documentFromAdapter)
-                    .collection("comments").document().set(comment)
-                finish()
-            } else {
-                Toast.makeText(this, "댓글 입력에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
+                DetailFirebase().sendDetailFirebase(binding.detailPageChatEditText.text.toString(),page,documentFromAdapter)
             }
         }
     }

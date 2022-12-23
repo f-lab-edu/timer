@@ -11,17 +11,17 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import kr.co.ky.cardviewCollection.CardviewInterface
 import kr.co.ky.detail.DetailPage
 import kr.co.ky.firestoreKey.FirestoreKey
 import kr.co.ky.kozoltime.R
 import kr.co.ky.kozoltime.databinding.OfficeCardviewBinding
 import kr.co.ky.like.LikeInterface
 
-class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface): RecyclerView.Adapter<CommunityAdapter.ViewHolder>() {
+class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface,val cardviewInterface: CardviewInterface): RecyclerView.Adapter<CommunityAdapter.ViewHolder>() {
 
     val uid = FirestoreKey.auth.currentUser?.uid
     val option = RequestOptions().error(R.drawable.ic_add_a_photo)
-    lateinit var intent : Intent
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = OfficeCardviewBinding.inflate(LayoutInflater.from(parent.context),parent,false)
@@ -52,19 +52,17 @@ class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val co
         holder.cardView.setOnClickListener {
             when (collection) {
                 "community" -> {
-                    intent = Intent(holder.itemView.context, DetailPage::class.java)
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                    intent.putExtra("page", "community")
-                    intent.putExtra("document",communityList[position].document)
-                    holder.itemView.context.startActivity(intent)
+                    communityList[position].document?.let { it1 ->
+                        cardviewInterface.selectCollection(holder.itemView.context,"community",
+                            it1)
+                    }
                 }
                 "office" -> {
-                    intent = Intent(holder.itemView.context, DetailPage::class.java)
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                    intent.putExtra("page", "office")
-                    intent.putExtra("document",communityList[position].document)
-                    holder.itemView.context.startActivity(intent)
-                }
+                    communityList[position].document?.let { it1 ->
+                        cardviewInterface.selectCollection(holder.itemView.context, "office",
+                            it1)
+                    }
+                  }
                 }
             }
             holder.likeImage.setOnClickListener {

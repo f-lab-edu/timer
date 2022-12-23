@@ -9,7 +9,7 @@ import kr.co.ky.kozoltime.databinding.DetailCardviewBinding
 
 class DetailAdapter(private val detailChatList: MutableList<CommunityDataClass.Comment>):RecyclerView.Adapter<DetailAdapter.ViewHolder>() {
 
-    inner class ViewHolder(val binding: DetailCardviewBinding):RecyclerView.ViewHolder(binding.root){
+    class ViewHolder(val binding: DetailCardviewBinding):RecyclerView.ViewHolder(binding.root){
 
         fun bind(nickname:String?,date:String?,context:String?){
             binding.detailCardviewNickname.text = nickname

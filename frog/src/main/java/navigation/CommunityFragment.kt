@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import data.DataListener
 import data.FirebaseData
+import kr.co.ky.cardviewCollection.CardviewCollection
 import kr.co.ky.community.CommunityAdapter
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.community.CommunityWriteActivity
@@ -51,7 +52,8 @@ class CommunityFragment : Fragment(){
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
                 val like = Like()
-                binding.communityRecyclerview.adapter = CommunityAdapter(mutableList,path,like)
+                val cardviewCollection = CardviewCollection()
+                binding.communityRecyclerview.adapter = CommunityAdapter(mutableList,path,like,cardviewCollection)
                 (binding.communityRecyclerview.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }

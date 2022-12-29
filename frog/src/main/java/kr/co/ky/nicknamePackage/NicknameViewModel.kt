@@ -12,21 +12,20 @@ import kotlinx.coroutines.*
 class NicknameViewModel : ViewModel() {
 
     var _nickState = MutableLiveData<NickDataClass>()
-    val nickState: LiveData<NickDataClass> = _nickState
+    val nickState: LiveData<NickDataClass>
+        get() =_nickState
 
-//    init {
-//        getNick().value?.let { setNickState(it) }
-//        getNick().value?.nickname?.let { Log.d("추가가", it) }
-//    }
-    fun setNickState(value: MutableLiveData<NickDataClass>){
-        _nickState = value
-     Log.d("닉 세팅", _nickState.value.toString())
+    init {
+        getNick()
+    }
+    fun setNickState(value: NickDataClass){
+        _nickState.value = value
     }
 
     fun getNick() {
                 NickFirebase().sendNickFirebase(object : NickCallback {
                     override fun setNickTextView(nick: MutableLiveData<NickDataClass>) {
-                        setNickState(nick)
+                        nick.value?.let { setNickState(it) }
                     }
                 })
         }

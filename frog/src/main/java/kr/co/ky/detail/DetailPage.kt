@@ -44,22 +44,25 @@ class DetailPage : AppCompatActivity() {
         }
 
         binding.chatButton.setOnClickListener {
-            viewModel =
-                ViewModelProvider(viewModelStore, ViewModelFactory()).get(NicknameViewModel::class.java)
-//            val nick = NickFirebase().sendNickFirebase()
-//            nick.let { it1 -> viewModel.setNickState(it1) }
-//            viewModel.nickState.observe(this, Observer {
-//                if (page != null && documentFromAdapter != null) {
-//                    Log.d("뷰모델 안","2")
-//                    it.nickname.let { it1 ->
-//                        DetailFirebase().setDetailview(binding.detailPageChatEditText.text.toString(),
-//                            it1,
-//                            page,
-//                            documentFromAdapter)
-//                    }
-//                }
-//            })
+            viewModel = ViewModelProvider(viewModelStore, ViewModelFactory()).get(NicknameViewModel::class.java)
+            viewModel.nickState.observe(this, Observer {
+                if (page != null && documentFromAdapter != null) {
+                    DetailFirebase().receiveDetailFirebase(page,
+                        documentFromAdapter,
+                        object : DetailListener{
+                            override fun detail(mutableDetailList: MutableList<CommunityDataClass.Comment>) {
+                                it.nickname?.let { it1 ->
+                                    DetailFirebase().setDetailview(binding.detailPageChatEditText.text.toString(),
+                                        it1,
+                                        page,
+                                        documentFromAdapter)
+                                }
+                        }
+                        })
+                }
+            })
         }
     }
 }
+
 

@@ -29,15 +29,10 @@ class NickFirebase {
                                 Log.w("닉네임 파이어 베이스", "Listen failed", e)
                             }
                             if (snapshot != null && snapshot.exists()) {
-                                runBlocking {
-                                    async {
                                         val item =
                                             NickDataClass(nickname = snapshot["nickname"] as? String)
                                         mutableData.value = item
-                                    }.await()
-                                }
-                                nickCallback.setNickTextView(mutableData)
-
+                                        nickCallback.setNickTextView(mutableData)
                             }
                         }
                     } else {

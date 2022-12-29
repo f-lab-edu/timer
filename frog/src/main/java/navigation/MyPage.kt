@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
 import data.NickFirebase
 import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kr.co.ky.nicknamePackage.NickNameActivity
@@ -33,20 +34,10 @@ class MyPage : Fragment(){
     ): View? {
         _binding = FragmentMyPageBinding.inflate(inflater,container,false)
         val view = binding.root
-        viewModel = ViewModelProvider(viewModelStore, ViewModelProvider.NewInstanceFactory())[NicknameViewModel::class.java]
-            runBlocking {
-                launch {
-                    async {
-                        viewModel.getNick()
-                    }.await()
+        viewModel = ViewModelProvider(viewModelStore, ViewModelProvider.NewInstanceFactory()).get(NicknameViewModel::class.java)
                     viewModel.nickState.observe(viewLifecycleOwner, Observer {
-                        Log.d("뷰모델","!")
                         binding.nickTv.text = it.nickname
                     })
-                    Log.d("뷰모델","2")
-                }
-            }
-        viewModel.nickState.value?.let { it.nickname?.let { it1 -> Log.d("뷰모델 값", it1) } }
         return view
     }
 

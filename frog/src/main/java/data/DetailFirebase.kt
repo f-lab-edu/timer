@@ -1,11 +1,6 @@
 package data
 
-import android.util.Log
-import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.ktx.Firebase
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.firestoreKey.FirestoreKey
 import navigation.MyPage
@@ -40,11 +35,11 @@ class DetailFirebase {
 
             }
     }
-    fun sendDetailFirebase(editText:String?,page:String,documentFromAdapter:String){
+    fun setDetailview(commentEditText:String?, nickname:String,page:String, documentFromAdapter:String){
         val comment = CommunityDataClass.Comment(
             uid = FirestoreKey.auth.currentUser?.uid,
-            nickname = MyPage.nickname,
-            comment = editText,
+            nickname = nickname,
+            comment = commentEditText,
             singleDate = dateformat.format(Date()))
 
             FirebaseFirestore.getInstance().collection(page).document(documentFromAdapter)

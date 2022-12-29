@@ -1495,10 +1495,14 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <item name="androidx_compose_ui_view_composition_context" type="id"/>
+    <item name="compose_view_saveable_id_tag" type="id"/>
     <item name="fragment_container_view_tag" type="id"/>
     <item name="ghost_view" type="id"/>
     <item name="ghost_view_holder" type="id"/>
+    <item name="hide_in_inspector_tag" type="id"/>
     <item name="home" type="id"/>
+    <item name="inspection_slot_table_set" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
@@ -1563,6 +1567,7 @@
     <id name="view_tree_saved_state_registry_owner"/>
     <id name="view_tree_view_model_store_owner"/>
     <item name="visible_removing_fragment_view_tag" type="id"/>
+    <item name="wrapped_composition_tag" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
@@ -1661,6 +1666,8 @@
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="cleric">성직자</string>
+    <string name="close_drawer">"Close navigation menu"</string>
+    <string name="close_sheet">"Close sheet"</string>
     <string name="com">community</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
@@ -1687,6 +1694,7 @@
     <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="date">date</string>
     <string name="date_colon">날  짜 : </string>
+    <string name="default_error_message">"Invalid input"</string>
     <string name="default_web_client_id" translatable="false">558492715774-09ak4uvi64m0sk2n8m1jc54sh7r0sqel.apps.googleusercontent.com</string>
     <string name="delivery">배달부</string>
     <string name="ect">기타등등</string>
@@ -1715,6 +1723,8 @@
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="id">id</string>
     <string name="image">이미지뷰 입니다.</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Neither checked nor unchecked</string>
     <string name="influencer">인플루언서</string>
     <string name="it">it 개발자</string>
     <string name="item_view_role_description">Tab</string>
@@ -1800,14 +1810,18 @@
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
     <string name="my_page">프로필</string>
     <string name="my_writing">내가 쓴 글</string>
+    <string name="navigation_menu">"Navigation menu"</string>
     <string name="new_post">새 글</string>
     <string name="next_join">둘러보기</string>
     <string name="nick_name">닉네임:</string>
     <string name="nick_setting">닉네임 설정</string>
     <string name="nick_write">닉네임을 입력하세요.</string>
     <string name="nickname">닉네임</string>
+    <string name="not_selected">Not selected</string>
     <string name="nurse">간호조무사</string>
+    <string name="off">Off</string>
     <string name="office">사무직</string>
+    <string name="on">On</string>
     <string name="overlap">중복 확인</string>
     <string name="password">비밀번호 입력</string>
     <string name="password_toggle_content_description">Show password</string>
@@ -1819,6 +1833,7 @@
     <string name="public_official">공무원</string>
     <string name="search">검색어를 입력하세요.</string>
     <string name="search_menu_title">Search</string>
+    <string name="selected">Selected</string>
     <string name="service">서비스업</string>
     <string name="sharing">꿀팁 공유</string>
     <string name="signin_email">이메일 로그인</string>
@@ -1827,6 +1842,8 @@
     <string name="sports">운동 선수</string>
     <string name="ssul">취업 후기</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent"><ns2:g id="percentage">%1$d</ns2:g> percent.</string>
     <string name="title">title</string>
     <string name="title_colon">제목 : </string>
     <string name="title_plz">제목</string>
@@ -4879,6 +4896,9 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="DialogWindowTheme">
+        <item name="android:windowClipToOutline">false</item>
     </style>
     <style name="EmptyTheme"/>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">

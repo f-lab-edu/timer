@@ -21,7 +21,7 @@ import kr.co.ky.like.LikeInterface
 class CommunityAdapter(var communityList:MutableList<CommunityDataClass>, val collection: String, val likeInterface: LikeInterface,val cardviewInterface: CardviewInterface): RecyclerView.Adapter<CommunityAdapter.ViewHolder>() {
 
     val uid = FirestoreKey.auth.currentUser?.uid
-    val option = RequestOptions().error(R.drawable.ic_add_a_photo)
+    val option = RequestOptions().error(R.drawable.ic_add_a_photo).fallback(R.drawable.ic_add_a_photo).placeholder(R.drawable.ic_add_a_photo)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = OfficeCardviewBinding.inflate(LayoutInflater.from(parent.context),parent,false)

@@ -2678,6 +2678,7 @@ id aligned
 id all
 id allStates
 id always
+id androidx_compose_ui_view_composition_context
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -2753,6 +2754,7 @@ id community_ssul_context
 id community_ssul_image
 id community_ssul_title
 id community_tv
+id compose_view_saveable_id_tag
 id compress
 id confirm_button
 id constraint
@@ -2862,6 +2864,7 @@ id grouping
 id groups
 id guideline
 id header_title
+id hide_in_inspector_tag
 id hideable
 id home
 id homeAsUp
@@ -2881,6 +2884,7 @@ id image
 id immediateStop
 id included
 id info
+id inspection_slot_table_set
 id invisible
 id inward
 id italic
@@ -3176,6 +3180,7 @@ id withinBounds
 id wrap
 id wrap_content
 id wrap_content_constrained
+id wrapped_composition_tag
 id write_spinner
 id x_left
 id x_right
@@ -3433,6 +3438,8 @@ string chat
 string chip_text
 string clear_text_end_icon_content_description
 string cleric
+string close_drawer
+string close_sheet
 string com
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -3459,6 +3466,7 @@ string context_plz
 string copy_toast_msg
 string date
 string date_colon
+string default_error_message
 string default_web_client_id
 string delivery
 string ect
@@ -3487,6 +3495,8 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string id
 string image
+string in_progress
+string indeterminate
 string influencer
 string it
 string item_view_role_description
@@ -3572,14 +3582,18 @@ string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string my_page
 string my_writing
+string navigation_menu
 string new_post
 string next_join
 string nick_name
 string nick_setting
 string nick_write
 string nickname
+string not_selected
 string nurse
+string off
 string office
+string on
 string overlap
 string password
 string password_toggle_content_description
@@ -3591,6 +3605,7 @@ string project_id
 string public_official
 string search
 string search_menu_title
+string selected
 string service
 string sharing
 string signin_email
@@ -3599,6 +3614,8 @@ string social_login
 string sports
 string ssul
 string status_bar_notification_info_overflow
+string tab
+string template_percent
 string title
 string title_colon
 string title_plz
@@ -3874,6 +3891,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogWindowTheme
 style EmptyTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text

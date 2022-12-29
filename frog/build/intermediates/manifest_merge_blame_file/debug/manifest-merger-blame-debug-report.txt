@@ -319,12 +319,38 @@
 172                android:value="androidx.startup" />
 172-->[androidx.emoji2:emoji2:1.0.0] /Users/hi-macbook/.gradle/caches/transforms-3/eb77eb99f43b44110aa09a52f81666ce/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
 173            <meta-data
-173-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/8fa22576d02faa857b246f893f3f845c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+173-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/e1133e6a7ef682dbbc252a781c0e2ddd/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
 174                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-174-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/8fa22576d02faa857b246f893f3f845c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+174-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/e1133e6a7ef682dbbc252a781c0e2ddd/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
 175                android:value="androidx.startup" />
-175-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/hi-macbook/.gradle/caches/transforms-3/8fa22576d02faa857b246f893f3f845c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-176        </provider>
-177    </application>
-178
-179</manifest>
+175-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/hi-macbook/.gradle/caches/transforms-3/e1133e6a7ef682dbbc252a781c0e2ddd/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+176            <meta-data
+176-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:31:13-33:52
+177                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+177-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:32:17-85
+178                android:value="androidx.startup" />
+178-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:33:17-49
+179        </provider>
+180
+181        <receiver
+181-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:36:9-45:20
+182            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+182-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:37:13-76
+183            android:directBootAware="false"
+183-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:38:13-44
+184            android:enabled="true"
+184-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:39:13-35
+185            android:exported="true"
+185-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:40:13-36
+186            android:permission="android.permission.DUMP" >
+186-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:41:13-57
+187            <intent-filter>
+187-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:42:13-44:29
+188                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+188-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:43:17-91
+188-->[androidx.profileinstaller:profileinstaller:1.0.1] /Users/hi-macbook/.gradle/caches/transforms-3/3efe220c914ef765e66de2e472b33542/transformed/jetified-profileinstaller-1.0.1/AndroidManifest.xml:43:25-88
+189            </intent-filter>
+190        </receiver>
+191    </application>
+192
+193</manifest>

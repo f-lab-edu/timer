@@ -9,8 +9,7 @@
 ## 사용 기술 
 1. kotlin
 2. firebase
-3. git flow
-
+3. gitflow
 
 ## 프로젝트 목표
 1. 앱을 출시하는 것

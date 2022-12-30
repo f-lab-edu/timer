@@ -11,6 +11,7 @@ import kotlinx.coroutines.*
 
 class NicknameViewModel : ViewModel() {
 
+    val nickFirebase = NickFirebase()
     var _nickState = MutableLiveData<NickDataClass>()
     val nickState: LiveData<NickDataClass>
         get() =_nickState
@@ -23,7 +24,7 @@ class NicknameViewModel : ViewModel() {
     }
 
     fun getNick() {
-                NickFirebase().sendNickFirebase(object : NickCallback {
+                nickFirebase.sendNickFirebase(object : NickCallback {
                     override fun setNickTextView(nick: MutableLiveData<NickDataClass>) {
                         nick.value?.let { setNickState(it) }
                     }

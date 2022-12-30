@@ -17,7 +17,6 @@ import navigation.JobEpilogueFragment
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
         private lateinit var binding: ActivityMainBinding
         val jobEpilogueFragment = JobEpilogueFragment()
-        private lateinit var viewModel: NicknameViewModel
         override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 
             when (p0.itemId) {

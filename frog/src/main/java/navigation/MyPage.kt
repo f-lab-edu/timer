@@ -2,7 +2,6 @@ package navigation
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,15 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
-import data.NickFirebase
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import kr.co.ky.nicknamePackage.NickNameActivity
 import kr.co.ky.kozoltime.databinding.FragmentMyPageBinding
-import kr.co.ky.nicknamePackage.NickAsync
-import kr.co.ky.nicknamePackage.NickDataClass
 import kr.co.ky.nicknamePackage.NicknameViewModel
 
 
@@ -34,10 +26,12 @@ class MyPage : Fragment(){
     ): View? {
         _binding = FragmentMyPageBinding.inflate(inflater,container,false)
         val view = binding.root
-        viewModel = ViewModelProvider(viewModelStore, ViewModelProvider.NewInstanceFactory()).get(NicknameViewModel::class.java)
+
+            viewModel = ViewModelProvider(viewModelStore, ViewModelProvider.NewInstanceFactory()).get(NicknameViewModel::class.java)
                     viewModel.nickState.observe(viewLifecycleOwner, Observer {
                         binding.nickTv.text = it.nickname
                     })
+
         return view
     }
 

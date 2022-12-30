@@ -19,6 +19,7 @@ class DetailPage : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
     private lateinit var viewModel: NicknameViewModel
     var nick :String? = null
+    val detailFirebase = DetailFirebase()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
@@ -51,7 +52,7 @@ class DetailPage : AppCompatActivity() {
 
         binding.chatButton.setOnClickListener {
                 if (page != null && documentFromAdapter != null && nick != null) {
-                    DetailFirebase().setDetailview(binding.detailPageChatEditText.text.toString(),
+                    detailFirebase.setDetailview(binding.detailPageChatEditText.text.toString(),
                                         nick!!,
                                         page,
                                         documentFromAdapter)

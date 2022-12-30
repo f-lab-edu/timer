@@ -1,17 +1,10 @@
 package data
 
-import android.content.ContentValues.TAG
 import android.util.Log
 import androidx.lifecycle.*
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.withContext
 import kr.co.ky.firestoreKey.FirestoreKey
-import kr.co.ky.nicknamePackage.NickDataClass
-import kr.co.ky.nicknamePackage.NicknameViewModel
 import kotlinx.coroutines.*
 
 class NickFirebase {

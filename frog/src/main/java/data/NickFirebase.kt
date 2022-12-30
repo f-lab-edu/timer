@@ -6,6 +6,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kr.co.ky.firestoreKey.FirestoreKey
 import kotlinx.coroutines.*
+import kr.co.ky.nicknamePackage.NickDataClass
 
 class NickFirebase {
 

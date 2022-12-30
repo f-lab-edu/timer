@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import data.*
 import kr.co.ky.community.CommunityDataClass
+import kr.co.ky.kozoltime.R
 import kr.co.ky.kozoltime.databinding.ActivityDetailBinding
 import kr.co.ky.nicknamePackage.NicknameViewModel
 import kr.co.ky.nicknamePackage.ViewModelFactory
@@ -17,6 +18,7 @@ class DetailPage : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
     private lateinit var viewModel: NicknameViewModel
+    var nick :String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
@@ -27,6 +29,10 @@ class DetailPage : AppCompatActivity() {
         val page = receivedIntent.getStringExtra("page")
         val documentFromAdapter = receivedIntent.getStringExtra("document")
 
+        viewModel = ViewModelProvider(viewModelStore, ViewModelFactory()).get(NicknameViewModel::class.java)
+        viewModel.nickState.observe(this, Observer {
+            nick = it.nickname
+        })
         if (page != null && documentFromAdapter != null) {
             DetailFirebase().receiveDetailFirebase(page,
                 documentFromAdapter,
@@ -44,25 +50,15 @@ class DetailPage : AppCompatActivity() {
         }
 
         binding.chatButton.setOnClickListener {
-            viewModel = ViewModelProvider(viewModelStore, ViewModelFactory()).get(NicknameViewModel::class.java)
-            viewModel.nickState.observe(this, Observer {
-                if (page != null && documentFromAdapter != null) {
-                    DetailFirebase().receiveDetailFirebase(page,
-                        documentFromAdapter,
-                        object : DetailListener{
-                            override fun detail(mutableDetailList: MutableList<CommunityDataClass.Comment>) {
-                                it.nickname?.let { it1 ->
-                                    DetailFirebase().setDetailview(binding.detailPageChatEditText.text.toString(),
-                                        it1,
+                if (page != null && documentFromAdapter != null && nick != null) {
+                    DetailFirebase().setDetailview(binding.detailPageChatEditText.text.toString(),
+                                        nick!!,
                                         page,
                                         documentFromAdapter)
                                 }
-                        }
-                        })
                 }
-            })
         }
     }
-}
+
 
 

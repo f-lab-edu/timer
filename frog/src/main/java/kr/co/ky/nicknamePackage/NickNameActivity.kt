@@ -17,6 +17,7 @@ class NickNameActivity : AppCompatActivity() {
     private val fbFirestore = FirebaseFirestore.getInstance()
     private val emailId = "emailId"
     private val nickname = "nickname"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNickNameBinding.inflate(layoutInflater)
@@ -73,8 +74,8 @@ class NickNameActivity : AppCompatActivity() {
 
         binding.nickEdit.addTextChangedListener {
             val nick = binding.nickEdit.text.toString()
-            var enabled = nick !=firstNick
-            var notEnabled = nick == firstNick
+            val enabled = nick !=firstNick
+            val notEnabled = nick == firstNick
 
             if(enabled){
                 binding.nickSetBtn.isEnabled = enabled

@@ -7,6 +7,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import data.DataListener
 import data.FirebaseData
+import kr.co.ky.cardviewCollection.CardviewCollection
 import kr.co.ky.community.CommunityAdapter
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.kozoltime.R
@@ -28,14 +29,15 @@ class OfficeActivity : AppCompatActivity() {
             val intent = Intent(this, WriteActivity::class.java)
             startActivity(intent)
         }
-        val path = "kozoltime"
+        val path = "office"
         binding.officeRv.layoutManager = LinearLayoutManager(this@OfficeActivity)
 
         firebaseData.receiveFirebase(path, object : DataListener() {
             @SuppressLint("NotifyDataSetChanged")
             override fun adapter(mutableList: MutableList<CommunityDataClass>) {
                 val like =  Like()
-                binding.officeRv.adapter = CommunityAdapter(mutableList,path,like)
+                val cardviewCollection = CardviewCollection()
+                binding.officeRv.adapter = CommunityAdapter(mutableList,path,like,cardviewCollection)
                 (binding.officeRv.adapter as CommunityAdapter).notifyDataSetChanged()
 
             }

@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import data.FirebaseData
+import kr.co.ky.cardviewCollection.CardviewCollection
 import kr.co.ky.community.CommunityAdapter
 import kr.co.ky.community.CommunityDataClass
 import kr.co.ky.kozoltime.R
@@ -75,8 +76,9 @@ class SearchActivity : AppCompatActivity() {
                     }
                 }
                         val like = Like()
+                        val cardviewCollection = CardviewCollection()
                         binding.searchRecyclerview.adapter =
-                            CommunityAdapter(searchList, spinnerTextValue, like)
+                            CommunityAdapter(searchList, spinnerTextValue, like,cardviewCollection)
                         binding.searchRecyclerview.layoutManager = LinearLayoutManager(this)
                         (binding.searchRecyclerview.adapter as CommunityAdapter).notifyDataSetChanged()
 

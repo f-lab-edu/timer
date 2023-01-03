@@ -14,7 +14,6 @@ class NickFirebase {
         val fbAuth = FirestoreKey.auth
         val database = Firebase.firestore
         val email = fbAuth.currentUser?.email
-        val mutableData = MutableLiveData<NickDataClass>()
 
                     val firebaseCollection = database.collection("nickname")
                     if (email != null) {
@@ -25,8 +24,7 @@ class NickFirebase {
                             if (snapshot != null && snapshot.exists()) {
                                         val item =
                                             NickDataClass(nickname = snapshot["nickname"] as? String)
-                                        mutableData.value = item
-                                        nickCallback.setNickTextView(mutableData)
+                                        nickCallback.setNickTextView(item)
                             }
                         }
                     } else {

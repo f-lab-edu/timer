@@ -3,6 +3,7 @@ package kr.co.ky.kozoltime
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.activity.viewModels
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -17,6 +18,7 @@ import navigation.JobEpilogueFragment
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
         private lateinit var binding: ActivityMainBinding
         val jobEpilogueFragment = JobEpilogueFragment()
+
         override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 
             when (p0.itemId) {
@@ -56,6 +58,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             val view = binding.root
             setContentView(view)
             binding.bottomNavigation.setOnItemSelectedListener(this)
+            val viewModel = ViewModelProvider(this).get(NicknameViewModel::class.java)
+            viewModel.getNick()
 
             val fragmentTransaction: FragmentTransaction = supportFragmentManager.beginTransaction()
 

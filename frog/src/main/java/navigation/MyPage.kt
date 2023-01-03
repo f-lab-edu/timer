@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
+import kr.co.ky.kozoltime.MainActivity
 import kr.co.ky.nicknamePackage.NickNameActivity
 import kr.co.ky.kozoltime.databinding.FragmentMyPageBinding
 import kr.co.ky.nicknamePackage.NicknameViewModel
@@ -17,7 +19,7 @@ import kr.co.ky.nicknamePackage.NicknameViewModel
 class MyPage : Fragment(){
     private var _binding: FragmentMyPageBinding? = null
     private val binding get() = _binding!!
-    private lateinit var viewModel: NicknameViewModel
+    private val viewModel by activityViewModels<NicknameViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,7 +29,6 @@ class MyPage : Fragment(){
         _binding = FragmentMyPageBinding.inflate(inflater,container,false)
         val view = binding.root
 
-            viewModel = ViewModelProvider(viewModelStore, ViewModelProvider.NewInstanceFactory()).get(NicknameViewModel::class.java)
                     viewModel.nickState.observe(viewLifecycleOwner, Observer {
                         binding.nickTv.text = it.nickname
                     })

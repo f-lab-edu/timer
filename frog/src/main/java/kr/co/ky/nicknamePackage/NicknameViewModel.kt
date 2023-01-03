@@ -16,17 +16,14 @@ class NicknameViewModel : ViewModel() {
     val nickState: LiveData<NickDataClass>
         get() =_nickState
 
-    init {
-        getNick()
-    }
     fun setNickState(value: NickDataClass){
         _nickState.value = value
     }
 
     fun getNick() {
                 nickFirebase.sendNickFirebase(object : NickCallback {
-                    override fun setNickTextView(nick: MutableLiveData<NickDataClass>) {
-                        nick.value?.let { setNickState(it) }
+                    override fun setNickTextView(nick: NickDataClass) {
+                        setNickState(nick)
                     }
                 })
         }

@@ -4,7 +4,6 @@ package kr.co.ky.kozoltime.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,19 +17,10 @@ import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
-=======
-import android.widget.LinearLayout;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.viewbinding.ViewBinding;
-import java.lang.NullPointerException;
-import java.lang.Override;
->>>>>>> develop
 import kr.co.ky.kozoltime.R;
 
 public final class ActivityDetailBinding implements ViewBinding {
   @NonNull
-<<<<<<< HEAD
   private final ScrollView rootView;
 
   @NonNull
@@ -84,21 +74,11 @@ public final class ActivityDetailBinding implements ViewBinding {
     this.fixedDate = fixedDate;
     this.fixedNickname = fixedNickname;
     this.fixedTitle = fixedTitle;
-=======
-  private final LinearLayout rootView;
-
-  private ActivityDetailBinding(@NonNull LinearLayout rootView) {
-    this.rootView = rootView;
->>>>>>> develop
   }
 
   @Override
   @NonNull
-<<<<<<< HEAD
   public ScrollView getRoot() {
-=======
-  public LinearLayout getRoot() {
->>>>>>> develop
     return rootView;
   }
 
@@ -119,7 +99,6 @@ public final class ActivityDetailBinding implements ViewBinding {
 
   @NonNull
   public static ActivityDetailBinding bind(@NonNull View rootView) {
-<<<<<<< HEAD
     // The body of this method is generated in a way you would not otherwise write.
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
@@ -196,12 +175,5 @@ public final class ActivityDetailBinding implements ViewBinding {
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
-=======
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
-
-    return new ActivityDetailBinding((LinearLayout) rootView);
->>>>>>> develop
   }
 }

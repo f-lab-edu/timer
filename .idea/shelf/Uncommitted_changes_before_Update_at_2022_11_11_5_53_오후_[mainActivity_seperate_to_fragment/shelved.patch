@@ -1,0 +1,37 @@
+Index: frog/src/main/java/navigation/CommunityFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package navigation\n\nimport android.os.Bundle\nimport android.view.LayoutInflater\nimport android.view.View\nimport android.view.ViewGroup\nimport androidx.fragment.app.Fragment\nimport kr.co.ky.kozoltime.R\n\nclass CommunityFragment : Fragment(){\n    override fun onCreateView(\n        inflater: LayoutInflater,\n        container: ViewGroup?,\n        savedInstanceState: Bundle?\n    ): View? {\n        var view = LayoutInflater.from(activity).inflate(R.layout.fragment_community,container,false)\n        return view\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frog/src/main/java/navigation/CommunityFragment.kt b/frog/src/main/java/navigation/CommunityFragment.kt
+--- a/frog/src/main/java/navigation/CommunityFragment.kt	(revision c55926371289e36e5ce522d366de692f120afba7)
++++ b/frog/src/main/java/navigation/CommunityFragment.kt	(date 1668156734090)
+@@ -1,13 +1,16 @@
+ package navigation
+ 
++import android.content.Intent
+ import android.os.Bundle
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
+ import androidx.fragment.app.Fragment
++import kotlinx.android.synthetic.main.fragment_job_epilogue.*
++import kr.co.ky.kozoltime.Office
+ import kr.co.ky.kozoltime.R
+ 
+-class CommunityFragment : Fragment(){
++class communityFragment : Fragment(){
+     override fun onCreateView(
+         inflater: LayoutInflater,
+         container: ViewGroup?,
+@@ -15,5 +18,7 @@
+     ): View? {
+         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_community,container,false)
+         return view
++
++
+     }
+ }
+\ No newline at end of file

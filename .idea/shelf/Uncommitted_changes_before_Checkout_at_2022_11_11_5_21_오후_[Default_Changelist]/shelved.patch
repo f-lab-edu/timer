@@ -1,0 +1,140 @@
+Index: frog/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".MainActivity\">\n\n    <TextView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Hello World!\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintLeft_toLeftOf=\"parent\"\n        app:layout_constraintRight_toRightOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\" />\n\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frog/src/main/res/layout/activity_main.xml b/frog/src/main/res/layout/activity_main.xml
+--- a/frog/src/main/res/layout/activity_main.xml	
++++ b/frog/src/main/res/layout/activity_main.xml	
+@@ -6,13 +6,104 @@
+     android:layout_height="match_parent"
+     tools:context=".MainActivity">
+ 
+-    <TextView
+-        android:layout_width="wrap_content"
++
++    <LinearLayout
++        android:id="@+id/main_content"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:layout_above="@id/nav_division"
++        android:orientation="vertical">
++        <LinearLayout
++            android:id="@+id/home_linear"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal">
++        <EditText
++            android:id="@+id/home_edit"
++            android:layout_width="320dp"
++            android:layout_height="50dp"> </EditText>
++            <Button
++                android:id="@+id/home_search_btn"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:drawableStart="@drawable/ic_searching"
++                android:paddingLeft="30dp"
++                android:background="@color/purple"/>
++        </LinearLayout>
++        <GridLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:columnCount="4"
++            android:paddingTop="10dp"
++            >
++            <Button
++                android:id="@+id/office_btn"
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="@string/office_job"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="사무직"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="사무직"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="사무직"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="사무직"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="사무직"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="사무직"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++            <Button
++                android:layout_width="103dp"
++                android:layout_height="50dp"
++                android:text="창업"
++                android:textColor="@color/white"
++                android:background="@color/purple"/>
++        </GridLayout>
++    </LinearLayout>
++    <LinearLayout
++        android:id="@+id/nav_division"
++        android:background="@color/colorDivision"
++        android:orientation="horizontal"
++        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
++        android:layout_width="match_parent"
++        android:layout_height="1dp">
++    </LinearLayout>
++
++    <com.google.android.material.bottomnavigation.BottomNavigationView
++        android:id="@+id/bottom_navigation"
++        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+-        android:text="Hello World!"
+         app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintLeft_toLeftOf="parent"
+-        app:layout_constraintRight_toRightOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
++        android:background="@color/colorDivision"
++        app:menu="@menu/bottom_navigation_main"
++        android:orientation="vertical">
+ 
++    </com.google.android.material.bottomnavigation.BottomNavigationView>
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\nbuildscript {\n    repositories {\n        google()\n        mavenCentral()\n    }\n    dependencies {\n        classpath \"com.android.tools.build:gradle:7.0.4\"\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10\"\n        classpath 'com.google.gms:google-services:4.3.14'\n\n        // NOTE: Do not place your application dependencies here; they belong\n        // in the individual module build.gradle files\n    }\n}\n\ntask clean(type: Delete) {\n    delete rootProject.buildDir\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	
++++ b/build.gradle	
+@@ -3,6 +3,7 @@
+     repositories {
+         google()
+         mavenCentral()
++
+     }
+     dependencies {
+         classpath "com.android.tools.build:gradle:7.0.4"

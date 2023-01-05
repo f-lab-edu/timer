@@ -2831,12 +2831,26 @@ id expand_activities_button
 id expanded_menu
 id fabWrite
 id fabWrite_community
+id fabWrite_find_job
 id fade
 id fill
 id fill_horizontal
 id fill_vertical
 id filled
 id find_job
+id find_job_cardview_context
+id find_job_cardview_date
+id find_job_cardview_linear
+id find_job_cardview_office_name
+id find_job_cardview_title
+id find_job_linear
+id find_job_recyclerview
+id find_job_search_button
+id find_job_text
+id find_job_write_button
+id find_job_write_context
+id find_job_write_office_name
+id find_job_write_title
 id fitCenter
 id fitEnd
 id fitStart
@@ -3283,6 +3297,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_detail
+layout activity_find_job_write
 layout activity_login_join
 layout activity_main
 layout activity_nick_name
@@ -3308,6 +3323,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout detail_cardview
+layout find_job_cardview
 layout fragment_community
 layout fragment_find_job
 layout fragment_job_epilogue
@@ -3488,6 +3504,7 @@ string fallback_menu_item_share_link
 string fb_login_protocol_scheme
 string findJobKey
 string find_job
+string find_job_plz
 string firebase_database_url
 string frog
 string gcm_defaultSenderId
@@ -3504,6 +3521,7 @@ string indeterminate
 string influencer
 string it
 string item_view_role_description
+string job_button
 string job_select
 string join
 string kozoltimeKey
@@ -3597,6 +3615,7 @@ string not_selected
 string nurse
 string off
 string office
+string office_name
 string on
 string overlap
 string password

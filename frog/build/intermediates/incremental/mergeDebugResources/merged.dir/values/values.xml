@@ -1716,6 +1716,7 @@
     <string name="fb_login_protocol_scheme">fb873009302900995</string>
     <string name="findJobKey">findJob</string>
     <string name="find_job">구인란</string>
+    <string name="find_job_plz">구인 내용을 작성해주세요.</string>
     <string name="firebase_database_url" translatable="false">https://firebase-adminsdk-s1vjx@kozoltime.iam.gserviceaccount.com</string>
     <string name="frog">개구리</string>
     <string name="gcm_defaultSenderId" translatable="false">558492715774</string>
@@ -1732,6 +1733,7 @@
     <string name="influencer">인플루언서</string>
     <string name="it">it 개발자</string>
     <string name="item_view_role_description">Tab</string>
+    <string name="job_button">구인구직 등록</string>
     <string name="job_select">직종 선택</string>
     <string name="join">이메일로 회원가입</string>
     <string name="kozoltimeKey">kozoltime</string>
@@ -1825,6 +1827,7 @@
     <string name="nurse">간호조무사</string>
     <string name="off">Off</string>
     <string name="office">사무직</string>
+    <string name="office_name">회사 이름</string>
     <string name="on">On</string>
     <string name="overlap">중복 확인</string>
     <string name="password">비밀번호 입력</string>

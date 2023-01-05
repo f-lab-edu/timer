@@ -1,5 +1,7 @@
 kr/co/ky/kozoltime/databinding/ActivityNickNameBinding.java
  kr.co.ky.kozoltime.databinding.ActivityNickNameBinding
+kr/co/ky/kozoltime/databinding/FindJobCardviewBinding.java
+ kr.co.ky.kozoltime.databinding.FindJobCardviewBinding
 kr/co/ky/kozoltime/databinding/FragmentMyPageBinding.java
  kr.co.ky.kozoltime.databinding.FragmentMyPageBinding
 kr/co/ky/kozoltime/databinding/SplashLayoutBinding.java
@@ -16,6 +18,8 @@ kr/co/ky/kozoltime/databinding/ActivityOfficeBinding.java
  kr.co.ky.kozoltime.databinding.ActivityOfficeBinding
 kr/co/ky/kozoltime/databinding/WriteCommunityActivityBinding.java
  kr.co.ky.kozoltime.databinding.WriteCommunityActivityBinding
+kr/co/ky/kozoltime/databinding/ActivityFindJobWriteBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityFindJobWriteBinding
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 kr/co/ky/kozoltime/databinding/ActivityLoginJoinBinding.java

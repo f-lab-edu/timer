@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.co.ky.findJob.FindJobWriteActivity">
+
+    <EditText
+        android:id="@+id/find_job_write_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLength="18"
+        android:ellipsize="end"
+        android:hint="@string/title_plz"/>
+    <EditText
+        android:id="@+id/find_job_write_office_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLength="18"
+        android:ellipsize="end"
+        android:hint="@string/office_name"/>
+
+    <EditText
+        android:id="@+id/find_job_write_context"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:hint="@string/find_job_plz"
+        android:gravity="top"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/find_job_write_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/job_button"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple"
+        android:textStyle="bold" />
+</LinearLayout>

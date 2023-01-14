@@ -1,0 +1,52 @@
+kr/co/ky/kozoltime/databinding/ActivityNickNameBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityNickNameBinding
+kr/co/ky/kozoltime/databinding/FindJobCardviewBinding.java
+ kr.co.ky.kozoltime.databinding.FindJobCardviewBinding
+kr/co/ky/kozoltime/databinding/FragmentMyPageBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentMyPageBinding
+kr/co/ky/kozoltime/databinding/SplashLayoutBinding.java
+ kr.co.ky.kozoltime.databinding.SplashLayoutBinding
+kr/co/ky/kozoltime/databinding/FragmentNewOfficeBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentNewOfficeBinding
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+kr/co/ky/kozoltime/databinding/FragmentCommunityBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentCommunityBinding
+kr/co/ky/kozoltime/BR.java
+ kr.co.ky.kozoltime.BR
+kr/co/ky/kozoltime/databinding/ActivityOfficeBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityOfficeBinding
+kr/co/ky/kozoltime/databinding/WriteCommunityActivityBinding.java
+ kr.co.ky.kozoltime.databinding.WriteCommunityActivityBinding
+kr/co/ky/kozoltime/databinding/ActivityFindJobWriteBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityFindJobWriteBinding
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+kr/co/ky/kozoltime/databinding/ActivityLoginJoinBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityLoginJoinBinding
+kr/co/ky/kozoltime/databinding/ActivityMainBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityMainBinding
+kr/co/ky/kozoltime/BuildConfig.java
+ kr.co.ky.kozoltime.BuildConfig
+kr/co/ky/kozoltime/DataBindingTriggerClass.java
+ kr.co.ky.kozoltime.DataBindingTriggerClass
+kr/co/ky/kozoltime/databinding/ActivitySearchBinding.java
+ kr.co.ky.kozoltime.databinding.ActivitySearchBinding
+kr/co/ky/kozoltime/databinding/DetailCardviewBinding.java
+ kr.co.ky.kozoltime.databinding.DetailCardviewBinding
+kr/co/ky/kozoltime/databinding/FragmentFindJobBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentFindJobBinding
+kr/co/ky/kozoltime/databinding/ActivityDetailBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityDetailBinding
+kr/co/ky/kozoltime/DataBinderMapperImpl.java
+ kr.co.ky.kozoltime.DataBinderMapperImpl
+ kr.co.ky.kozoltime.DataBinderMapperImpl$InnerBrLookup
+ kr.co.ky.kozoltime.DataBinderMapperImpl$InnerLayoutIdLookup
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+kr/co/ky/kozoltime/databinding/FragmentJobEpilogueBinding.java
+ kr.co.ky.kozoltime.databinding.FragmentJobEpilogueBinding
+kr/co/ky/kozoltime/databinding/OfficeCardviewBinding.java
+ kr.co.ky.kozoltime.databinding.OfficeCardviewBinding
+kr/co/ky/kozoltime/databinding/ActivityWriteBinding.java
+ kr.co.ky.kozoltime.databinding.ActivityWriteBinding

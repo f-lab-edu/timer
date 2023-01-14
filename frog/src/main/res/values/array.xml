@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itemList">
+        <item>사무직</item>
+        <item>생산직</item>
+        <item>창업</item>
+        <item>운동 선수</item>
+        <item>서비스업</item>
+        <item>성직자</item>
+        <item>직업 군인</item>
+        <item>공무원</item>
+        <item>인플루언서</item>
+        <item>it 개발자</item>
+        <item>간호조무사</item>
+        <item>배달부</item>
+        <item>기타등등</item>
+    </string-array>
+    <string-array name="searchList">
+        <item>커뮤니티</item>
+        <item>취업 후기</item>
+        <item>구인구직</item>
+    </string-array>
+</resources>

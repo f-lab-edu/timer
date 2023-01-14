@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WriteActivity">
+    <LinearLayout
+        android:id="@+id/job_epilogue_spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="@string/job_select"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/write_spinner"
+        android:layout_width="match_parent"
+        android:entries="@array/itemList"
+        android:layout_height="50dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/job_write_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLength="18"
+        android:ellipsize="end"
+        android:hint="@string/title_plz"/>
+
+    <EditText
+        android:id="@+id/job_write_context"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="@string/context_plz"
+        android:gravity="top"
+        android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/job_write_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_a_photo"
+        android:padding="60dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorLightGray"
+        android:contentDescription="@string/image" />
+
+    <Button
+        android:id="@+id/job_write_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sharing"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple"
+        android:textStyle="bold" />
+</LinearLayout>

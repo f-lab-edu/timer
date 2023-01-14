@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kozoltime.iml" filepath="$PROJECT_DIR$/.idea/modules/kozoltime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.iml" filepath="$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.main.iml" filepath="$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/frog/kozoltime.frog.unitTest.iml" />
+    </modules>
+  </component>
+</project>

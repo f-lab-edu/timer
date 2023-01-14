@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">고졸 타임</string>
+    <string name="facebook_app_id">873009302900995</string>
+    <string name="fb_login_protocol_scheme">fb873009302900995</string>
+
+    <!-- Sign In -->
+    <string name="email">이메일 입력</string>
+    <string name="password">비밀번호 입력</string>
+    <string name="signin_email">이메일 로그인</string>
+    <string name="signin_google">구글 로그인</string>
+    <string name="social_login">소셜 로그인</string>
+    <string name="next_join">둘러보기</string>
+    <string name="join">이메일로 회원가입</string>
+
+    <!-- job_epilogue -->
+    <string name="office">사무직</string>
+    <string name="factory">생산직</string>
+    <string name="establishment">창업</string>
+    <string name="sports">운동 선수</string>
+    <string name="service">서비스업</string>
+    <string name="cleric">성직자</string>
+    <string name="army">직업 군인</string>
+    <string name="public_official">공무원</string>
+    <string name="influencer">인플루언서</string>
+    <string name="it">it 개발자</string>
+    <string name="nurse">간호조무사</string>
+    <string name="delivery">배달부</string>
+    <string name="ect">기타등등</string>
+
+    <!-- bottom_navigation_main -->
+    <string name="ssul">취업 후기</string>
+    <string name="community">커뮤니티</string>
+    <string name="find_job">구인란</string>
+    <string name="my_page">프로필</string>
+
+    <!-- office_cardview -->
+    <string name="id">id</string>
+    <string name="title">title</string>
+    <string name="context">context</string>
+    <string name="date">date</string>
+    <string name="like_count">개</string>
+    <string name="like_number">0</string>
+    <!-- activity_office -->
+    <string name="legend_post">레전드</string>
+    <string name="new_post">새 글</string>
+
+    <!-- activity_write -->
+    <string name="title_plz">제목</string>
+    <string name="context_plz">당신의 취업 꿀팁을 공유해주세요!</string>
+    <string name="job_select">직종 선택</string>
+    <string name="sharing">꿀팁 공유</string>
+    <string name="image">이미지뷰 입니다.</string>
+    <!-- my_page -->
+    <string name="nick_name">닉네임:</string>
+    <string name="frog">개구리</string>
+    <string name="nick_setting">닉네임 설정</string>
+    <string name="logout">로그 아웃</string>
+    <string name="my_writing">내가 쓴 글</string>
+    <string name="like">좋아요</string>
+
+    <!-- nick -->
+    <string name="overlap">중복 확인</string>
+    <string name="nick_write">닉네임을 입력하세요.</string>
+    <string name="com">community</string>
+
+    <!-- search -->
+    <string name="search">검색어를 입력하세요.</string>
+    <string name="communityKey">community</string>
+    <string name="kozoltimeKey">kozoltime</string>
+    <string name="findJobKey">findJob</string>
+
+    <!-- detail activity -->
+    <string name="title_colon">제목 : </string>
+    <string name="nickname">닉네임</string>
+    <string name="date_colon">날  짜 : </string>
+    <string name="chat">댓글을 입력하세요.</string>
+
+    <!-- find job cardview -->
+    <string name="office_name">회사 이름</string>
+    <string name="job_button">구인구직 등록</string>
+    <string name="find_job_plz">구인 내용을 작성해주세요.</string>
+</resources>

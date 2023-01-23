@@ -29,18 +29,21 @@ class OfficeActivity : AppCompatActivity() {
             val intent = Intent(this, WriteActivity::class.java)
             startActivity(intent)
         }
-        val path = "office"
+        val pathIntent = intent
+        val path = pathIntent.getStringExtra("path")
         binding.officeRv.layoutManager = LinearLayoutManager(this@OfficeActivity)
 
-        firebaseData.receiveFirebase(path, object : DataListener() {
-            @SuppressLint("NotifyDataSetChanged")
-            override fun adapter(mutableList: MutableList<CommunityDataClass>) {
-                val like =  Like()
-                val cardviewCollection = CardviewCollection()
-                binding.officeRv.adapter = CommunityAdapter(mutableList,path,like,cardviewCollection)
-                (binding.officeRv.adapter as CommunityAdapter).notifyDataSetChanged()
+        if (path != null) {
+            firebaseData.receiveFirebase(path, object : DataListener() {
+                @SuppressLint("NotifyDataSetChanged")
+                override fun adapter(mutableList: MutableList<CommunityDataClass>) {
+                    val like =  Like()
+                    val cardviewCollection = CardviewCollection()
+                    binding.officeRv.adapter = CommunityAdapter(mutableList,path,like,cardviewCollection)
+                    (binding.officeRv.adapter as CommunityAdapter).notifyDataSetChanged()
 
-            }
-        })
+                }
+            })
+        }
     }
 }

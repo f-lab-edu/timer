@@ -31,7 +31,7 @@ class DetailPage : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val receivedIntent = getIntent()
+        val receivedIntent = intent
         val page = receivedIntent.getStringExtra("page")
         val documentFromAdapter = receivedIntent.getStringExtra("document")
 

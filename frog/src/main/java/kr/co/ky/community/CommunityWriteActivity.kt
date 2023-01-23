@@ -42,6 +42,7 @@ class CommunityWriteActivity : AppCompatActivity() {
         binding = WriteCommunityActivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
         binding.communitySsulImage.setOnClickListener {
             when {
                 ContextCompat.checkSelfPermission(this,
@@ -50,11 +51,9 @@ class CommunityWriteActivity : AppCompatActivity() {
                     intentImage.type = "image/*"
                     launcher.launch(intentImage)
                 }
-                shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
+                ContextCompat.checkSelfPermission(this,
+                    android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED -> {
                     showPermissionContextPopup()
-                }
-                else -> {
-                   SettingPopup()
                 }
             }
         }
@@ -148,9 +147,10 @@ class CommunityWriteActivity : AppCompatActivity() {
                     launcher.launch(intentImage)
                 } else {
                     Toast.makeText(this, "권한을 거부했습니다.", Toast.LENGTH_SHORT).show()
+                    SettingPopup()
                 }
             }
-         else -> {
+            else -> {
                 Log.d("권한","종료")
              SettingPopup()
             }

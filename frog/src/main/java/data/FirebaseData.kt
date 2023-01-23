@@ -27,7 +27,6 @@ class FirebaseData(){
                         context = document["context"] as? String,
                         title = document["title"] as? String,
                         imageUri = document["imageUri"] as? String,
-                        spinner = document["spinner"] as? String,
                         singleDate = document["singleDate"] as? String,
                         document = document["document"] as? String,
                         likeCount = document["likeCount"] as? Long,

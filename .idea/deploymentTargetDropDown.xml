@@ -7,19 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_2_API_30.avd" />
+            <value value="$USER_HOME$/.android/avd/Pixel_XL_API_30.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <timeTargetWasSelectedWithDropDown value="2022-12-03T12:49:39.975589Z" />
-=======
-    <timeTargetWasSelectedWithDropDown value="2022-11-29T04:38:51.605665Z" />
->>>>>>> a38d387 (adapter & data seperate success2)
-=======
-    <timeTargetWasSelectedWithDropDown value="2022-12-03T12:49:39.975589Z" />
->>>>>>> 8866060 (image setting finish)
+    <timeTargetWasSelectedWithDropDown value="2023-01-14T10:14:53.078666Z" />
   </component>
 </project>

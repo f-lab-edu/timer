@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.View
 import android.widget.*
@@ -71,12 +72,9 @@ class WriteActivity : AppCompatActivity() {
                     launcher.launch(intentImage)
 
                 }
-                shouldShowRequestPermissionRationale(android.Manifest.permission.READ_EXTERNAL_STORAGE) -> {
+                ContextCompat.checkSelfPermission(this,
+                    android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED -> {
                     showPermissionContextPopup()
-                }
-                else -> {
-                    requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
-                        1000)
                 }
             }
         }
@@ -96,9 +94,9 @@ class WriteActivity : AppCompatActivity() {
                                 imageUri = it.toString(),
                                 singleDate = fileName,
                                 document = fileName,
-                                spinner = writeSpinner
+
                             )
-                            val bucket = fbFirestore.collection(collection).document(fileName)
+                            val bucket = fbFirestore.collection(writeSpinner).document(fileName)
                             bucket.set(communityDataClass).addOnSuccessListener {
                                 Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
                             }
@@ -115,8 +113,9 @@ class WriteActivity : AppCompatActivity() {
                         "uid" to fbAuth.currentUser?.uid,
                         "singleDate" to fileName,
                         "document" to fileName
+
                     )
-                    val bucket = fbFirestore.collection(collection)
+                    val bucket = fbFirestore.collection(writeSpinner)
                     bucket.document(fileName).set(writeData).addOnSuccessListener {
                         Toast.makeText(this, "데이터가 추가되었습니다.", Toast.LENGTH_SHORT).show()
                     }
@@ -142,6 +141,19 @@ class WriteActivity : AppCompatActivity() {
                 .create()
                 .show()
         }
+    private fun SettingPopup() {
+        AlertDialog.Builder(this)
+            .setTitle("권한이 필요합니다.")
+            .setMessage("사진 권한을 불러오기 위해 환경설정으로 이동합니다. 이미지를 사용하려면 권한에 동의해주세요.")
+            .setPositiveButton("동의") { _, _ ->
+                val intentPermission = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                intentPermission.data = Uri.parse(("package:" + this.packageName))
+                this.startActivity(intentPermission)
+            }
+            .setNegativeButton("취소") { _, _ -> }
+            .create()
+            .show()
+    }
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
@@ -155,9 +167,8 @@ class WriteActivity : AppCompatActivity() {
                     intentImage.type = "image/*"
                     launcher.launch(intentImage)
                 } else {
-                    // 거부 클릭시
                     Toast.makeText(this, "권한을 거부했습니다.", Toast.LENGTH_SHORT).show()
-                    showPermissionContextPopup()
+                    SettingPopup()
                 }
             }
             else -> {

@@ -377,5 +377,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.startup:startup-runtime:1.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:protolite-well-known-types:18.0.0@aar" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="kozoltime.frog.main" />
 </module>

@@ -34,6 +34,7 @@ class LoginJoinActivity : AppCompatActivity() {
         binding = ActivityLoginJoinBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
         binding.loginBtn.setOnClickListener {
             if (binding.idEdit.length() == 0 && binding.passwordEdit.length() == 0) {
                 detectEmailAndPasswordEmpty()
@@ -146,7 +147,7 @@ class LoginJoinActivity : AppCompatActivity() {
         binding.idEdit.addTextChangedListener {
             val email = binding.idEdit.text.toString()
             val password = binding.passwordEdit.text.toString()
-            var enabled = email.isNotEmpty() && password.isNotEmpty()
+            val enabled = email.isNotEmpty() && password.isNotEmpty()
             binding.loginBtn.isEnabled = enabled
             binding.joinBtn.isEnabled = enabled
         }
@@ -154,7 +155,7 @@ class LoginJoinActivity : AppCompatActivity() {
         binding.passwordEdit.addTextChangedListener {
             val email = binding.idEdit.text.toString()
             val password = binding.passwordEdit.text.toString()
-            var enabled = email.isNotEmpty() && password.isNotEmpty()
+            val enabled = email.isNotEmpty() && password.isNotEmpty()
             binding.loginBtn.isEnabled = enabled
             binding.joinBtn.isEnabled = enabled
         }
